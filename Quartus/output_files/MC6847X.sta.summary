@@ -1,0 +1,69 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[0]'
+Slack : -13.300
+TNS   : -110.300
+
+Type  : Setup 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[1]'
+Slack : -13.300
+TNS   : -110.300
+
+Type  : Setup 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[3]'
+Slack : -13.300
+TNS   : -110.300
+
+Type  : Setup 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[4]'
+Slack : -13.300
+TNS   : -110.300
+
+Type  : Setup 'NTSCClk'
+Slack : -9.800
+TNS   : -76.000
+
+Type  : Hold 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[0]'
+Slack : -8.000
+TNS   : -69.600
+
+Type  : Hold 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[1]'
+Slack : -8.000
+TNS   : -69.600
+
+Type  : Hold 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[3]'
+Slack : -8.000
+TNS   : -69.600
+
+Type  : Hold 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[4]'
+Slack : -8.000
+TNS   : -69.600
+
+Type  : Hold 'NTSCClk'
+Slack : -3.500
+TNS   : -28.000
+
+Type  : Minimum Pulse Width 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[0]'
+Slack : -3.500
+TNS   : -63.000
+
+Type  : Minimum Pulse Width 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[1]'
+Slack : -3.500
+TNS   : -63.000
+
+Type  : Minimum Pulse Width 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[3]'
+Slack : -3.500
+TNS   : -63.000
+
+Type  : Minimum Pulse Width 'FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[4]'
+Slack : -3.500
+TNS   : -63.000
+
+Type  : Minimum Pulse Width 'NTSCClk'
+Slack : -3.500
+TNS   : -56.000
+
+Type  : Minimum Pulse Width 'FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[3]'
+Slack : -3.500
+TNS   : -7.000
+
+------------------------------------------------------------

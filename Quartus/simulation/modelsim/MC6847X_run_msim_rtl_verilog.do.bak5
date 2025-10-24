@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/MC6847X.v}
+vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/FormatSwitch.v}
+vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/FrameTiming.v}
+vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/ext_counter.v}
+vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/counter.v}
+vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/ClockSwitch.v}
+

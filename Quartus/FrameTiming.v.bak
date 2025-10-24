@@ -1,0 +1,10 @@
+module FrameTiming(
+	clk,
+	format,
+	hsn,
+	fsn,
+	preload,
+	rowclear
+);
+
+endmodule

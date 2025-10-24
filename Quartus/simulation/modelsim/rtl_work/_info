@@ -1,0 +1,129 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\Quartus\6847substitute\simulation\modelsim
+vClockSwitch
+!i10b 1
+!s100 D?eB>kjz57jJmd]nS=GXG3
+I5^RIOXE9UFQml;KO`BQa51
+VFJGRRIk>MG8<mmL1`52cA3
+Z1 dH:\Quartus\6847substitute\simulation\modelsim
+w1761208459
+8H:/Quartus/6847substitute/ClockSwitch.v
+FH:/Quartus/6847substitute/ClockSwitch.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1761208484.930000
+!s107 H:/Quartus/6847substitute/ClockSwitch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/Quartus/6847substitute|H:/Quartus/6847substitute/ClockSwitch.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+H:/Quartus/6847substitute -O0
+n@clock@switch
+vcounter
+I56hdljBzMZnz>^c;J1R>=2
+VKLlCNN2bEzI^8Mz5g;`Gn1
+R1
+w1761156534
+8H:/Quartus/6847substitute/counter.v
+FH:/Quartus/6847substitute/counter.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 mE=6IO?ERdVP]mW1kRP@O3
+!s85 0
+!s108 1761208484.847000
+!s107 H:/Quartus/6847substitute/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/Quartus/6847substitute|H:/Quartus/6847substitute/counter.v|
+!s101 -O0
+vext_counter
+IbJfb]7m5nOaL;_4gASzTj0
+VAJ^bW>SEhWZ?Kk09m0Kbb0
+R1
+w1761205505
+8H:/Quartus/6847substitute/ext_counter.v
+FH:/Quartus/6847substitute/ext_counter.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ZAWJU]k`AFgDPTmQoRCFC0
+!s85 0
+!s108 1761208484.764000
+!s107 H:/Quartus/6847substitute/ext_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/Quartus/6847substitute|H:/Quartus/6847substitute/ext_counter.v|
+!s101 -O0
+vFormatSwitch
+IgRZF_OMgEB<V`YX[@aH<:2
+VAH4ICl=_hQe^`CM`iG;280
+R1
+w1761208342
+8H:/Quartus/6847substitute/FormatSwitch.v
+FH:/Quartus/6847substitute/FormatSwitch.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@format@switch
+!i10b 1
+!s100 6E;DjRnaDQz6gJ[jzRf1B3
+!s85 0
+!s108 1761208484.593000
+!s107 H:/Quartus/6847substitute/FormatSwitch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/Quartus/6847substitute|H:/Quartus/6847substitute/FormatSwitch.v|
+!s101 -O0
+vFrameTiming
+Ih2elkU`a_alLb^VEAN6Zo1
+VM1IO70Yzenc[fkU`NMRmc3
+R1
+w1761206784
+8H:/Quartus/6847substitute/FrameTiming.v
+FH:/Quartus/6847substitute/FrameTiming.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@frame@timing
+!i10b 1
+!s100 M5Y2JX>F3XIabWX;cBBdz1
+!s85 0
+!s108 1761208484.678000
+!s107 H:/Quartus/6847substitute/FrameTiming.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/Quartus/6847substitute|H:/Quartus/6847substitute/FrameTiming.v|
+!s101 -O0
+vMC6847X
+IhXzegSI1Uz]Hm0PkI>4100
+V6?YHjVWmV0mA<oH^ZG1l;0
+R1
+w1761207941
+8H:/Quartus/6847substitute/MC6847X.v
+FH:/Quartus/6847substitute/MC6847X.v
+L0 3
+R2
+r1
+31
+R3
+n@m@c6847@x
+R4
+!i10b 1
+!s100 J9b:TmLLTWCo3;4b4J8bM0
+!s85 0
+!s108 1761208484.490000
+!s107 H:/Quartus/6847substitute/MC6847X.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/Quartus/6847substitute|H:/Quartus/6847substitute/MC6847X.v|
+!s101 -O0

@@ -1,0 +1,22 @@
+module counter
+	#(parameter WIDTH = 8)
+(
+	input  clk,
+	input  reset,
+	input  enable,
+	output counter
+);
+
+	reg [WIDTH-1:0] count;
+	
+	assign counter = count;
+	
+	initial begin
+		count = 0;
+	end
+	
+	always @(negedge clk) begin
+		count = reset ? 0 : enable ? count + 1 : count;
+	end
+
+endmodule

@@ -1,0 +1,558 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MC6847X_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/MC6847X.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MC6847X
+# 
+# Top level modules:
+# 	MC6847X
+# vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/FormatSwitch.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FormatSwitch
+# 
+# Top level modules:
+# 	FormatSwitch
+# vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/FrameTiming.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FrameTiming
+# 
+# Top level modules:
+# 	FrameTiming
+# vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/ext_counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ext_counter
+# 
+# Top level modules:
+# 	ext_counter
+# vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# vlog -vlog01compat -work work +incdir+H:/Quartus/6847substitute {H:/Quartus/6847substitute/ClockSwitch.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ClockSwitch
+# 
+# Top level modules:
+# 	ClockSwitch
+# 
+vsim work.MC6847X
+# vsim work.MC6847X 
+# Loading work.MC6847X
+# Loading work.FormatSwitch
+# Loading work.ClockSwitch
+# Loading work.FrameTiming
+# Loading work.ext_counter
+# Loading work.counter
+add wave -position insertpoint  \
+sim:/MC6847X/NTSCClk \
+sim:/MC6847X/PALClk \
+sim:/MC6847X/RequestFormat \
+sim:/MC6847X/DA0 \
+sim:/MC6847X/FSn \
+sim:/MC6847X/HSn \
+sim:/MC6847X/FormatClk \
+sim:/MC6847X/Format \
+sim:/MC6847X/DataPreLoad \
+sim:/MC6847X/AlphaRowClear
+force -freeze sim:/MC6847X/NTSCClk 1 0, 0 {135 ps} -r 270
+force -freeze sim:/MC6847X/PALClk 1 0, 0 {115 ps} -r 231
+force -freeze sim:/MC6847X/RequestFormat 1 0, 0 {5000 ps} -r 10000
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -continue
+run -continue
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MC6847X/RequestFormat St0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/MC6847X/Frame/colCount
+add wave -position insertpoint  \
+sim:/MC6847X/Frame/rowCount
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

@@ -1,0 +1,367 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--G2_dffs[0] is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[0]
+G2_dffs[0]_p1_out = G2_dffs[2] & G2_dffs[1] & G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & !G2_dffs[0];
+G2_dffs[0]_p2_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & !G2_dffs[0] & G2_dffs[4];
+G2_dffs[0]_p4_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & !G2_dffs[0] & G2_dffs[3];
+G2_dffs[0]_or_out = G2_dffs[0]_p1_out # G2_dffs[0]_p2_out # G2_dffs[0]_p4_out;
+G2_dffs[0]_reg_input = !G2_dffs[0]_or_out;
+G2_dffs[0] = TFFE(G2_dffs[0]_reg_input, !NTSCClk, , , );
+
+
+--G2_dffs[1] is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[1]
+G2_dffs[1]_p0_out = G2_dffs[0] & G2_dffs[1];
+G2_dffs[1]_p1_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[4];
+G2_dffs[1]_p2_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[3];
+G2_dffs[1]_p4_out = !G2_dffs[0] & !G2_dffs[1];
+G2_dffs[1]_or_out = G2L4 # G2_dffs[1]_p0_out # G2_dffs[1]_p1_out # G2_dffs[1]_p2_out # G2_dffs[1]_p4_out;
+G2_dffs[1]_reg_input = !(G2_dffs[1]_or_out);
+G2_dffs[1] = DFFE(G2_dffs[1]_reg_input, !NTSCClk, , , );
+
+
+--G2_dffs[2] is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[2]
+G2_dffs[2]_p0_out = G2_dffs[1] & G2_dffs[0] & G2_dffs[2];
+G2_dffs[2]_p1_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[1] & !G2_dffs[0];
+G2_dffs[2]_p2_out = !G2_dffs[1] & !G2_dffs[2];
+G2_dffs[2]_p4_out = !G2_dffs[0] & !G2_dffs[2];
+G2_dffs[2]_or_out = G2L6 # G2_dffs[2]_p0_out # G2_dffs[2]_p1_out # G2_dffs[2]_p2_out # G2_dffs[2]_p4_out;
+G2_dffs[2]_reg_input = !(G2_dffs[2]_or_out);
+G2_dffs[2] = DFFE(G2_dffs[2]_reg_input, !NTSCClk, , , );
+
+
+--G2_dffs[3] is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[3]
+G2_dffs[3]_p0_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[3];
+G2_dffs[3]_p1_out = !G2_dffs[7] & G2_dffs[1] & G2_dffs[0] & G2_dffs[2];
+G2_dffs[3]_p2_out = G2_dffs[1] & G2_dffs[0] & G2_dffs[2] & !G2_dffs[6];
+G2_dffs[3]_p4_out = G2_dffs[1] & G2_dffs[0] & G2_dffs[2] & !G2_dffs[5];
+G2_dffs[3]_or_out = G2_dffs[3]_p0_out # G2_dffs[3]_p1_out # G2_dffs[3]_p2_out # G2_dffs[3]_p4_out;
+G2_dffs[3]_reg_input = G2_dffs[3]_or_out;
+G2_dffs[3] = TFFE(G2_dffs[3]_reg_input, !NTSCClk, , , );
+
+
+--G2_dffs[4] is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[4]
+G2_dffs[4]_p0_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[4];
+G2_dffs[4]_p1_out = !G2_dffs[7] & G2_dffs[1] & G2_dffs[0] & G2_dffs[2] & G2_dffs[3];
+G2_dffs[4]_p2_out = G2_dffs[1] & G2_dffs[0] & G2_dffs[2] & G2_dffs[3] & !G2_dffs[6];
+G2_dffs[4]_p4_out = G2_dffs[1] & G2_dffs[0] & G2_dffs[2] & G2_dffs[3] & !G2_dffs[5];
+G2_dffs[4]_or_out = G2_dffs[4]_p0_out # G2_dffs[4]_p1_out # G2_dffs[4]_p2_out # G2_dffs[4]_p4_out;
+G2_dffs[4]_reg_input = G2_dffs[4]_or_out;
+G2_dffs[4] = TFFE(G2_dffs[4]_reg_input, !NTSCClk, , , );
+
+
+--G2_dffs[5] is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[5]
+G2_dffs[5]_p0_out = G2_dffs[4] & G2_dffs[2] & G2_dffs[0] & G2_dffs[1] & G2_dffs[3];
+G2_dffs[5]_p1_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[4] & G2_dffs[5];
+G2_dffs[5]_p2_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[2] & G2_dffs[0];
+G2_dffs[5]_p4_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[2] & G2_dffs[1];
+G2_dffs[5]_or_out = G2L10 # G2_dffs[5]_p0_out # G2_dffs[5]_p1_out # G2_dffs[5]_p2_out # G2_dffs[5]_p4_out;
+G2_dffs[5]_reg_input = G2_dffs[5]_or_out;
+G2_dffs[5] = TFFE(G2_dffs[5]_reg_input, !NTSCClk, , , );
+
+
+--G2_dffs[6] is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[6]
+G2_dffs[6]_p0_out = G2_dffs[4] & G2_dffs[5] & G2_dffs[2] & G2_dffs[0] & G2_dffs[1] & G2_dffs[3];
+G2_dffs[6]_p1_out = G2_dffs[7] & G2_dffs[4] & G2_dffs[5] & G2_dffs[6];
+G2_dffs[6]_p2_out = G2_dffs[7] & G2_dffs[5] & G2_dffs[6] & G2_dffs[2] & G2_dffs[0];
+G2_dffs[6]_p4_out = G2_dffs[7] & G2_dffs[5] & G2_dffs[6] & G2_dffs[2] & G2_dffs[1];
+G2_dffs[6]_or_out = G2L12 # G2_dffs[6]_p0_out # G2_dffs[6]_p1_out # G2_dffs[6]_p2_out # G2_dffs[6]_p4_out;
+G2_dffs[6]_reg_input = G2_dffs[6]_or_out;
+G2_dffs[6] = TFFE(G2_dffs[6]_reg_input, !NTSCClk, , , );
+
+
+--G2_dffs[7] is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[7]
+G2_dffs[7]_p0_out = G2_dffs[7] & !G2_dffs[4] & !G2_dffs[3] & !G2_dffs[1] & !G2_dffs[0];
+G2_dffs[7]_p1_out = !G2_dffs[6] & G2_dffs[7];
+G2_dffs[7]_p2_out = G2_dffs[7] & !G2_dffs[5];
+G2_dffs[7]_p4_out = G2_dffs[7] & !G2_dffs[2] & !G2_dffs[4] & !G2_dffs[3];
+G2_dffs[7]_or_out = G2L14 # G2_dffs[7]_p0_out # G2_dffs[7]_p1_out # G2_dffs[7]_p2_out # G2_dffs[7]_p4_out;
+G2_dffs[7]_reg_input = G2_dffs[7]_or_out;
+G2_dffs[7] = DFFE(G2_dffs[7]_reg_input, !NTSCClk, , , );
+
+
+--D1L7 is FrameTiming:Frame|LessThan3~7
+D1L7_p1_out = !G2_dffs[3] & !G2_dffs[7] & !G2_dffs[6] & !G2_dffs[5] & !G2_dffs[4];
+D1L7_p2_out = !G2_dffs[7] & !G2_dffs[6] & !G2_dffs[5] & !G2_dffs[4] & !G2_dffs[2];
+D1L7_p3_out = !G2_dffs[7] & !G2_dffs[6] & !G2_dffs[5] & !G2_dffs[4] & !G2_dffs[1];
+D1L7_p4_out = !G2_dffs[7] & !G2_dffs[6] & !G2_dffs[5] & !G2_dffs[4] & !NTSCClk & !G2_dffs[0];
+D1L7_or_out = D1L7_p1_out # D1L7_p2_out # D1L7_p3_out # D1L7_p4_out;
+D1L7 = !(D1L7_or_out);
+
+
+--G1_dffs[0] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[0]
+G1_dffs[0]_p0_out = !G1_dffs[5] & !G1_dffs[7] & !G1_dffs[6] & !G1_dffs[0] & !G1_dffs[4] & !G1_dffs[3] & !G1_dffs[2] & !G1_dffs[1];
+G1_dffs[0]_p1_out = C1_FormatOut & !G1_dffs[5] & !G1_dffs[7] & !G1_dffs[6] & !G1_dffs[0];
+G1_dffs[0]_p2_out = C1_FormatOut & !G1_dffs[7] & !G1_dffs[6] & !G1_dffs[0] & !G1_dffs[4];
+G1_dffs[0]_p4_out = C1_FormatOut & !G1_dffs[7] & !G1_dffs[6] & !G1_dffs[0] & !G1_dffs[3];
+G1_dffs[0]_or_out = G1L3 # G1_dffs[0]_p0_out # G1_dffs[0]_p1_out # G1_dffs[0]_p2_out # G1_dffs[0]_p4_out;
+G1_dffs[0]_reg_input = G1_dffs[0]_or_out;
+G1_dffs[0]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[0] = DFFE(G1_dffs[0]_reg_input, G1_dffs[0]_p3_out, , , );
+
+
+--D1L1 is FrameTiming:Frame|LessThan0~13
+D1L1 = EXP(G2_dffs[4] & G2_dffs[7] & G2_dffs[6] & G2_dffs[5]);
+
+
+--D1L2 is FrameTiming:Frame|LessThan0~14
+D1L2 = EXP(G2_dffs[3] & G2_dffs[7] & G2_dffs[6] & G2_dffs[5]);
+
+
+--D1L3 is FrameTiming:Frame|LessThan0~15
+D1L3 = EXP(G2_dffs[1] & G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[2]);
+
+
+--D1L4 is FrameTiming:Frame|LessThan0~16
+D1L4 = EXP(G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[2] & G2_dffs[0]);
+
+
+--G1_dffs[1] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[1]
+G1_dffs[1]_p0_out = !G1_dffs[1] & !G1_dffs[4] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[0] & !G1_dffs[3] & !G1_dffs[2] & !G1_dffs[5];
+G1_dffs[1]_p1_out = C1_FormatOut & !G1_dffs[1] & !G1_dffs[4] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[0];
+G1_dffs[1]_p2_out = C1_FormatOut & !G1_dffs[1] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[0] & !G1_dffs[3];
+G1_dffs[1]_p4_out = C1_FormatOut & G1_dffs[1] & !G1_dffs[7] & !G1_dffs[6] & !G1_dffs[0] & !G1_dffs[3];
+G1_dffs[1]_or_out = G1L5 # G1_dffs[1]_p0_out # G1_dffs[1]_p1_out # G1_dffs[1]_p2_out # G1_dffs[1]_p4_out;
+G1_dffs[1]_reg_input = G1_dffs[1]_or_out;
+G1_dffs[1]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[1] = DFFE(G1_dffs[1]_reg_input, G1_dffs[1]_p3_out, , , );
+
+
+--G1_dffs[2] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[2]
+G1_dffs[2]_p0_out = !G1_dffs[2] & !G1_dffs[0];
+G1_dffs[2]_p1_out = G1_dffs[8] & G1_dffs[6];
+G1_dffs[2]_p2_out = G1_dffs[1] & G1_dffs[2] & G1_dffs[0];
+G1_dffs[2]_p4_out = !G1_dffs[1] & !G1_dffs[2];
+G1_dffs[2]_or_out = G1L7 # G1_dffs[2]_p0_out # G1_dffs[2]_p1_out # G1_dffs[2]_p2_out # G1_dffs[2]_p4_out;
+G1_dffs[2]_reg_input = !(G1_dffs[2]_or_out);
+G1_dffs[2]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[2] = DFFE(G1_dffs[2]_reg_input, G1_dffs[2]_p3_out, , , );
+
+
+--G1_dffs[3] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[3]
+G1_dffs[3]_p0_out = G1_dffs[2] & G1_dffs[3] & G1_dffs[1] & G1_dffs[0];
+G1_dffs[3]_p1_out = !G1_dffs[2] & !G1_dffs[3];
+G1_dffs[3]_p2_out = !G1_dffs[3] & !G1_dffs[1];
+G1_dffs[3]_p4_out = !G1_dffs[3] & !G1_dffs[0];
+G1_dffs[3]_or_out = G1L9 # G1_dffs[3]_p0_out # G1_dffs[3]_p1_out # G1_dffs[3]_p2_out # G1_dffs[3]_p4_out;
+G1_dffs[3]_reg_input = !(G1_dffs[3]_or_out);
+G1_dffs[3]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[3] = DFFE(G1_dffs[3]_reg_input, G1_dffs[3]_p3_out, , , );
+
+
+--G1_dffs[4] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[4]
+G1_dffs[4]_p0_out = G1_dffs[8] & G1_dffs[4] & G1_dffs[6];
+G1_dffs[4]_p1_out = G1_dffs[8] & G1_dffs[2] & G1_dffs[1] & G1_dffs[0] & G1_dffs[5] & G1_dffs[4];
+G1_dffs[4]_p2_out = G1_dffs[8] & G1_dffs[4] & !C1_FormatOut;
+G1_dffs[4]_p4_out = G1_dffs[8] & G1_dffs[4] & G1_dffs[7];
+G1_dffs[4]_or_out = G1L11 # G1_dffs[4]_p0_out # G1_dffs[4]_p1_out # G1_dffs[4]_p2_out # G1_dffs[4]_p4_out;
+G1_dffs[4]_reg_input = G1_dffs[4]_or_out;
+G1_dffs[4]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[4] = TFFE(G1_dffs[4]_reg_input, G1_dffs[4]_p3_out, , , );
+
+
+--G1_dffs[5] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[5]
+G1_dffs[5]_p0_out = G1_dffs[8] & G1_dffs[5] & G1_dffs[6];
+G1_dffs[5]_p1_out = G1_dffs[8] & !C1_FormatOut & G1_dffs[5];
+G1_dffs[5]_p2_out = G1_dffs[8] & G1_dffs[5] & G1_dffs[2] & G1_dffs[4] & G1_dffs[1] & G1_dffs[0];
+G1_dffs[5]_p4_out = G1_dffs[8] & G1_dffs[5] & G1_dffs[7];
+G1_dffs[5]_or_out = G1L13 # G1_dffs[5]_p0_out # G1_dffs[5]_p1_out # G1_dffs[5]_p2_out # G1_dffs[5]_p4_out;
+G1_dffs[5]_reg_input = G1_dffs[5]_or_out;
+G1_dffs[5]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[5] = TFFE(G1_dffs[5]_reg_input, G1_dffs[5]_p3_out, , , );
+
+
+--G1_dffs[6] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[6]
+G1_dffs[6]_p1_out = !G1_dffs[8] & G1_dffs[4] & G1_dffs[0] & G1_dffs[1] & G1_dffs[2] & G1_dffs[3] & G1_dffs[5];
+G1_dffs[6]_p2_out = G1_dffs[8] & G1_dffs[6];
+G1_dffs[6]_or_out = G1_dffs[6]_p1_out # G1_dffs[6]_p2_out;
+G1_dffs[6]_reg_input = G1_dffs[6]_or_out;
+G1_dffs[6]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[6] = TFFE(G1_dffs[6]_reg_input, G1_dffs[6]_p3_out, , , );
+
+
+--G1_dffs[7] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[7]
+G1_dffs[7]_p1_out = !G1_dffs[8] & G1_dffs[5] & G1_dffs[4] & G1_dffs[0] & G1_dffs[1] & G1_dffs[2] & G1_dffs[3] & G1_dffs[6];
+G1_dffs[7]_p2_out = G1_dffs[8] & G1_dffs[7];
+G1_dffs[7]_or_out = G1_dffs[7]_p1_out # G1_dffs[7]_p2_out;
+G1_dffs[7]_reg_input = G1_dffs[7]_or_out;
+G1_dffs[7]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[7] = TFFE(G1_dffs[7]_reg_input, G1_dffs[7]_p3_out, , , );
+
+
+--C1_FormatOut is FormatSwitch:FormatSelect|FormatOut
+C1_FormatOut_or_out = RequestFormat;
+C1_FormatOut_reg_input = C1_FormatOut_or_out;
+C1_FormatOut = DFFE(C1_FormatOut_reg_input, D1L5, , , );
+
+
+--B1L1 is ClockSwitch:ColourClock|Clk~5
+B1L1_p1_out = PALClk & C1_FormatOut;
+B1L1_p2_out = !C1_FormatOut & NTSCClk;
+B1L1_or_out = B1L1_p1_out # B1L1_p2_out;
+B1L1 = B1L1_or_out;
+
+
+--G1_dffs[8] is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[8]
+G1_dffs[8]_p0_out = !G1_dffs[2] & !G1_dffs[3] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[8] & !G1_dffs[1] & !G1_dffs[5] & !G1_dffs[4];
+G1_dffs[8]_p1_out = C1_FormatOut & !G1_dffs[2] & !G1_dffs[3] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[8];
+G1_dffs[8]_p2_out = C1_FormatOut & !G1_dffs[3] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[8] & !G1_dffs[1];
+G1_dffs[8]_p4_out = C1_FormatOut & !G1_dffs[3] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[8] & !G1_dffs[0];
+G1_dffs[8]_or_out = G1L17 # G1_dffs[8]_p0_out # G1_dffs[8]_p1_out # G1_dffs[8]_p2_out # G1_dffs[8]_p4_out;
+G1_dffs[8]_reg_input = G1_dffs[8]_or_out;
+G1_dffs[8]_p3_out = D1L1 & D1L2 & D1L3 & D1L4;
+G1_dffs[8] = DFFE(G1_dffs[8]_reg_input, G1_dffs[8]_p3_out, , , );
+
+
+--D1L6 is FrameTiming:Frame|LessThan2~5
+D1L6_p1_out = !G1_dffs[8] & !G1_dffs[5] & !G1_dffs[4] & !G1_dffs[3] & !G1_dffs[7] & !G1_dffs[6];
+D1L6_or_out = D1L6_p1_out;
+D1L6 = !(D1L6_or_out);
+
+
+--G2L4 is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[1]~62
+G2L4_p1_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[2];
+G2L4 = G2L4_p1_out;
+
+
+--G2L6 is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[2]~64
+G2L6_p1_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[4];
+G2L6_p2_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[3];
+G2L6_p3_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & !G2_dffs[1] & G2_dffs[0];
+G2L6 = G2L6_p1_out # G2L6_p2_out # G2L6_p3_out;
+
+
+--G2L10 is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[5]~68
+G2L10_p1_out = G2_dffs[7] & G2_dffs[6] & G2_dffs[5] & G2_dffs[3];
+G2L10 = G2L10_p1_out;
+
+
+--G2L12 is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[6]~70
+G2L12_p1_out = G2_dffs[7] & G2_dffs[5] & G2_dffs[6] & G2_dffs[3];
+G2L12 = G2L12_p1_out;
+
+
+--G2L14 is FrameTiming:Frame|ext_counter:pixelCols|lpm_counter:cheatCount_rtl_0|dffs[7]~72
+G2L14_p1_out = G2_dffs[2] & G2_dffs[5] & G2_dffs[4] & G2_dffs[3] & G2_dffs[1] & G2_dffs[0] & G2_dffs[6] & !G2_dffs[7];
+G2L14 = G2L14_p1_out;
+
+
+--G1L3 is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[0]~65
+G1L3_p1_out = !G1_dffs[8] & !G1_dffs[0];
+G1L3 = G1L3_p1_out;
+
+
+--G1L5 is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[1]~67
+G1L5_p0_out = G1_dffs[1] & !G1_dffs[0] & C1_FormatOut & !G1_dffs[7] & !G1_dffs[6] & !G1_dffs[4];
+G1L5_p1_out = !G1_dffs[8] & G1_dffs[1] & !G1_dffs[0];
+G1L5_p2_out = !G1_dffs[8] & !G1_dffs[1] & G1_dffs[0];
+G1L5_p3_out = G1_dffs[1] & !G1_dffs[0] & C1_FormatOut & !G1_dffs[5] & !G1_dffs[7] & !G1_dffs[6];
+G1L5_p4_out = !G1_dffs[1] & G1_dffs[0] & C1_FormatOut & !G1_dffs[5] & !G1_dffs[7] & !G1_dffs[6];
+G1L5 = G1L5_p0_out # G1L5_p1_out # G1L5_p2_out # G1L5_p3_out # G1L5_p4_out;
+
+
+--G1L7 is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[2]~73
+G1L7_p1_out = G1_dffs[5] & G1_dffs[4] & G1_dffs[8] & G1_dffs[3];
+G1L7_p2_out = G1_dffs[8] & !C1_FormatOut;
+G1L7_p3_out = G1_dffs[8] & G1_dffs[7];
+G1L7 = G1L7_p1_out # G1L7_p2_out # G1L7_p3_out;
+
+
+--G1L9 is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[3]~77
+G1L9_p1_out = G1_dffs[5] & G1_dffs[8] & G1_dffs[4];
+G1L9_p2_out = G1_dffs[8] & !C1_FormatOut;
+G1L9_p3_out = G1_dffs[8] & G1_dffs[7];
+G1L9_p4_out = G1_dffs[8] & G1_dffs[6];
+G1L9 = G1L9_p1_out # G1L9_p2_out # G1L9_p3_out # G1L9_p4_out;
+
+
+--G1L11 is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[4]~82
+G1L11_p1_out = G1_dffs[8] & G1_dffs[3] & G1_dffs[5] & G1_dffs[4];
+G1L11_p2_out = !G1_dffs[8] & G1_dffs[3] & G1_dffs[2] & G1_dffs[1] & G1_dffs[0];
+G1L11_p3_out = G1_dffs[3] & G1_dffs[2] & G1_dffs[1] & G1_dffs[0] & C1_FormatOut & !G1_dffs[7] & !G1_dffs[6];
+G1L11 = G1L11_p1_out # G1L11_p2_out # G1L11_p3_out;
+
+
+--G1L13 is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[5]~86
+G1L13_p1_out = G1_dffs[8] & G1_dffs[3] & G1_dffs[4] & G1_dffs[5];
+G1L13_p2_out = !G1_dffs[8] & G1_dffs[3] & G1_dffs[4] & G1_dffs[2] & G1_dffs[1] & G1_dffs[0];
+G1L13_p3_out = G1_dffs[3] & G1_dffs[4] & G1_dffs[2] & G1_dffs[1] & G1_dffs[0] & C1_FormatOut & !G1_dffs[7] & !G1_dffs[6];
+G1L13 = G1L13_p1_out # G1L13_p2_out # G1L13_p3_out;
+
+
+--G1L17 is FrameTiming:Frame|counter:pixelRows|lpm_counter:count_rtl_0|dffs[8]~90
+G1L17_p1_out = G1_dffs[0] & G1_dffs[2] & G1_dffs[1] & G1_dffs[5] & G1_dffs[4] & G1_dffs[3] & G1_dffs[7] & G1_dffs[6] & !G1_dffs[8];
+G1L17_p2_out = !G1_dffs[5] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[8] & C1_FormatOut;
+G1L17_p3_out = !G1_dffs[4] & !G1_dffs[7] & !G1_dffs[6] & G1_dffs[8] & C1_FormatOut;
+G1L17 = G1L17_p1_out # G1L17_p2_out # G1L17_p3_out;
+
+
+--~GND~0 is ~GND~0
+~GND~0_or_out = GND;
+~GND~0 = ~GND~0_or_out;
+
+
+--D1L5 is FrameTiming:Frame|LessThan2~4bal
+D1L5_p1_out = !G1_dffs[8] & !G1_dffs[5] & !G1_dffs[4] & !G1_dffs[3] & !G1_dffs[7] & !G1_dffs[6];
+D1L5_or_out = D1L5_p1_out;
+D1L5 = !(D1L5_or_out);
+
+
+--NTSCClk is NTSCClk
+--operation mode is input
+
+NTSCClk = INPUT();
+
+
+--PALClk is PALClk
+--operation mode is input
+
+PALClk = INPUT();
+
+
+--RequestFormat is RequestFormat
+--operation mode is input
+
+RequestFormat = INPUT();
+
+
+--DA0 is DA0
+--operation mode is output
+
+DA0 = OUTPUT(~GND~0);
+
+
+--HSn is HSn
+--operation mode is output
+
+HSn = OUTPUT(D1L7);
+
+
+--Format is Format
+--operation mode is output
+
+Format = OUTPUT(C1_FormatOut);
+
+
+--FormatClk is FormatClk
+--operation mode is output
+
+FormatClk = OUTPUT(B1L1);
+
+
+--FSn is FSn
+--operation mode is output
+
+FSn = OUTPUT(D1L6);
+
+

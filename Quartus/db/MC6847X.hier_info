@@ -1,0 +1,91 @@
+|MC6847X
+NTSCClk => NTSCClk.IN2
+PALClk => PALClk.IN1
+RequestFormat => RequestFormat.IN1
+DA0 <= <GND>
+FSn <= FSn.DB_MAX_OUTPUT_PORT_TYPE
+HSn <= FrameTiming:Frame.hsn
+FormatClk <= ClockSwitch:ColourClock.Clk
+Format <= Format.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|FormatSwitch:FormatSelect
+RequestFormat => FormatOut~reg0.DATAIN
+Sync => FormatOut~reg0.CLK
+FormatOut <= FormatOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|ClockSwitch:ColourClock
+Format => Clk.IN0
+Format => Clk.IN0
+Clk1 => Clk.IN1
+Clk2 => Clk.IN1
+Clk <= Clk.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|FrameTiming:Frame
+clk => clk.IN1
+format => maxRows[5].OUTPUTSELECT
+format => maxRows[4].OUTPUTSELECT
+format => maxRows[2].OUTPUTSELECT
+format => maxRows[1].OUTPUTSELECT
+format => maxRows[0].OUTPUTSELECT
+hsn <= hsn.DB_MAX_OUTPUT_PORT_TYPE
+fsn <= fsn.DB_MAX_OUTPUT_PORT_TYPE
+preload <= <VCC>
+rowclear <= <VCC>
+
+
+|MC6847X|FrameTiming:Frame|ext_counter:pixelCols
+clk => always0.IN0
+clk => count[0].DATAIN
+reset => cheatCount.OUTPUTSELECT
+reset => cheatCount.OUTPUTSELECT
+reset => cheatCount.OUTPUTSELECT
+reset => cheatCount.OUTPUTSELECT
+reset => cheatCount.OUTPUTSELECT
+reset => cheatCount.OUTPUTSELECT
+reset => cheatCount.OUTPUTSELECT
+reset => cheatCount.OUTPUTSELECT
+count[0] <= clk.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= cheatCount[0].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= cheatCount[1].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= cheatCount[2].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= cheatCount[3].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= cheatCount[4].DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= cheatCount[5].DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= cheatCount[6].DB_MAX_OUTPUT_PORT_TYPE
+count[8] <= cheatCount[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|FrameTiming:Frame|counter:pixelRows
+clk => always0.IN0
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+counter[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+counter[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+counter[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+counter[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+counter[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+counter[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+counter[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+counter[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+counter[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
+
+

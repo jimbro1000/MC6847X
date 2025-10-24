@@ -1,0 +1,26 @@
+`timescale 1ns / 1ps
+
+module MC6847X(
+	NTSCClk,
+	PALClk,
+	RequireFormat,
+	DA0,
+	FSn,
+	HSn,
+	FormatClk,
+	Format
+);
+
+input		NTSCClk;
+input		PALClk;
+input		RequireFormat;
+
+output	DA0;
+output	FSn;
+output	HSn;
+output	FormatClk;
+output	Format;
+
+
+
+endmodule

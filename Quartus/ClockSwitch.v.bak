@@ -1,0 +1,10 @@
+module ClockSwitch(
+	input Format,
+	input Clk1,
+	input Clk2,
+	output Clk
+);
+
+	assign Clk = Format ? Clk1 : Clk2;
+
+endmodule
