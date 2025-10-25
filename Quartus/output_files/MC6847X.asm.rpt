@@ -1,5 +1,5 @@
 Assembler report for MC6847X
-Thu Oct 23 20:40:20 2025
+Sat Oct 25 14:52:17 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: H:/Quartus/6847substitute/output_files/MC6847X.pof
+  5. Assembler Device Options: H:/MC6847X/Quartus/output_files/MC6847X.pof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 23 20:40:20 2025 ;
+; Assembler Status      ; Successful - Sat Oct 25 14:52:17 2025 ;
 ; Revision Name         ; MC6847X                               ;
 ; Top-level Entity Name ; MC6847X                               ;
 ; Family                ; MAX7000S                              ;
@@ -73,24 +73,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------------------------+
-; Assembler Generated Files                          ;
-+----------------------------------------------------+
-; File Name                                          ;
-+----------------------------------------------------+
-; H:/Quartus/6847substitute/output_files/MC6847X.pof ;
-+----------------------------------------------------+
++---------------------------------------------+
+; Assembler Generated Files                   ;
++---------------------------------------------+
+; File Name                                   ;
++---------------------------------------------+
+; H:/MC6847X/Quartus/output_files/MC6847X.pof ;
++---------------------------------------------+
 
 
-+------------------------------------------------------------------------------+
-; Assembler Device Options: H:/Quartus/6847substitute/output_files/MC6847X.pof ;
-+----------------+-------------------------------------------------------------+
-; Option         ; Setting                                                     ;
-+----------------+-------------------------------------------------------------+
-; Device         ; EPM7128SLC84-10                                             ;
-; JTAG usercode  ; 0x00000000                                                  ;
-; Checksum       ; 0x001CA8D6                                                  ;
-+----------------+-------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Assembler Device Options: H:/MC6847X/Quartus/output_files/MC6847X.pof ;
++----------------+------------------------------------------------------+
+; Option         ; Setting                                              ;
++----------------+------------------------------------------------------+
+; Device         ; EPM7128SLC84-10                                      ;
+; JTAG usercode  ; 0x00000000                                           ;
+; Checksum       ; 0x001CA8D6                                           ;
++----------------+------------------------------------------------------+
 
 
 +--------------------+
@@ -99,13 +99,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 23 20:40:19 2025
+    Info: Processing started: Sat Oct 25 14:52:17 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off 6847substitute -c MC6847X
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4516 megabytes
-    Info: Processing ended: Thu Oct 23 20:40:20 2025
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sat Oct 25 14:52:17 2025
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
