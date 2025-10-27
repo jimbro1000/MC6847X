@@ -69,3 +69,16 @@ set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
 set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
 set_location_assignment PIN_69 -to RequestFormat
 set_global_assignment -name VERILOG_FILE ClockSwitch.v
+set_global_assignment -name VHDL_FILE ext_counter_vhdl.vhd
+set_location_assignment PIN_46 -to row[0]
+set_location_assignment PIN_45 -to row[1]
+set_location_assignment PIN_44 -to row[2]
+set_location_assignment PIN_52 -to row[3]
+set_location_assignment PIN_51 -to row[4]
+set_location_assignment PIN_50 -to row[5]
+set_location_assignment PIN_58 -to row[6]
+set_location_assignment PIN_57 -to row[7]
+set_location_assignment PIN_56 -to row[8]
+set_global_assignment -name VHDL_FILE reg_counter_vhdl.vhd
+set_global_assignment -name VHDL_FILE col_counter_vhdl.vhd
+set_global_assignment -name VHDL_FILE row_counter_vhdl.vhd

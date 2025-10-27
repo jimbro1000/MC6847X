@@ -1,12 +1,21 @@
 |MC6847X
 NTSCClk => NTSCClk.IN2
 PALClk => PALClk.IN1
-RequestFormat => RequestFormat.IN1
+RequestFormat => ~NO_FANOUT~
 DA0 <= <GND>
 FSn <= FSn.DB_MAX_OUTPUT_PORT_TYPE
 HSn <= FrameTiming:Frame.hsn
 FormatClk <= ClockSwitch:ColourClock.Clk
 Format <= Format.DB_MAX_OUTPUT_PORT_TYPE
+row[0] <= FrameTiming:Frame.row
+row[1] <= FrameTiming:Frame.row
+row[2] <= FrameTiming:Frame.row
+row[3] <= FrameTiming:Frame.row
+row[4] <= FrameTiming:Frame.row
+row[5] <= FrameTiming:Frame.row
+row[6] <= FrameTiming:Frame.row
+row[7] <= FrameTiming:Frame.row
+row[8] <= FrameTiming:Frame.row
 
 
 |MC6847X|FormatSwitch:FormatSelect
@@ -25,54 +34,157 @@ Clk <= Clk.DB_MAX_OUTPUT_PORT_TYPE
 
 |MC6847X|FrameTiming:Frame
 clk => clk.IN1
-format => maxRows[5].OUTPUTSELECT
-format => maxRows[4].OUTPUTSELECT
-format => maxRows[2].OUTPUTSELECT
-format => maxRows[1].OUTPUTSELECT
-format => maxRows[0].OUTPUTSELECT
+format => maxRows.DATAB
+format => maxRows.DATAB
+format => maxRows.DATAB
+format => maxRows.DATAB
+format => comb.IN0
+format => portY[6].DATAB
+format => comb.IN0
+format => comb.IN0
+format => comb.IN0
+format => comb.IN0
+format => maxPortY[8].DATAB
+format => comb.IN0
+format => comb.IN0
+format => comb.IN0
+format => comb.IN0
+format => maxPortY[0].DATAB
+width[0] => Equal0.IN6
+width[0] => Equal1.IN11
+width[0] => Equal2.IN11
+width[1] => Equal0.IN5
+width[1] => Equal1.IN10
+width[1] => Equal2.IN10
+width[2] => Equal0.IN4
+width[2] => Equal1.IN9
+width[2] => Equal2.IN9
+width[3] => Equal0.IN3
+width[3] => Equal1.IN8
+width[3] => Equal2.IN8
+width[4] => Equal0.IN2
+width[4] => Equal1.IN7
+width[4] => Equal2.IN7
+width[5] => Equal0.IN1
+width[5] => Equal1.IN6
+width[5] => Equal2.IN6
 hsn <= hsn.DB_MAX_OUTPUT_PORT_TYPE
 fsn <= fsn.DB_MAX_OUTPUT_PORT_TYPE
-preload <= <VCC>
-rowclear <= <VCC>
+preload <= Equal5.DB_MAX_OUTPUT_PORT_TYPE
+rowclear <= Equal4.DB_MAX_OUTPUT_PORT_TYPE
+row[0] <= row_counter_vhdl:pixelRows.count
+row[1] <= row_counter_vhdl:pixelRows.count
+row[2] <= row_counter_vhdl:pixelRows.count
+row[3] <= row_counter_vhdl:pixelRows.count
+row[4] <= row_counter_vhdl:pixelRows.count
+row[5] <= row_counter_vhdl:pixelRows.count
+row[6] <= row_counter_vhdl:pixelRows.count
+row[7] <= row_counter_vhdl:pixelRows.count
+row[8] <= row_counter_vhdl:pixelRows.count
 
 
-|MC6847X|FrameTiming:Frame|ext_counter:pixelCols
-clk => always0.IN0
+|MC6847X|FrameTiming:Frame|col_counter_vhdl:pixelCols
+clk => ext_counter_vhdl:col_counter.clk
+count[0] <= ext_counter_vhdl:col_counter.count[0]
+count[1] <= ext_counter_vhdl:col_counter.count[1]
+count[2] <= ext_counter_vhdl:col_counter.count[2]
+count[3] <= ext_counter_vhdl:col_counter.count[3]
+count[4] <= ext_counter_vhdl:col_counter.count[4]
+count[5] <= ext_counter_vhdl:col_counter.count[5]
+count[6] <= ext_counter_vhdl:col_counter.count[6]
+count[7] <= ext_counter_vhdl:col_counter.count[7]
+count[8] <= ext_counter_vhdl:col_counter.count[8]
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
 clk => count[0].DATAIN
-reset => cheatCount.OUTPUTSELECT
-reset => cheatCount.OUTPUTSELECT
-reset => cheatCount.OUTPUTSELECT
-reset => cheatCount.OUTPUTSELECT
-reset => cheatCount.OUTPUTSELECT
-reset => cheatCount.OUTPUTSELECT
-reset => cheatCount.OUTPUTSELECT
-reset => cheatCount.OUTPUTSELECT
 count[0] <= clk.DB_MAX_OUTPUT_PORT_TYPE
-count[1] <= cheatCount[0].DB_MAX_OUTPUT_PORT_TYPE
-count[2] <= cheatCount[1].DB_MAX_OUTPUT_PORT_TYPE
-count[3] <= cheatCount[2].DB_MAX_OUTPUT_PORT_TYPE
-count[4] <= cheatCount[3].DB_MAX_OUTPUT_PORT_TYPE
-count[5] <= cheatCount[4].DB_MAX_OUTPUT_PORT_TYPE
-count[6] <= cheatCount[5].DB_MAX_OUTPUT_PORT_TYPE
-count[7] <= cheatCount[6].DB_MAX_OUTPUT_PORT_TYPE
-count[8] <= cheatCount[7].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= counter[0].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= counter[1].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= counter[2].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= counter[3].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= counter[4].DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= counter[5].DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= counter[6].DB_MAX_OUTPUT_PORT_TYPE
+count[8] <= counter[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MC6847X|FrameTiming:Frame|counter:pixelRows
+|MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows
+clk => reg_counter_vhdl:row_counter.clk
+limit[0] => ~NO_FANOUT~
+limit[1] => Equal0.IN7
+limit[2] => Equal0.IN6
+limit[3] => Equal0.IN5
+limit[4] => Equal0.IN4
+limit[5] => Equal0.IN3
+limit[6] => Equal0.IN2
+limit[7] => Equal0.IN1
+limit[8] => Equal0.IN0
+count[0] <= reg_counter_vhdl:row_counter.count[0]
+count[1] <= reg_counter_vhdl:row_counter.count[1]
+count[2] <= reg_counter_vhdl:row_counter.count[2]
+count[3] <= reg_counter_vhdl:row_counter.count[3]
+count[4] <= reg_counter_vhdl:row_counter.count[4]
+count[5] <= reg_counter_vhdl:row_counter.count[5]
+count[6] <= reg_counter_vhdl:row_counter.count[6]
+count[7] <= reg_counter_vhdl:row_counter.count[7]
+count[8] <= reg_counter_vhdl:row_counter.count[8]
+
+
+|MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+reset => counter[8].ACLR
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+count[0] <= counter[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= counter[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= counter[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= counter[3].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= counter[4].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= counter[5].DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= counter[6].DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= counter[7].DB_MAX_OUTPUT_PORT_TYPE
+count[8] <= counter[8].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|FrameTiming:Frame|counter:dataCounter
 clk => always0.IN0
 reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
 reset => count.OUTPUTSELECT
-reset => count.OUTPUTSELECT
-reset => count.OUTPUTSELECT
-reset => count.OUTPUTSELECT
-reset => count.OUTPUTSELECT
-enable => count.OUTPUTSELECT
-enable => count.OUTPUTSELECT
-enable => count.OUTPUTSELECT
-enable => count.OUTPUTSELECT
 enable => count.OUTPUTSELECT
 enable => count.OUTPUTSELECT
 enable => count.OUTPUTSELECT
@@ -83,9 +195,21 @@ counter[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
 counter[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
 counter[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
 counter[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
-counter[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
-counter[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
-counter[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
-counter[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|FrameTiming:Frame|counter:alphaCounter
+clk => always0.IN0
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+enable => count.OUTPUTSELECT
+counter[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+counter[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+counter[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+counter[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
