@@ -104,21 +104,21 @@ RESERVED                     : 40        :        :                   :         
 RESERVED                     : 41        :        :                   :         :           :                
 GND                          : 42        : gnd    :                   :         :           :                
 VCCINT                       : 43        : power  :                   : 5.0V    :           :                
-row[2]                       : 44        : output : TTL               :         :           : Y              
-row[1]                       : 45        : output : TTL               :         :           : Y              
-row[0]                       : 46        : output : TTL               :         :           : Y              
+rgb[2]                       : 44        : output : TTL               :         :           : Y              
+rgb[1]                       : 45        : output : TTL               :         :           : Y              
+rgb[0]                       : 46        : output : TTL               :         :           : Y              
 GND                          : 47        : gnd    :                   :         :           :                
 RESERVED                     : 48        :        :                   :         :           :                
 RESERVED                     : 49        :        :                   :         :           :                
-row[5]                       : 50        : output : TTL               :         :           : Y              
-row[4]                       : 51        : output : TTL               :         :           : Y              
-row[3]                       : 52        : output : TTL               :         :           : Y              
+rgb[5]                       : 50        : output : TTL               :         :           : Y              
+rgb[4]                       : 51        : output : TTL               :         :           : Y              
+rgb[3]                       : 52        : output : TTL               :         :           : Y              
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
 RESERVED                     : 54        :        :                   :         :           :                
 RESERVED                     : 55        :        :                   :         :           :                
-row[8]                       : 56        : output : TTL               :         :           : Y              
-row[7]                       : 57        : output : TTL               :         :           : Y              
-row[6]                       : 58        : output : TTL               :         :           : Y              
+rgb[8]                       : 56        : output : TTL               :         :           : Y              
+rgb[7]                       : 57        : output : TTL               :         :           : Y              
+rgb[6]                       : 58        : output : TTL               :         :           : Y              
 GND                          : 59        : gnd    :                   :         :           :                
 RESERVED                     : 60        :        :                   :         :           :                
 RESERVED                     : 61        :        :                   :         :           :                

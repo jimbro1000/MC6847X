@@ -6,28 +6,34 @@ module FrameTiming(
 	output fsn, 	// vertical sync, active low
 	output preload, // data preload sync
 	output rowclear, // char rom row counter reset
-	output wire [8:0] row //debug frame row counter
+	output reg [1:0] active, // active viewport/border/blank 00=blank 10=border 11=viewport
+	output [8:0] debug //debug frame row counter
 );
 
 	parameter rowCols = 9'd458;
-	parameter hsyncCols = 9'd29;
+	parameter hsyncCols = 9'd28;
 	parameter rows0 = 9'd257;
 	parameter rows1 = 9'd310;
 	parameter vsyncRows = 9'd8;
 	parameter portx = 9'd129;
+	parameter maxPortX = 9'd385;
 	parameter porty0 = 9'd63;
 	parameter porty1 = 9'd88;
 	parameter portHeight = 9'd191;
+	parameter blankBoundary = 9'd38;
 	
 	reg [8:0] maxRows;
 	reg [8:0] portY;
 	reg [8:0] maxPortY;
+	reg [1:0] state;
 	
 	reg [8:0] activeRow;
 	
-	wire [8:0] nPreload = portx - 9'd8;
+	wire [8:0] nPreload;
 	wire [4:0] dataCount;
 	wire [3:0] alphaCount;
+	
+	assign nPreload = portx - 9'd8;
 
 	wire rowClk;
 	wire [8:0] colCount;
@@ -55,8 +61,6 @@ module FrameTiming(
 		end
 	end
 	
-	
-	
 	wire rowReset;
 	wire [8:0] rowCount;
 	row_counter_vhdl pixelRows (
@@ -64,9 +68,6 @@ module FrameTiming(
 		.limit	(maxRows),
 		.count	(rowCount)
 	);
-	
-	assign row = rowCount;
-	
 	
 	wire dataReset;
 	assign dataReset = (colCount < nPreload) || (dataCount == width);
@@ -92,4 +93,19 @@ module FrameTiming(
 	assign rowclear = alphaCount == 4'd12;
 	assign preload = dataCount == 5'd1;
 
+	always @(clk, dataCount) begin
+		activeRow = {4'b0000, dataCount};
+	end
+	
+	always @(colCount, rowCount, fsn, portY, maxPortY) begin
+		if (!fsn || (colCount < blankBoundary)) 
+			active = 2'b00;
+		else if (colCount > portx && colCount < maxPortX && rowCount > portY && rowCount < maxPortY)
+			active = 2'b11;
+		else
+			active = 2'b10;
+	end
+	
+	assign debug = activeRow;
+		
 endmodule

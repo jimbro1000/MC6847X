@@ -9,7 +9,7 @@ module MC6847X(
 	HSn,
 	FormatClk,
 	Format,
-	row
+	rgb
 );
 
 input		NTSCClk;
@@ -21,11 +21,12 @@ output	FSn;
 output	HSn;
 output	FormatClk;
 output	Format;
-output	wire [8:0] row;
+output	wire [8:0] rgb;
 
 wire	DataPreLoad;
 wire	AlphaRowClear;
 wire  [8:0] rowCount;
+wire  [1:0] outputSelect;
 
 	FormatSwitch	FormatSelect(
 		.RequestFormat (1'b1),
@@ -48,8 +49,16 @@ wire  [8:0] rowCount;
 		.fsn			(FSn),
 		.preload		(DataPreLoad),
 		.rowclear 	(AlphaRowClear),
-		
-		.row			(row)
+		.active		(outputSelect)
+	);
+	
+	videoMux			outputStream(
+		.select		(outputSelect),
+		.channel1	(9'b000000000),
+		.channel2	(9'b111111111),
+		.channel3	(9'b111000000),
+		.channel4	(9'b000111000),
+		.result		(rgb)
 	);
 	
 	assign DA0 = 1'b0;
