@@ -28,12 +28,12 @@ Q[5] => ~NO_FANOUT~
 Q[6] => ~NO_FANOUT~
 Q[7] => ~NO_FANOUT~
 Inv => ~NO_FANOUT~
-AnG => ~NO_FANOUT~
-AnS => ~NO_FANOUT~
-CSS => ~NO_FANOUT~
-GM[0] => ~NO_FANOUT~
-GM[1] => ~NO_FANOUT~
-GM[2] => ~NO_FANOUT~
+AnG => AnG.IN2
+AnS => AnS.IN1
+CSS => CSS.IN3
+GM[0] => GM[0].IN2
+GM[1] => GM[1].IN2
+GM[2] => GM[2].IN2
 Ext => ~NO_FANOUT~
 RP <= FrameTiming:Frame.rowclear
 rgb[0] <= videoMux:outputStream.result
@@ -301,6 +301,185 @@ result[5] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 result[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 result[7] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 result[8] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|resModeToPalette:resMode
+data[0] => Mux0.IN9
+data[0] => Mux1.IN17
+data[0] => Mux2.IN17
+data[1] => Mux0.IN8
+data[1] => Mux1.IN16
+data[1] => Mux2.IN16
+clk => Mux0.IN10
+clk => Mux1.IN18
+clk => Mux2.IN18
+CS => Mux1.IN19
+CS => Mux2.IN19
+palette[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+palette[1] <= <GND>
+palette[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+palette[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|graphicModeToPalette:graphicMode
+data[0] => palette[0].DATAIN
+data[1] => palette[1].DATAIN
+CS => palette[2].DATAIN
+palette[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+palette[1] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+palette[2] <= CS.DB_MAX_OUTPUT_PORT_TYPE
+palette[3] <= <GND>
+
+
+|MC6847X|modeMux:modeSelector
+AnG => palette.OUTPUTSELECT
+AnG => palette.OUTPUTSELECT
+AnG => palette.OUTPUTSELECT
+AnG => palette.OUTPUTSELECT
+AnS => palette.OUTPUTSELECT
+AnS => palette.OUTPUTSELECT
+AnS => palette.OUTPUTSELECT
+AnS => palette.OUTPUTSELECT
+GM[0] => palette.OUTPUTSELECT
+GM[0] => palette.OUTPUTSELECT
+GM[0] => palette.OUTPUTSELECT
+GM[0] => palette.OUTPUTSELECT
+GM[1] => ~NO_FANOUT~
+GM[2] => ~NO_FANOUT~
+alphaData[0] => palette.DATAA
+alphaData[1] => palette.DATAA
+alphaData[2] => palette.DATAA
+alphaData[3] => palette.DATAA
+semiData[0] => palette.DATAB
+semiData[1] => palette.DATAB
+semiData[2] => palette.DATAB
+semiData[3] => palette.DATAB
+graphData[0] => palette.DATAA
+graphData[1] => palette.DATAA
+graphData[2] => palette.DATAA
+graphData[3] => palette.DATAA
+resData[0] => palette.DATAB
+resData[1] => palette.DATAB
+resData[2] => palette.DATAB
+resData[3] => palette.DATAB
+palette[0] <= palette.DB_MAX_OUTPUT_PORT_TYPE
+palette[1] <= palette.DB_MAX_OUTPUT_PORT_TYPE
+palette[2] <= palette.DB_MAX_OUTPUT_PORT_TYPE
+palette[3] <= palette.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|colourMux:colourSelect
+data[0] => Mux0.IN19
+data[0] => Mux1.IN19
+data[0] => Mux2.IN19
+data[0] => Mux3.IN19
+data[0] => Mux4.IN19
+data[0] => Mux5.IN19
+data[0] => Mux6.IN19
+data[0] => Mux7.IN19
+data[0] => Mux8.IN19
+data[1] => Mux0.IN18
+data[1] => Mux1.IN18
+data[1] => Mux2.IN18
+data[1] => Mux3.IN18
+data[1] => Mux4.IN18
+data[1] => Mux5.IN18
+data[1] => Mux6.IN18
+data[1] => Mux7.IN18
+data[1] => Mux8.IN18
+data[2] => Mux0.IN17
+data[2] => Mux1.IN17
+data[2] => Mux2.IN17
+data[2] => Mux3.IN17
+data[2] => Mux4.IN17
+data[2] => Mux5.IN17
+data[2] => Mux6.IN17
+data[2] => Mux7.IN17
+data[2] => Mux8.IN17
+data[3] => Mux0.IN16
+data[3] => Mux1.IN16
+data[3] => Mux2.IN16
+data[3] => Mux3.IN16
+data[3] => Mux4.IN16
+data[3] => Mux5.IN16
+data[3] => Mux6.IN16
+data[3] => Mux7.IN16
+data[3] => Mux8.IN16
+RGB[0] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+RGB[1] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+RGB[2] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+RGB[3] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+RGB[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+RGB[5] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+RGB[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+RGB[7] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+RGB[8] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|borderMux:borderSelect
+CS => data[2].DATAB
+AnG => data[3].IN0
+AnG => data[2].OUTPUTSELECT
+mode[0] => ~NO_FANOUT~
+mode[1] => ~NO_FANOUT~
+mode[2] => ~NO_FANOUT~
+RGB[0] <= colourmux:col_mux.RGB[0]
+RGB[1] <= colourmux:col_mux.RGB[1]
+RGB[2] <= colourmux:col_mux.RGB[2]
+RGB[3] <= colourmux:col_mux.RGB[3]
+RGB[4] <= colourmux:col_mux.RGB[4]
+RGB[5] <= colourmux:col_mux.RGB[5]
+RGB[6] <= colourmux:col_mux.RGB[6]
+RGB[7] <= colourmux:col_mux.RGB[7]
+RGB[8] <= colourmux:col_mux.RGB[8]
+
+
+|MC6847X|borderMux:borderSelect|colourMux:col_mux
+data[0] => Mux0.IN19
+data[0] => Mux1.IN19
+data[0] => Mux2.IN19
+data[0] => Mux3.IN19
+data[0] => Mux4.IN19
+data[0] => Mux5.IN19
+data[0] => Mux6.IN19
+data[0] => Mux7.IN19
+data[0] => Mux8.IN19
+data[1] => Mux0.IN18
+data[1] => Mux1.IN18
+data[1] => Mux2.IN18
+data[1] => Mux3.IN18
+data[1] => Mux4.IN18
+data[1] => Mux5.IN18
+data[1] => Mux6.IN18
+data[1] => Mux7.IN18
+data[1] => Mux8.IN18
+data[2] => Mux0.IN17
+data[2] => Mux1.IN17
+data[2] => Mux2.IN17
+data[2] => Mux3.IN17
+data[2] => Mux4.IN17
+data[2] => Mux5.IN17
+data[2] => Mux6.IN17
+data[2] => Mux7.IN17
+data[2] => Mux8.IN17
+data[3] => Mux0.IN16
+data[3] => Mux1.IN16
+data[3] => Mux2.IN16
+data[3] => Mux3.IN16
+data[3] => Mux4.IN16
+data[3] => Mux5.IN16
+data[3] => Mux6.IN16
+data[3] => Mux7.IN16
+data[3] => Mux8.IN16
+RGB[0] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+RGB[1] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+RGB[2] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+RGB[3] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+RGB[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+RGB[5] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+RGB[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+RGB[7] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+RGB[8] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MC6847X|counter:dataAddress

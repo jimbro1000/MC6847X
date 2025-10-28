@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MC6847X
-Tue Oct 28 09:06:49 2025
+Tue Oct 28 15:01:34 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -22,13 +22,16 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  14. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0
  15. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0
  16. Port Connectivity Checks: "counter:dataAddress"
- 17. Port Connectivity Checks: "videoMux:outputStream"
- 18. Port Connectivity Checks: "FrameTiming:Frame|counter:alphaCounter"
- 19. Port Connectivity Checks: "FrameTiming:Frame|counter:dataCounter"
- 20. Port Connectivity Checks: "FrameTiming:Frame|row_counter_vhdl:pixelRows"
- 21. Port Connectivity Checks: "FrameTiming:Frame"
- 22. Analysis & Synthesis Equations
- 23. Analysis & Synthesis Messages
+ 17. Port Connectivity Checks: "borderMux:borderSelect|colourMux:col_mux"
+ 18. Port Connectivity Checks: "modeMux:modeSelector"
+ 19. Port Connectivity Checks: "graphicModeToPalette:graphicMode"
+ 20. Port Connectivity Checks: "resModeToPalette:resMode"
+ 21. Port Connectivity Checks: "videoMux:outputStream"
+ 22. Port Connectivity Checks: "FrameTiming:Frame|counter:alphaCounter"
+ 23. Port Connectivity Checks: "FrameTiming:Frame|counter:dataCounter"
+ 24. Port Connectivity Checks: "FrameTiming:Frame|row_counter_vhdl:pixelRows"
+ 25. Port Connectivity Checks: "FrameTiming:Frame"
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -54,12 +57,12 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Oct 28 09:06:49 2025           ;
+; Analysis & Synthesis Status ; Successful - Tue Oct 28 15:01:34 2025           ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name               ; MC6847X                                         ;
 ; Top-level Entity Name       ; MC6847X                                         ;
 ; Family                      ; MAX7000S                                        ;
-; Total macrocells            ; 56                                              ;
+; Total macrocells            ; 61                                              ;
 ; Total pins                  ; 46                                              ;
 +-----------------------------+-------------------------------------------------+
 
@@ -148,16 +151,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; MC6847X.v                        ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/MC6847X.v                                              ;         ;
-; FormatSwitch.v                   ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/FormatSwitch.v                                         ;         ;
-; FrameTiming.v                    ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/FrameTiming.v                                          ;         ;
-; counter.v                        ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/counter.v                                              ;         ;
-; ClockSwitch.v                    ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/ClockSwitch.v                                          ;         ;
-; ext_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/ext_counter_vhdl.vhd                                   ;         ;
-; reg_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/reg_counter_vhdl.vhd                                   ;         ;
-; col_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/col_counter_vhdl.vhd                                   ;         ;
-; row_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/row_counter_vhdl.vhd                                   ;         ;
-; videoMux.v                       ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/videoMux.v                                             ;         ;
+; MC6847X.v                        ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/MC6847X.v                                              ;         ;
+; FormatSwitch.v                   ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/FormatSwitch.v                                         ;         ;
+; FrameTiming.v                    ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/FrameTiming.v                                          ;         ;
+; counter.v                        ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/counter.v                                              ;         ;
+; ClockSwitch.v                    ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/ClockSwitch.v                                          ;         ;
+; ext_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/ext_counter_vhdl.vhd                                   ;         ;
+; reg_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/reg_counter_vhdl.vhd                                   ;         ;
+; col_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/col_counter_vhdl.vhd                                   ;         ;
+; row_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/row_counter_vhdl.vhd                                   ;         ;
+; videoMux.v                       ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/videoMux.v                                             ;         ;
+; border_mux.vhd                   ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/border_mux.vhd                                         ;         ;
+; colour_mux.vhd                   ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/colour_mux.vhd                                         ;         ;
+; res_mode_to_palette.vhd          ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/res_mode_to_palette.vhd                                ;         ;
+; graphic_mode_to_palette.vhd      ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/graphic_mode_to_palette.vhd                            ;         ;
+; mode_mux.vhd                     ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/mode_mux.vhd                                           ;         ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
@@ -176,15 +184,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------+-------------------------------------------------------------------------------------------------------------+
 ; Resource             ; Usage                                                                                                       ;
 +----------------------+-------------------------------------------------------------------------------------------------------------+
-; Logic cells          ; 56                                                                                                          ;
+; Logic cells          ; 61                                                                                                          ;
 ; Total registers      ; 18                                                                                                          ;
 ; I/O pins             ; 46                                                                                                          ;
-; Shareable expanders  ; 2                                                                                                           ;
-; Parallel expanders   ; 3                                                                                                           ;
+; Shareable expanders  ; 3                                                                                                           ;
+; Parallel expanders   ; 7                                                                                                           ;
 ; Maximum fan-out node ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
-; Maximum fan-out      ; 30                                                                                                          ;
-; Total fan-out        ; 481                                                                                                         ;
-; Average fan-out      ; 4.63                                                                                                        ;
+; Maximum fan-out      ; 33                                                                                                          ;
+; Total fan-out        ; 562                                                                                                         ;
+; Average fan-out      ; 5.11                                                                                                        ;
 +----------------------+-------------------------------------------------------------------------------------------------------------+
 
 
@@ -193,17 +201,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------+------------+------+--------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node              ; Macrocells ; Pins ; Full Hierarchy Name                                                                                          ; Library Name ;
 +-----------------------------------------+------------+------+--------------------------------------------------------------------------------------------------------------+--------------+
-; |MC6847X                                ; 56         ; 46   ; |MC6847X                                                                                                     ; work         ;
+; |MC6847X                                ; 61         ; 46   ; |MC6847X                                                                                                     ; work         ;
 ;    |ClockSwitch:ColourClock|            ; 1          ; 0    ; |MC6847X|ClockSwitch:ColourClock                                                                             ; work         ;
 ;    |FormatSwitch:FormatSelect|          ; 1          ; 0    ; |MC6847X|FormatSwitch:FormatSelect                                                                           ; work         ;
-;    |FrameTiming:Frame|                  ; 34         ; 0    ; |MC6847X|FrameTiming:Frame                                                                                   ; work         ;
+;    |FrameTiming:Frame|                  ; 31         ; 0    ; |MC6847X|FrameTiming:Frame                                                                                   ; work         ;
 ;       |col_counter_vhdl:pixelCols|      ; 8          ; 0    ; |MC6847X|FrameTiming:Frame|col_counter_vhdl:pixelCols                                                        ; work         ;
 ;          |ext_counter_vhdl:col_counter| ; 8          ; 0    ; |MC6847X|FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter                           ; work         ;
 ;             |lpm_counter:counter_rtl_0| ; 8          ; 0    ; |MC6847X|FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0 ; work         ;
 ;       |row_counter_vhdl:pixelRows|      ; 11         ; 0    ; |MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows                                                        ; work         ;
 ;          |reg_counter_vhdl:row_counter| ; 9          ; 0    ; |MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter                           ; work         ;
 ;             |lpm_counter:counter_rtl_0| ; 9          ; 0    ; |MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0 ; work         ;
-;    |videoMux:outputStream|              ; 3          ; 0    ; |MC6847X|videoMux:outputStream                                                                               ; work         ;
+;    |videoMux:outputStream|              ; 14         ; 0    ; |MC6847X|videoMux:outputStream                                                                               ; work         ;
 +-----------------------------------------+------------+------+--------------------------------------------------------------------------------------------------------------+--------------+
 
 
@@ -345,19 +353,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "borderMux:borderSelect|colourMux:col_mux" ;
++------------+-------+----------+--------------------------------------+
+; Port       ; Type  ; Severity ; Details                              ;
++------------+-------+----------+--------------------------------------+
+; data[1..0] ; Input ; Info     ; Stuck at GND                         ;
++------------+-------+----------+--------------------------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "modeMux:modeSelector" ;
++----------------+-------+----------+--------------+
+; Port           ; Type  ; Severity ; Details      ;
++----------------+-------+----------+--------------+
+; alphadata      ; Input ; Info     ; Stuck at GND ;
+; semidata[2..0] ; Input ; Info     ; Stuck at GND ;
+; semidata[3]    ; Input ; Info     ; Stuck at VCC ;
++----------------+-------+----------+--------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "graphicModeToPalette:graphicMode" ;
++---------+-------+----------+---------------------------------+
+; Port    ; Type  ; Severity ; Details                         ;
++---------+-------+----------+---------------------------------+
+; data[1] ; Input ; Info     ; Stuck at VCC                    ;
+; data[0] ; Input ; Info     ; Stuck at GND                    ;
++---------+-------+----------+---------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "resModeToPalette:resMode" ;
++---------+-------+----------+-------------------------+
+; Port    ; Type  ; Severity ; Details                 ;
++---------+-------+----------+-------------------------+
+; data[1] ; Input ; Info     ; Stuck at VCC            ;
+; data[0] ; Input ; Info     ; Stuck at GND            ;
++---------+-------+----------+-------------------------+
+
+
 +---------------------------------------------------+
 ; Port Connectivity Checks: "videoMux:outputStream" ;
-+----------------+-------+----------+---------------+
-; Port           ; Type  ; Severity ; Details       ;
-+----------------+-------+----------+---------------+
-; channel1       ; Input ; Info     ; Stuck at GND  ;
-; channel2       ; Input ; Info     ; Stuck at VCC  ;
-; channel3[8..6] ; Input ; Info     ; Stuck at VCC  ;
-; channel3[5..0] ; Input ; Info     ; Stuck at GND  ;
-; channel4[5..3] ; Input ; Info     ; Stuck at VCC  ;
-; channel4[8..6] ; Input ; Info     ; Stuck at GND  ;
-; channel4[2..0] ; Input ; Info     ; Stuck at GND  ;
-+----------------+-------+----------+---------------+
++----------+-------+----------+---------------------+
+; Port     ; Type  ; Severity ; Details             ;
++----------+-------+----------+---------------------+
+; channel1 ; Input ; Info     ; Stuck at GND        ;
+; channel2 ; Input ; Info     ; Stuck at VCC        ;
++----------+-------+----------+---------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -400,20 +443,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------+
-; Analysis & Synthesis Equations ;
-+--------------------------------+
-The equations can be found in H:/MC6847X/Quartus/output_files/MC6847X.map.eqn.
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 28 09:06:47 2025
+    Info: Processing started: Tue Oct 28 15:01:33 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 6847substitute -c MC6847X
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mc6847x.v
     Info (12023): Found entity 1: MC6847X
 Info (12021): Found 1 design units, including 1 entities, in source file formatswitch.v
@@ -440,6 +478,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file row_cou
     Info (12023): Found entity 1: row_counter_vhdl
 Info (12021): Found 1 design units, including 1 entities, in source file videomux.v
     Info (12023): Found entity 1: videoMux
+Info (12021): Found 2 design units, including 1 entities, in source file border_mux.vhd
+    Info (12022): Found design unit 1: borderMux-rtl
+    Info (12023): Found entity 1: borderMux
+Info (12021): Found 2 design units, including 1 entities, in source file colour_mux.vhd
+    Info (12022): Found design unit 1: colourMux-rtl
+    Info (12023): Found entity 1: colourMux
+Info (12021): Found 2 design units, including 1 entities, in source file res_mode_to_palette.vhd
+    Info (12022): Found design unit 1: resModeToPalette-rtl
+    Info (12023): Found entity 1: resModeToPalette
+Info (12021): Found 2 design units, including 1 entities, in source file graphic_mode_to_palette.vhd
+    Info (12022): Found design unit 1: graphicModeToPalette-rtl
+    Info (12023): Found entity 1: graphicModeToPalette
+Info (12021): Found 2 design units, including 1 entities, in source file mode_mux.vhd
+    Info (12022): Found design unit 1: modeMux-rtl
+    Info (12023): Found entity 1: modeMux
+Warning (10236): Verilog HDL Implicit Net warning at MC6847X.v(87): created implicit net for "clk"
 Info (12127): Elaborating entity "MC6847X" for the top level hierarchy
 Info (12128): Elaborating entity "FormatSwitch" for hierarchy "FormatSwitch:FormatSelect"
 Info (12128): Elaborating entity "ClockSwitch" for hierarchy "ClockSwitch:ColourClock"
@@ -451,6 +505,11 @@ Info (12128): Elaborating entity "reg_counter_vhdl" for hierarchy "FrameTiming:F
 Info (12128): Elaborating entity "counter" for hierarchy "FrameTiming:Frame|counter:dataCounter"
 Info (12128): Elaborating entity "counter" for hierarchy "FrameTiming:Frame|counter:alphaCounter"
 Info (12128): Elaborating entity "videoMux" for hierarchy "videoMux:outputStream"
+Info (12128): Elaborating entity "resModeToPalette" for hierarchy "resModeToPalette:resMode"
+Info (12128): Elaborating entity "graphicModeToPalette" for hierarchy "graphicModeToPalette:graphicMode"
+Info (12128): Elaborating entity "modeMux" for hierarchy "modeMux:modeSelector"
+Info (12128): Elaborating entity "colourMux" for hierarchy "colourMux:colourSelect"
+Info (12128): Elaborating entity "borderMux" for hierarchy "borderMux:borderSelect"
 Info (12128): Elaborating entity "counter" for hierarchy "counter:dataAddress"
 Info (19000): Inferred 2 megafunctions from design logic
     Info (19001): Inferred lpm_counter megafunction (LPM_WIDTH=9) from the following logic: "FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|counter_rtl_0"
@@ -481,11 +540,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DA[11]" is stuck at GND
     Warning (13410): Pin "DA[12]" is stuck at GND
     Warning (13410): Pin "RP" is stuck at GND
-    Warning (13410): Pin "rgb[0]" is stuck at GND
-    Warning (13410): Pin "rgb[1]" is stuck at GND
-    Warning (13410): Pin "rgb[2]" is stuck at GND
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
-Warning (21074): Design contains 16 input pin(s) that do not drive logic
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Q[0]"
     Warning (15610): No output dependent on input pin "Q[1]"
     Warning (15610): No output dependent on input pin "Q[2]"
@@ -495,22 +551,18 @@ Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Q[6]"
     Warning (15610): No output dependent on input pin "Q[7]"
     Warning (15610): No output dependent on input pin "Inv"
-    Warning (15610): No output dependent on input pin "AnG"
-    Warning (15610): No output dependent on input pin "AnS"
-    Warning (15610): No output dependent on input pin "CSS"
-    Warning (15610): No output dependent on input pin "GM[0]"
     Warning (15610): No output dependent on input pin "GM[1]"
     Warning (15610): No output dependent on input pin "GM[2]"
     Warning (15610): No output dependent on input pin "Ext"
-Info (21057): Implemented 104 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 110 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 27 output pins
-    Info (21063): Implemented 56 macrocells
-    Info (21073): Implemented 2 shareable expanders
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 36 warnings
-    Info: Peak virtual memory: 4630 megabytes
-    Info: Processing ended: Tue Oct 28 09:06:49 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21063): Implemented 61 macrocells
+    Info (21073): Implemented 3 shareable expanders
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4626 megabytes
+    Info: Processing ended: Tue Oct 28 15:01:34 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

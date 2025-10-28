@@ -111,3 +111,8 @@ set_location_assignment PIN_27 -to GM[0]
 set_location_assignment PIN_28 -to GM[1]
 set_location_assignment PIN_29 -to GM[2]
 set_location_assignment PIN_37 -to Ext
+set_global_assignment -name VHDL_FILE border_mux.vhd
+set_global_assignment -name VHDL_FILE colour_mux.vhd
+set_global_assignment -name VHDL_FILE res_mode_to_palette.vhd
+set_global_assignment -name VHDL_FILE graphic_mode_to_palette.vhd
+set_global_assignment -name VHDL_FILE mode_mux.vhd

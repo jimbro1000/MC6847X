@@ -43,6 +43,11 @@ wire	DataPreLoad;
 wire	AlphaRowClear;
 wire  [8:0] rowCount;
 wire  [1:0] outputSelect;
+wire	[8:0] VPStream;
+wire  [8:0] BDStream;
+wire	[3:0] resPaletteValue;
+wire	[3:0] graphicPaletteValue;
+wire	[3:0] paletteValue;
 
 	FormatSwitch	FormatSelect(
 		.RequestFormat (RequestFormat),
@@ -72,9 +77,45 @@ wire  [1:0] outputSelect;
 		.select		(outputSelect),
 		.channel1	(9'b000000000),
 		.channel2	(9'b111111111),
-		.channel3	(9'b111000000),
-		.channel4	(9'b000111000),
+		.channel3	(BDStream),
+		.channel4	(VPStream),
 		.result		(rgb)
+	);
+	
+	resModeToPalette	resMode(
+		.data			(2'b10),
+		.clk			(clk),
+		.CS			(CSS),
+		.palette		(resPaletteValue)
+	);
+	
+	graphicModeToPalette graphicMode(
+		.data			(2'b10),
+		.CS			(CSS),
+		.palette		(graphicPaletteValue)
+	);	
+	
+	modeMux			modeSelector(
+		.AnG			(AnG),
+		.AnS			(AnS),
+		.GM			(GM),
+		.alphaData	(4'b0000),
+		.semiData	(4'b1000),
+		.graphData	(graphicPaletteValue),
+		.resData		(resPaletteValue),
+		.palette		(paletteValue)
+	);
+	
+	colourMux		colourSelect(
+		.data			(paletteValue),
+		.RGB			(VPStream)
+	);
+	
+	borderMux		borderSelect(
+		.mode			(GM),
+		.CS			(CSS),
+		.AnG			(AnG),
+		.RGB			(BDStream)
 	);
 	
 	counter #(.WIDTH(13)) dataAddress(

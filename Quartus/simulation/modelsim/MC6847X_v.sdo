@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "MC6847X")
-  (DATE "10/28/2025 09:06:56")
+  (DATE "10/28/2025 15:01:39")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -1230,7 +1230,168 @@
   )
   (CELL
     (CELLTYPE "max_asynch_mcell")
-    (INSTANCE Frame\|always2\~18.pcom)
+    (INSTANCE outputStream\|Mux8\~58.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[1] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[2] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[3] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[4] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[5] pexpout (5000:5000:5000) (5000:5000:5000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE AnG\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (500:500:500) (500:500:500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE CSS\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (500:500:500) (500:500:500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux8\~14.pcom)
+    (DELAY
+      (ABSOLUTE
+        (PORT pexpin (0:0:0) (0:0:0))
+        (IOPATH pterm0[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pexpin combout (2800:2800:2800) (2800:2800:2800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux8\~62.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[1] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[2] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[3] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[4] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[5] pexpout (5000:5000:5000) (5000:5000:5000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux8\~28.pcom)
+    (DELAY
+      (ABSOLUTE
+        (PORT pexpin (0:0:0) (0:0:0))
+        (IOPATH pterm0[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pexpin combout (2800:2800:2800) (2800:2800:2800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux8\~60.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[1] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[2] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[3] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[4] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[5] pexpout (5000:5000:5000) (5000:5000:5000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux8\~21.pcom)
+    (DELAY
+      (ABSOLUTE
+        (PORT pexpin (0:0:0) (0:0:0))
+        (IOPATH pterm0[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pexpin combout (2800:2800:2800) (2800:2800:2800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE Frame\|LessThan8\~6.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm1[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE Frame\|always2\~8.pcom)
     (DELAY
       (ABSOLUTE
         (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
@@ -1255,23 +1416,6 @@
         (IOPATH pterm4[3] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm4[4] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm4[5] combout (7000:7000:7000) (7000:7000:7000))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_mcell")
-    (INSTANCE Frame\|always2\~11.pcom)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[6] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
       )
     )
   )
@@ -1331,7 +1475,7 @@
   )
   (CELL
     (CELLTYPE "max_asynch_mcell")
-    (INSTANCE Frame\|LessThan10\~18.pcom)
+    (INSTANCE Frame\|active\[0\]\~19.pcom)
     (DELAY
       (ABSOLUTE
         (IOPATH pterm1[0] pexpout (5000:5000:5000) (5000:5000:5000))
@@ -1341,7 +1485,7 @@
   )
   (CELL
     (CELLTYPE "max_asynch_mcell")
-    (INSTANCE Frame\|LessThan10\~20.pcom)
+    (INSTANCE Frame\|active\[0\]\~21.pcom)
     (DELAY
       (ABSOLUTE
         (PORT pexpin (0:0:0) (0:0:0))
@@ -1388,7 +1532,7 @@
   )
   (CELL
     (CELLTYPE "max_asynch_mcell")
-    (INSTANCE Frame\|LessThan10\~17.pcom)
+    (INSTANCE Frame\|active\[0\]\~18.pcom)
     (DELAY
       (ABSOLUTE
         (PORT pexpin (0:0:0) (0:0:0))
@@ -1431,41 +1575,63 @@
     )
   )
   (CELL
-    (CELLTYPE "max_asynch_sexp")
-    (INSTANCE Frame\|LessThan7\~5.pcom)
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux8\~64.pcom)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain[0] dataout (5000:5000:5000) (5000:5000:5000))
-        (IOPATH datain[1] dataout (5000:5000:5000) (5000:5000:5000))
-        (IOPATH datain[2] dataout (5000:5000:5000) (5000:5000:5000))
-        (IOPATH datain[3] dataout (5000:5000:5000) (5000:5000:5000))
-        (IOPATH datain[4] dataout (5000:5000:5000) (5000:5000:5000))
-        (IOPATH datain[5] dataout (5000:5000:5000) (5000:5000:5000))
-        (IOPATH datain[6] dataout (5000:5000:5000) (5000:5000:5000))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_sexp")
-    (INSTANCE Frame\|LessThan7\~6.pcom)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datain[0] dataout (5000:5000:5000) (5000:5000:5000))
-        (IOPATH datain[1] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[0] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[1] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[2] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[3] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[4] pexpout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH pterm1[5] pexpout (5000:5000:5000) (5000:5000:5000))
       )
     )
   )
   (CELL
     (CELLTYPE "max_asynch_mcell")
-    (INSTANCE Frame\|active\[0\]\~5.pcom)
+    (INSTANCE outputStream\|Mux8\~37.pcom)
     (DELAY
       (ABSOLUTE
+        (PORT pexpin (0:0:0) (0:0:0))
+        (IOPATH pterm0[0] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pexpin combout (2800:2800:2800) (2800:2800:2800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE GM\[0\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (500:500:500) (500:500:500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE outputStream\|Mux8\~32sexp.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[1] dataout (5000:5000:5000) (5000:5000:5000))
       )
     )
   )
@@ -1496,92 +1662,228 @@
   )
   (CELL
     (CELLTYPE "max_asynch_mcell")
-    (INSTANCE outputStream\|Mux2\~9.pcom)
+    (INSTANCE outputStream\|Mux8\~40.pcom)
     (DELAY
       (ABSOLUTE
-        (IOPATH pterm0[0] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm0[1] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm0[2] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm0[3] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm0[4] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pxor[0] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[8] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm3[4] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm3[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[7] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm4[1] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm4[2] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm4[3] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm4[4] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm4[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[8] combout (7000:7000:7000) (7000:7000:7000))
       )
     )
   )
   (CELL
     (CELLTYPE "max_asynch_mcell")
-    (INSTANCE Frame\|active\[0\]\~9.pcom)
+    (INSTANCE outputStream\|Mux8\~46.pcom)
     (DELAY
       (ABSOLUTE
-        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_mcell")
-    (INSTANCE Frame\|active\[0\]\~7.pcom)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[5] combout (7000:7000:7000) (7000:7000:7000))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_mcell")
-    (INSTANCE outputStream\|Mux2\~16.pcom)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pxor[0] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[8] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[8] combout (7000:7000:7000) (7000:7000:7000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE outputStream\|Mux8\~66.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[1] dataout (5000:5000:5000) (5000:5000:5000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE Frame\|LessThan7\~5.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[1] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[2] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[3] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[4] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[5] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[6] dataout (5000:5000:5000) (5000:5000:5000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE Frame\|LessThan7\~6.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (5000:5000:5000) (5000:5000:5000))
+        (IOPATH datain[1] dataout (5000:5000:5000) (5000:5000:5000))
       )
     )
   )
   (CELL
     (CELLTYPE "max_asynch_mcell")
-    (INSTANCE outputStream\|Mux2\~12.pcom)
+    (INSTANCE outputStream\|Mux8\~52.pcom)
     (DELAY
       (ABSOLUTE
-        (IOPATH pterm1[0] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[1] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[2] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[3] combout (7000:7000:7000) (7000:7000:7000))
-        (IOPATH pterm1[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pxor[0] combout (7000:7000:7000) (7000:7000:7000))
         (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[8] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[8] combout (7000:7000:7000) (7000:7000:7000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE AnS\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (500:500:500) (500:500:500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux5\~9.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pxor[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[1] combout (7000:7000:7000) (7000:7000:7000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux5\~21.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pxor[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[1] combout (7000:7000:7000) (7000:7000:7000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE outputStream\|Mux5\~15.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pxor[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm2[7] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[1] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[2] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[3] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[4] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[5] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm3[6] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[0] combout (7000:7000:7000) (7000:7000:7000))
+        (IOPATH pterm4[1] combout (7000:7000:7000) (7000:7000:7000))
       )
     )
   )
@@ -1713,33 +2015,6 @@
   )
   (CELL
     (CELLTYPE "max_asynch_io")
-    (INSTANCE rgb\[0\]\~I.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_io")
-    (INSTANCE rgb\[1\]\~I.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_io")
-    (INSTANCE rgb\[2\]\~I.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_io")
     (INSTANCE HSn\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
@@ -1776,34 +2051,7 @@
   )
   (CELL
     (CELLTYPE "max_asynch_io")
-    (INSTANCE rgb\[3\]\~I.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_io")
-    (INSTANCE rgb\[6\]\~I.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_io")
-    (INSTANCE rgb\[4\]\~I.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "max_asynch_io")
-    (INSTANCE rgb\[5\]\~I.asynch_inst)
+    (INSTANCE rgb\[1\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
@@ -1822,6 +2070,60 @@
   (CELL
     (CELLTYPE "max_asynch_io")
     (INSTANCE rgb\[8\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE rgb\[0\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE rgb\[2\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE rgb\[6\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE rgb\[3\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE rgb\[4\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE rgb\[5\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH datain padio (1500:1500:1500) (1500:1500:1500))
