@@ -52,8 +52,8 @@ than Quartus II can provide
 ## Development Plan ##
 
 1. [x] NTSC/PAL timing switch
-2. [ ] NTSC/PAL frame timing (HS and VS signals)
-3. [ ] Viewport/Blank/Border multiplexer and timing
+2. [x] NTSC/PAL frame timing (HS and VS signals)
+3. [x] Viewport/Blank/Border multiplexer and timing
 4. [ ] Higher graphic modes (32 byte wide modes 7 then 6)
 5. [ ] Colour generator (colour id to 12 bit RGB)
 6. [ ] Colour set switch

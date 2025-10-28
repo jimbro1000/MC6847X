@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for MC6847X
-Mon Oct 27 18:36:23 2025
+Tue Oct 28 09:06:55 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,18 +62,20 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  54. Minimum Pulse Width: 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7]'
  55. Minimum Pulse Width: 'NTSCClk'
  56. Minimum Pulse Width: 'FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3]'
- 57. Clock to Output Times
- 58. Minimum Clock to Output Times
- 59. Propagation Delay
- 60. Minimum Propagation Delay
- 61. Setup Transfers
- 62. Hold Transfers
- 63. Recovery Transfers
- 64. Removal Transfers
- 65. Report TCCS
- 66. Report RSKM
- 67. Unconstrained Paths
- 68. TimeQuest Timing Analyzer Messages
+ 57. Setup Times
+ 58. Hold Times
+ 59. Clock to Output Times
+ 60. Minimum Clock to Output Times
+ 61. Propagation Delay
+ 62. Minimum Propagation Delay
+ 63. Setup Transfers
+ 64. Hold Transfers
+ 65. Recovery Transfers
+ 66. Removal Transfers
+ 67. Report TCCS
+ 68. Report RSKM
+ 69. Unconstrained Paths
+ 70. TimeQuest Timing Analyzer Messages
 
 
 
@@ -4490,8 +4492,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------------+----------------+------------------+-------------------------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------+
 ; -3.500 ; 0.500        ; 4.000          ; High Pulse Width ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Fall       ; FormatSwitch:FormatSelect|FormatOut                       ;
 ; -3.500 ; 0.500        ; 4.000          ; Low Pulse Width  ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Fall       ; FormatSwitch:FormatSelect|FormatOut                       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Fall       ; FormatSelect|FormatOut|[0]                                ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Fall       ; FormatSelect|FormatOut|[0]                                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Fall       ; FormatSelect|FormatOut|[1]                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Fall       ; FormatSelect|FormatOut|[1]                                ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Rise       ; Frame|LessThan2~3bal|[5]                                  ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Rise       ; Frame|LessThan2~3bal|[5]                                  ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Fall       ; Frame|LessThan2~3bal|dataout                              ;
@@ -4499,6 +4501,24 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Rise       ; Frame|pixelRows|row_counter|counter_rtl_0|dffs[3]|dataout ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; Rise       ; Frame|pixelRows|row_counter|counter_rtl_0|dffs[3]|dataout ;
 +--------+--------------+----------------+------------------+-------------------------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                                                                                                                                                                                              ;
++---------------+-------------------------------------------------------------------------------------------------------------+--------+--------+------------+-------------------------------------------------------------------------------------------------------------+
+; Data Port     ; Clock Port                                                                                                  ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                                                             ;
++---------------+-------------------------------------------------------------------------------------------------------------+--------+--------+------------+-------------------------------------------------------------------------------------------------------------+
+; RequestFormat ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; -5.500 ; -5.500 ; Fall       ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ;
++---------------+-------------------------------------------------------------------------------------------------------------+--------+--------+------------+-------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                                                                                                                                                                                               ;
++---------------+-------------------------------------------------------------------------------------------------------------+--------+--------+------------+-------------------------------------------------------------------------------------------------------------+
+; Data Port     ; Clock Port                                                                                                  ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                                                             ;
++---------------+-------------------------------------------------------------------------------------------------------------+--------+--------+------------+-------------------------------------------------------------------------------------------------------------+
+; RequestFormat ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ; 10.500 ; 10.500 ; Fall       ; FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] ;
++---------------+-------------------------------------------------------------------------------------------------------------+--------+--------+------------+-------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -5264,8 +5284,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 9     ; 9    ;
 ; Unconstrained Output Ports      ; 10    ; 10   ;
 ; Unconstrained Output Port Paths ; 131   ; 131  ;
 +---------------------------------+-------+------+
@@ -5277,7 +5297,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 27 18:36:21 2025
+    Info: Processing started: Tue Oct 28 09:06:53 2025
 Info: Command: quartus_sta 6847substitute -c MC6847X
 Info: qsta_default_script.tcl version: #1
 Info (306004): Started post-fitting delay annotation
@@ -5363,8 +5383,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4519 megabytes
-    Info: Processing ended: Mon Oct 27 18:36:23 2025
+    Info: Peak virtual memory: 4520 megabytes
+    Info: Processing ended: Tue Oct 28 09:06:55 2025
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

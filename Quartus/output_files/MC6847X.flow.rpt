@@ -1,5 +1,5 @@
 Flow report for MC6847X
-Mon Oct 27 18:36:24 2025
+Tue Oct 28 09:06:56 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Flow Summary                                                                ;
 +---------------------------+-------------------------------------------------+
-; Flow Status               ; Successful - Mon Oct 27 18:36:24 2025           ;
+; Flow Status               ; Successful - Tue Oct 28 09:06:56 2025           ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name             ; MC6847X                                         ;
 ; Top-level Entity Name     ; MC6847X                                         ;
 ; Family                    ; MAX7000S                                        ;
 ; Device                    ; EPM7128SLC84-10                                 ;
 ; Timing Models             ; Final                                           ;
-; Total macrocells          ; 43 / 128 ( 34 % )                               ;
-; Total pins                ; 21 / 68 ( 31 % )                                ;
+; Total macrocells          ; 56 / 128 ( 44 % )                               ;
+; Total pins                ; 50 / 68 ( 74 % )                                ;
 +---------------------------+-------------------------------------------------+
 
 
@@ -57,7 +57,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/27/2025 18:36:16 ;
+; Start date & time ; 10/28/2025 09:06:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MC6847X             ;
 +-------------------+---------------------+
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +---------------------------------+--------------------------------+---------------+-------------+----------------------+
 ; Assignment Name                 ; Value                          ; Default Value ; Entity Name ; Section Id           ;
 +---------------------------------+--------------------------------+---------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID           ; 71126652582353.176159017645804 ; --            ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID           ; 71126652582353.176164240734476 ; --            ; --          ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL ; Design Compiler                ; <None>        ; --          ; --                   ;
 ; EDA_INPUT_DATA_FORMAT           ; Verilog Hdl                    ; --            ; --          ; eda_design_synthesis ;
 ; EDA_INPUT_VCC_NAME              ; Vdd                            ; --            ; --          ; eda_design_synthesis ;
@@ -87,12 +87,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4628 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4630 MB             ; 00:00:02                           ;
 ; Fitter                    ; 00:00:01     ; 1.0                     ; 4681 MB             ; 00:00:01                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4516 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4519 MB             ; 00:00:02                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 4505 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4520 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4476 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
+; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

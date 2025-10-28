@@ -4,23 +4,39 @@ module MC6847X(
 	NTSCClk,
 	PALClk,
 	RequestFormat,
-	DA0,
+	DA,
 	FSn,
 	HSn,
 	FormatClk,
 	Format,
+	Q,
+	Inv,
+	AnG,
+	AnS,
+	CSS,
+	GM,
+	Ext,
+	RP,
 	rgb
 );
 
 input		NTSCClk;
 input		PALClk;
 input		RequestFormat;
+input		[7:0] Q;
+input		Inv;
+input		AnG;
+input		AnS;
+input		CSS;
+input		[2:0] GM;
+input		Ext;
 
-output	DA0;
+output	wire [12:0] DA;
 output	FSn;
 output	HSn;
 output	FormatClk;
 output	Format;
+output	RP;
 output	wire [8:0] rgb;
 
 wire	DataPreLoad;
@@ -29,7 +45,7 @@ wire  [8:0] rowCount;
 wire  [1:0] outputSelect;
 
 	FormatSwitch	FormatSelect(
-		.RequestFormat (1'b1),
+		.RequestFormat (RequestFormat),
 		.Sync 		(FSn),
 		.FormatOut 	(Format)
 	);
@@ -61,7 +77,12 @@ wire  [1:0] outputSelect;
 		.result		(rgb)
 	);
 	
-	assign DA0 = 1'b0;
+	counter #(.WIDTH(13)) dataAddress(
+		.clk			(~DataPreLoad),
+		.reset		(~FSn),
+		.counter		(DA)
+	);
+	
 	// DA0 needs to tick on DataPreLoad pulse
 	// bit 0 of a 10 bit counter
 	// needs to reset lower bits depending on mode
@@ -81,4 +102,5 @@ wire  [1:0] outputSelect;
 	// Gmode 7 - 2 colour 256x192 - 32 byte wide
 	// Alpha (A/S4/S6) - 256x192 - 32 byte wide - row div 12
 
+	assign RP = AlphaRowClear;
 endmodule
