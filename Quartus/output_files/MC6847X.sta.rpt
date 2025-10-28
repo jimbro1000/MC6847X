@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for MC6847X
-Tue Oct 28 15:18:26 2025
+Tue Oct 28 19:49:45 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -4537,13 +4537,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 27.100 ; 27.100 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
-; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
+; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 18.300 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
 ;  rgb[0]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
 ;  rgb[1]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
 ;  rgb[2]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
-;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
-;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
-;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
+;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
+;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
+;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] ;
@@ -4560,13 +4560,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
 ; HSn       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
-; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
+; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 18.300 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
 ;  rgb[0]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
 ;  rgb[1]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
 ;  rgb[2]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
-;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
-;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
-;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
+;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
+;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
+;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] ;
@@ -4583,13 +4583,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
 ; HSn       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
-; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
+; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 18.300 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
 ;  rgb[0]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
 ;  rgb[1]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
 ;  rgb[2]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
-;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
-;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
-;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
+;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
+;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
+;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] ;
@@ -4606,13 +4606,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
 ; HSn       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
-; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
+; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 18.300 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
 ;  rgb[0]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
 ;  rgb[1]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
 ;  rgb[2]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
-;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
-;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
-;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
+;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
+;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
+;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] ;
@@ -4629,13 +4629,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
 ; HSn       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
-; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
+; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 18.300 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
 ;  rgb[0]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
 ;  rgb[1]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
 ;  rgb[2]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
-;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
-;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
-;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
+;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
+;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
+;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] ;
@@ -4652,13 +4652,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
 ; HSn       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
-; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
+; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 18.300 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
 ;  rgb[0]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
 ;  rgb[1]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
 ;  rgb[2]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
-;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
-;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
-;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
+;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
+;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
+;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] ;
@@ -4675,13 +4675,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
 ; HSn       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
-; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
+; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 18.300 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
 ;  rgb[0]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
 ;  rgb[1]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
 ;  rgb[2]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
-;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
-;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
-;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
+;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
+;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
+;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
@@ -4698,13 +4698,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 18.300 ; 18.300 ; Rise       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
 ; HSn       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
-; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
+; rgb[*]    ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 18.300 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
 ;  rgb[0]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
 ;  rgb[1]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
 ;  rgb[2]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
-;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
-;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
-;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
+;  rgb[3]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
+;  rgb[4]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
+;  rgb[5]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 18.300 ; 17.500 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
 ;  rgb[6]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 17.500 ; 18.300 ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
 ;  rgb[7]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
 ;  rgb[8]   ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ; 9.500  ;        ; Fall       ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
@@ -4989,15 +4989,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; AnG        ; rgb[0]      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
 ; AnG        ; rgb[1]      ;        ; 10.000 ; 10.000 ;        ;
 ; AnG        ; rgb[2]      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
-; AnG        ; rgb[3]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
-; AnG        ; rgb[4]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
-; AnG        ; rgb[5]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
+; AnG        ; rgb[3]      ; 10.000 ;        ;        ; 10.000 ;
+; AnG        ; rgb[4]      ; 10.000 ;        ;        ; 10.000 ;
+; AnG        ; rgb[5]      ; 10.000 ;        ;        ; 10.000 ;
 ; AnG        ; rgb[6]      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
 ; AnG        ; rgb[7]      ;        ; 10.000 ; 10.000 ;        ;
 ; AnG        ; rgb[8]      ;        ; 10.000 ; 10.000 ;        ;
-; AnS        ; rgb[3]      ;        ; 10.000 ; 10.000 ;        ;
-; AnS        ; rgb[4]      ;        ; 10.000 ; 10.000 ;        ;
-; AnS        ; rgb[5]      ;        ; 10.000 ; 10.000 ;        ;
 ; CSS        ; rgb[0]      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
 ; CSS        ; rgb[1]      ;        ; 10.000 ; 10.000 ;        ;
 ; CSS        ; rgb[2]      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
@@ -5006,9 +5003,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; CSS        ; rgb[8]      ;        ; 10.000 ; 10.000 ;        ;
 ; GM[0]      ; rgb[0]      ; 10.000 ; 15.000 ; 15.000 ; 10.000 ;
 ; GM[0]      ; rgb[2]      ; 10.000 ; 15.000 ; 15.000 ; 10.000 ;
-; GM[0]      ; rgb[3]      ;        ; 10.000 ; 10.000 ;        ;
-; GM[0]      ; rgb[4]      ;        ; 10.000 ; 10.000 ;        ;
-; GM[0]      ; rgb[5]      ;        ; 10.000 ; 10.000 ;        ;
+; GM[0]      ; rgb[3]      ; 10.000 ;        ;        ; 10.000 ;
+; GM[0]      ; rgb[4]      ; 10.000 ;        ;        ; 10.000 ;
+; GM[0]      ; rgb[5]      ; 10.000 ;        ;        ; 10.000 ;
 ; GM[0]      ; rgb[6]      ; 10.000 ; 15.000 ; 15.000 ; 10.000 ;
 ; PALClk     ; FormatClk   ; 10.000 ;        ;        ; 10.000 ;
 +------------+-------------+--------+--------+--------+--------+
@@ -5022,15 +5019,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; AnG        ; rgb[0]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
 ; AnG        ; rgb[1]      ;        ; 10.000 ; 10.000 ;        ;
 ; AnG        ; rgb[2]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
-; AnG        ; rgb[3]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
-; AnG        ; rgb[4]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
-; AnG        ; rgb[5]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
+; AnG        ; rgb[3]      ; 10.000 ;        ;        ; 10.000 ;
+; AnG        ; rgb[4]      ; 10.000 ;        ;        ; 10.000 ;
+; AnG        ; rgb[5]      ; 10.000 ;        ;        ; 10.000 ;
 ; AnG        ; rgb[6]      ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
 ; AnG        ; rgb[7]      ;        ; 10.000 ; 10.000 ;        ;
 ; AnG        ; rgb[8]      ;        ; 10.000 ; 10.000 ;        ;
-; AnS        ; rgb[3]      ;        ; 10.000 ; 10.000 ;        ;
-; AnS        ; rgb[4]      ;        ; 10.000 ; 10.000 ;        ;
-; AnS        ; rgb[5]      ;        ; 10.000 ; 10.000 ;        ;
 ; CSS        ; rgb[0]      ; 15.000 ; 10.000 ; 10.000 ; 15.000 ;
 ; CSS        ; rgb[1]      ;        ; 10.000 ; 10.000 ;        ;
 ; CSS        ; rgb[2]      ; 15.000 ; 10.000 ; 10.000 ; 15.000 ;
@@ -5039,9 +5033,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; CSS        ; rgb[8]      ;        ; 10.000 ; 10.000 ;        ;
 ; GM[0]      ; rgb[0]      ; 10.000 ; 15.000 ; 15.000 ; 10.000 ;
 ; GM[0]      ; rgb[2]      ; 10.000 ; 15.000 ; 15.000 ; 10.000 ;
-; GM[0]      ; rgb[3]      ;        ; 10.000 ; 10.000 ;        ;
-; GM[0]      ; rgb[4]      ;        ; 10.000 ; 10.000 ;        ;
-; GM[0]      ; rgb[5]      ;        ; 10.000 ; 10.000 ;        ;
+; GM[0]      ; rgb[3]      ; 10.000 ;        ;        ; 10.000 ;
+; GM[0]      ; rgb[4]      ; 10.000 ;        ;        ; 10.000 ;
+; GM[0]      ; rgb[5]      ; 10.000 ;        ;        ; 10.000 ;
 ; GM[0]      ; rgb[6]      ; 10.000 ; 15.000 ; 15.000 ; 10.000 ;
 ; PALClk     ; FormatClk   ; 10.000 ;        ;        ; 10.000 ;
 +------------+-------------+--------+--------+--------+--------+
@@ -5440,10 +5434,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 7     ; 7    ;
-; Unconstrained Input Port Paths  ; 33    ; 33   ;
+; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 30    ; 30   ;
 ; Unconstrained Output Ports      ; 13    ; 13   ;
-; Unconstrained Output Port Paths ; 197   ; 197  ;
+; Unconstrained Output Port Paths ; 194   ; 194  ;
 +---------------------------------+-------+------+
 
 
@@ -5453,10 +5447,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 28 15:18:25 2025
+    Info: Processing started: Tue Oct 28 19:49:43 2025
 Info: Command: quartus_sta 6847substitute -c MC6847X
 Info: qsta_default_script.tcl version: #1
-Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Warning (335095): TimeQuest Timing Analyzer does not support the analysis of latches as synchronous elements for the currently selected device family.
@@ -5539,10 +5532,10 @@ Info (332146): Worst-case minimum pulse width slack is -3.500
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4524 megabytes
-    Info: Processing ended: Tue Oct 28 15:18:26 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4523 megabytes
+    Info: Processing ended: Tue Oct 28 19:49:45 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

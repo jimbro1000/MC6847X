@@ -5,7 +5,8 @@ module FrameTiming(
 	output hsn, 	// horizontal sync, active low
 	output fsn, 	// vertical sync, active low
 	output preload, // data preload sync
-	output rowclear, // char rom row counter reset
+	output rowclear, // ext char rom row counter reset
+	output [3:0] alphaCount, // char rom row counter
 	output reg [1:0] active, // active viewport/border/blank 00=blank 10=border 11=viewport
 	output [8:0] debug //debug frame row counter
 );
@@ -26,12 +27,10 @@ module FrameTiming(
 	reg [8:0] portY;
 	reg [8:0] maxPortY;
 	reg [1:0] state;
-	
 	reg [8:0] activeRow;
 	
 	wire [8:0] nPreload;
 	wire [4:0] dataCount;
-	wire [3:0] alphaCount;
 	
 	assign nPreload = portx - 9'd8;
 

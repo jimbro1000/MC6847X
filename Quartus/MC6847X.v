@@ -41,12 +41,14 @@ output	wire [8:0] rgb;
 
 wire	DataPreLoad;
 wire	AlphaRowClear;
+wire  [3:0] alphaRow;
 wire  [8:0] rowCount;
 wire  [1:0] outputSelect;
 wire	[8:0] VPStream;
 wire  [8:0] BDStream;
 wire	[3:0] resPaletteValue;
 wire	[3:0] graphicPaletteValue;
+wire	[3:0] alphaPaletteValue;
 wire	[3:0] paletteValue;
 
 	FormatSwitch	FormatSelect(
@@ -73,6 +75,12 @@ wire	[3:0] paletteValue;
 		.active		(outputSelect)
 	);
 	
+	alphaDataMux	charDataSelect(
+		.index		(6'b010101),
+		.row			(alphaRow),
+		.chardata	(charRowData)
+	);
+	
 	videoMux			outputStream(
 		.select		(outputSelect),
 		.channel1	(9'b000000000),
@@ -95,12 +103,17 @@ wire	[3:0] paletteValue;
 		.palette		(graphicPaletteValue)
 	);	
 	
+	textModeToPixel textMode(
+		.data			(1'b0),
+		.colour		(4'b0001),
+		.palette		(alphaPaletteValue)
+		
+	);
+	
 	modeMux			modeSelector(
 		.AnG			(AnG),
-		.AnS			(AnS),
 		.GM			(GM),
-		.alphaData	(4'b0000),
-		.semiData	(4'b1000),
+		.alphaData	(alphaPaletteValue),
 		.graphData	(graphicPaletteValue),
 		.resData		(resPaletteValue),
 		.palette		(paletteValue)

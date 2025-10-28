@@ -116,3 +116,5 @@ set_global_assignment -name VHDL_FILE colour_mux.vhd
 set_global_assignment -name VHDL_FILE res_mode_to_palette.vhd
 set_global_assignment -name VHDL_FILE graphic_mode_to_palette.vhd
 set_global_assignment -name VHDL_FILE mode_mux.vhd
+set_global_assignment -name VERILOG_FILE alphaDataMux.v
+set_global_assignment -name VERILOG_FILE textModeToPixel.v

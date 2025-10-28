@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MC6847X
-Tue Oct 28 15:18:22 2025
+Tue Oct 28 19:49:39 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -23,15 +23,17 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  15. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0
  16. Port Connectivity Checks: "counter:dataAddress"
  17. Port Connectivity Checks: "borderMux:borderSelect|colourMux:col_mux"
- 18. Port Connectivity Checks: "modeMux:modeSelector"
+ 18. Port Connectivity Checks: "textModeToPixel:textMode"
  19. Port Connectivity Checks: "graphicModeToPalette:graphicMode"
  20. Port Connectivity Checks: "resModeToPalette:resMode"
  21. Port Connectivity Checks: "videoMux:outputStream"
- 22. Port Connectivity Checks: "FrameTiming:Frame|counter:alphaCounter"
- 23. Port Connectivity Checks: "FrameTiming:Frame|counter:dataCounter"
- 24. Port Connectivity Checks: "FrameTiming:Frame|row_counter_vhdl:pixelRows"
- 25. Port Connectivity Checks: "FrameTiming:Frame"
- 26. Analysis & Synthesis Messages
+ 22. Port Connectivity Checks: "alphaDataMux:charDataSelect"
+ 23. Port Connectivity Checks: "FrameTiming:Frame|counter:alphaCounter"
+ 24. Port Connectivity Checks: "FrameTiming:Frame|counter:dataCounter"
+ 25. Port Connectivity Checks: "FrameTiming:Frame|row_counter_vhdl:pixelRows"
+ 26. Port Connectivity Checks: "FrameTiming:Frame"
+ 27. Analysis & Synthesis Equations
+ 28. Analysis & Synthesis Messages
 
 
 
@@ -57,7 +59,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Oct 28 15:18:22 2025           ;
+; Analysis & Synthesis Status ; Successful - Tue Oct 28 19:49:39 2025           ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name               ; MC6847X                                         ;
 ; Top-level Entity Name       ; MC6847X                                         ;
@@ -151,21 +153,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; MC6847X.v                        ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/MC6847X.v                                              ;         ;
-; FormatSwitch.v                   ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/FormatSwitch.v                                         ;         ;
-; FrameTiming.v                    ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/FrameTiming.v                                          ;         ;
-; counter.v                        ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/counter.v                                              ;         ;
-; ClockSwitch.v                    ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/ClockSwitch.v                                          ;         ;
-; ext_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/ext_counter_vhdl.vhd                                   ;         ;
-; reg_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/reg_counter_vhdl.vhd                                   ;         ;
-; col_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/col_counter_vhdl.vhd                                   ;         ;
-; row_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/row_counter_vhdl.vhd                                   ;         ;
-; videoMux.v                       ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/videoMux.v                                             ;         ;
-; border_mux.vhd                   ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/border_mux.vhd                                         ;         ;
-; colour_mux.vhd                   ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/colour_mux.vhd                                         ;         ;
-; res_mode_to_palette.vhd          ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/res_mode_to_palette.vhd                                ;         ;
-; graphic_mode_to_palette.vhd      ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/graphic_mode_to_palette.vhd                            ;         ;
-; mode_mux.vhd                     ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/mode_mux.vhd                                           ;         ;
+; MC6847X.v                        ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/MC6847X.v                                              ;         ;
+; FormatSwitch.v                   ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/FormatSwitch.v                                         ;         ;
+; FrameTiming.v                    ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/FrameTiming.v                                          ;         ;
+; counter.v                        ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/counter.v                                              ;         ;
+; ClockSwitch.v                    ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/ClockSwitch.v                                          ;         ;
+; ext_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/ext_counter_vhdl.vhd                                   ;         ;
+; reg_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/reg_counter_vhdl.vhd                                   ;         ;
+; col_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/col_counter_vhdl.vhd                                   ;         ;
+; row_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/row_counter_vhdl.vhd                                   ;         ;
+; videoMux.v                       ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/videoMux.v                                             ;         ;
+; border_mux.vhd                   ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/border_mux.vhd                                         ;         ;
+; colour_mux.vhd                   ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/colour_mux.vhd                                         ;         ;
+; res_mode_to_palette.vhd          ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/res_mode_to_palette.vhd                                ;         ;
+; graphic_mode_to_palette.vhd      ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/graphic_mode_to_palette.vhd                            ;         ;
+; mode_mux.vhd                     ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/mode_mux.vhd                                           ;         ;
+; alphaDataMux.v                   ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/alphaDataMux.v                                         ;         ;
+; textModeToPixel.v                ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/textModeToPixel.v                                      ;         ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
@@ -187,12 +191,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Logic cells          ; 61                                                                                                          ;
 ; Total registers      ; 18                                                                                                          ;
 ; I/O pins             ; 46                                                                                                          ;
-; Shareable expanders  ; 3                                                                                                           ;
+; Shareable expanders  ; 4                                                                                                           ;
 ; Parallel expanders   ; 7                                                                                                           ;
-; Maximum fan-out node ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
-; Maximum fan-out      ; 33                                                                                                          ;
-; Total fan-out        ; 562                                                                                                         ;
-; Average fan-out      ; 5.11                                                                                                        ;
+; Maximum fan-out node ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
+; Maximum fan-out      ; 34                                                                                                          ;
+; Total fan-out        ; 572                                                                                                         ;
+; Average fan-out      ; 5.15                                                                                                        ;
 +----------------------+-------------------------------------------------------------------------------------------------------------+
 
 
@@ -362,15 +366,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+--------------------------------------+
 
 
-+--------------------------------------------------+
-; Port Connectivity Checks: "modeMux:modeSelector" ;
-+----------------+-------+----------+--------------+
-; Port           ; Type  ; Severity ; Details      ;
-+----------------+-------+----------+--------------+
-; alphadata      ; Input ; Info     ; Stuck at GND ;
-; semidata[2..0] ; Input ; Info     ; Stuck at GND ;
-; semidata[3]    ; Input ; Info     ; Stuck at VCC ;
-+----------------+-------+----------+--------------+
++------------------------------------------------------+
+; Port Connectivity Checks: "textModeToPixel:textMode" ;
++--------------+-------+----------+--------------------+
+; Port         ; Type  ; Severity ; Details            ;
++--------------+-------+----------+--------------------+
+; data         ; Input ; Info     ; Stuck at GND       ;
+; colour[3..1] ; Input ; Info     ; Stuck at GND       ;
+; colour[0]    ; Input ; Info     ; Stuck at VCC       ;
++--------------+-------+----------+--------------------+
 
 
 +--------------------------------------------------------------+
@@ -401,6 +405,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; channel1 ; Input ; Info     ; Stuck at GND        ;
 ; channel2 ; Input ; Info     ; Stuck at VCC        ;
 +----------+-------+----------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alphaDataMux:charDataSelect"                                                                                                    ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                     ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
+; index[5] ; Input  ; Info     ; Stuck at GND                                                                                                                ;
+; index[4] ; Input  ; Info     ; Stuck at VCC                                                                                                                ;
+; index[3] ; Input  ; Info     ; Stuck at GND                                                                                                                ;
+; index[2] ; Input  ; Info     ; Stuck at VCC                                                                                                                ;
+; index[1] ; Input  ; Info     ; Stuck at GND                                                                                                                ;
+; index[0] ; Input  ; Info     ; Stuck at VCC                                                                                                                ;
+; chardata ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "chardata[7..1]" have no fanouts ;
+; chardata ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                         ;
++----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -439,8 +459,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; width[4..0] ; Input  ; Info     ; Stuck at GND                                                                                             ;
 ; width[5]    ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; alphaCount  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 ; debug       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 +-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+
+; Analysis & Synthesis Equations ;
++--------------------------------+
+The equations can be found in H:/MC6847X/Quartus/output_files/MC6847X.map.eqn.
 
 
 +-------------------------------+
@@ -449,9 +476,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 28 15:18:21 2025
+    Info: Processing started: Tue Oct 28 19:49:36 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 6847substitute -c MC6847X
-Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mc6847x.v
     Info (12023): Found entity 1: MC6847X
 Info (12021): Found 1 design units, including 1 entities, in source file formatswitch.v
@@ -493,7 +519,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file graphic
 Info (12021): Found 2 design units, including 1 entities, in source file mode_mux.vhd
     Info (12022): Found design unit 1: modeMux-rtl
     Info (12023): Found entity 1: modeMux
-Warning (10236): Verilog HDL Implicit Net warning at MC6847X.v(87): created implicit net for "clk"
+Info (12021): Found 1 design units, including 1 entities, in source file alphadatamux.v
+    Info (12023): Found entity 1: alphaDataMux
+Info (12021): Found 1 design units, including 1 entities, in source file textmodetopixel.v
+    Info (12023): Found entity 1: textModeToPixel
+Warning (10236): Verilog HDL Implicit Net warning at MC6847X.v(81): created implicit net for "charRowData"
+Warning (10236): Verilog HDL Implicit Net warning at MC6847X.v(95): created implicit net for "clk"
 Info (12127): Elaborating entity "MC6847X" for the top level hierarchy
 Info (12128): Elaborating entity "FormatSwitch" for hierarchy "FormatSwitch:FormatSelect"
 Info (12128): Elaborating entity "ClockSwitch" for hierarchy "ClockSwitch:ColourClock"
@@ -504,9 +535,13 @@ Info (12128): Elaborating entity "row_counter_vhdl" for hierarchy "FrameTiming:F
 Info (12128): Elaborating entity "reg_counter_vhdl" for hierarchy "FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter"
 Info (12128): Elaborating entity "counter" for hierarchy "FrameTiming:Frame|counter:dataCounter"
 Info (12128): Elaborating entity "counter" for hierarchy "FrameTiming:Frame|counter:alphaCounter"
+Info (12128): Elaborating entity "alphaDataMux" for hierarchy "alphaDataMux:charDataSelect"
+Warning (10272): Verilog HDL Case Statement warning at alphaDataMux.v(97): case item expression covers a value already covered by a previous case item
+Warning (10272): Verilog HDL Case Statement warning at alphaDataMux.v(126): case item expression covers a value already covered by a previous case item
 Info (12128): Elaborating entity "videoMux" for hierarchy "videoMux:outputStream"
 Info (12128): Elaborating entity "resModeToPalette" for hierarchy "resModeToPalette:resMode"
 Info (12128): Elaborating entity "graphicModeToPalette" for hierarchy "graphicModeToPalette:graphicMode"
+Info (12128): Elaborating entity "textModeToPixel" for hierarchy "textModeToPixel:textMode"
 Info (12128): Elaborating entity "modeMux" for hierarchy "modeMux:modeSelector"
 Info (12128): Elaborating entity "colourMux" for hierarchy "colourMux:colourSelect"
 Info (12128): Elaborating entity "borderMux" for hierarchy "borderMux:borderSelect"
@@ -524,7 +559,7 @@ Info (12133): Instantiated megafunction "FrameTiming:Frame|col_counter_vhdl:pixe
     Info (12134): Parameter "LPM_WIDTH" = "8"
     Info (12134): Parameter "LPM_DIRECTION" = "UP"
     Info (12134): Parameter "LPM_TYPE" = "LPM_COUNTER"
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DA[0]" is stuck at GND
     Warning (13410): Pin "DA[1]" is stuck at GND
@@ -541,7 +576,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DA[12]" is stuck at GND
     Warning (13410): Pin "RP" is stuck at GND
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
+Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Q[0]"
     Warning (15610): No output dependent on input pin "Q[1]"
     Warning (15610): No output dependent on input pin "Q[2]"
@@ -551,18 +586,19 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Q[6]"
     Warning (15610): No output dependent on input pin "Q[7]"
     Warning (15610): No output dependent on input pin "Inv"
+    Warning (15610): No output dependent on input pin "AnS"
     Warning (15610): No output dependent on input pin "GM[1]"
     Warning (15610): No output dependent on input pin "GM[2]"
     Warning (15610): No output dependent on input pin "Ext"
-Info (21057): Implemented 110 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 111 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 27 output pins
     Info (21063): Implemented 61 macrocells
-    Info (21073): Implemented 3 shareable expanders
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4629 megabytes
-    Info: Processing ended: Tue Oct 28 15:18:22 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info (21073): Implemented 4 shareable expanders
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4628 megabytes
+    Info: Processing ended: Tue Oct 28 19:49:39 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 
