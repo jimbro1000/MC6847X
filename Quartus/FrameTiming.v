@@ -68,10 +68,12 @@ module FrameTiming(
 		.count	(rowCount)
 	);
 	
+	// define data load trigger for 16 or 32 byte wide view ports
+	// needs to count to 16 or 32
 	wire dataReset;
 	assign dataReset = (colCount < nPreload) || (dataCount == width);
 	wire dataClock;
-	assign dataClock = (width == 6'd8) ? colCount[5] : (width == 6'd16) ? colCount[4] : colCount[3];
+	assign dataClock = (width == 6'd32) ? colCount[3] : colCount[4];
 	counter #(.WIDTH(5)) dataCounter (
 		.clk		(dataClock),
 		.reset	(dataReset),

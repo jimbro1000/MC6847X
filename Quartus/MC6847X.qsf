@@ -118,3 +118,6 @@ set_global_assignment -name VHDL_FILE graphic_mode_to_palette.vhd
 set_global_assignment -name VHDL_FILE mode_mux.vhd
 set_global_assignment -name VERILOG_FILE alphaDataMux.v
 set_global_assignment -name VERILOG_FILE textModeToPixel.v
+set_global_assignment -name VHDL_FILE data_counter_vhdl.vhd
+set_global_assignment -name VERILOG_FILE videoDataShiftRegister.v
+set_global_assignment -name VERILOG_FILE videoShiftClock.v

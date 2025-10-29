@@ -50,6 +50,7 @@ wire	[3:0] resPaletteValue;
 wire	[3:0] graphicPaletteValue;
 wire	[3:0] alphaPaletteValue;
 wire	[3:0] paletteValue;
+wire	[1:0] pixelData;
 
 	FormatSwitch	FormatSelect(
 		.RequestFormat (RequestFormat),
@@ -75,6 +76,14 @@ wire	[3:0] paletteValue;
 		.active		(outputSelect)
 	);
 	
+	videoDataShiftRegister videoDataRegister(
+		.clk	(NTSCClk),
+		.load	(DataPreLoad),
+		.data	(videoData),
+		.div2	(1'b0),
+		.pixelData (pixelData)
+	);
+	
 	alphaDataMux	charDataSelect(
 		.index		(6'b010101),
 		.row			(alphaRow),
@@ -91,20 +100,21 @@ wire	[3:0] paletteValue;
 	);
 	
 	resModeToPalette	resMode(
-		.data			(2'b10),
-		.clk			(clk),
+		.data			(pixelData),
+		.clk			(NTSCClk),
 		.CS			(CSS),
 		.palette		(resPaletteValue)
 	);
 	
 	graphicModeToPalette graphicMode(
-		.data			(2'b10),
+		.data			(pixelData),
 		.CS			(CSS),
 		.palette		(graphicPaletteValue)
 	);	
 	
 	textModeToPixel textMode(
-		.data			(1'b0),
+		.data			(pixelData),
+		.clk			(NTSCClk),
 		.colour		(4'b0001),
 		.palette		(alphaPaletteValue)
 		
@@ -131,16 +141,22 @@ wire	[3:0] paletteValue;
 		.RGB			(BDStream)
 	);
 	
-	counter #(.WIDTH(13)) dataAddress(
+	data_counter_vhdl  dataAddress(
 		.clk			(~DataPreLoad),
 		.reset		(~FSn),
-		.counter		(DA)
+		.hsn			(HSn),
+		.rp			(AlphaRowClear),
+		.wide			(1'b1),
+		.div2			(1'b0),
+		.div3			(1'b0),
+		.div12		(1'b0),
+		.count		(DA)
 	);
 	
 	// DA0 needs to tick on DataPreLoad pulse
 	// bit 0 of a 10 bit counter
 	// needs to reset lower bits depending on mode
-	// either lower 3, 4 or 5 bits (or none)
+	// either lower 4 or 5 bits (or none)
 	// actual behaviour is quite complex - da0 triggers data fetch and needs to happen in the video ticks immediately before it is required
 	// for 192 row mode the counter is continuous
 	// for 96 row mode each row must repeat twice
