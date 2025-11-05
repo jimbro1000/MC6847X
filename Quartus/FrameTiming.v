@@ -12,16 +12,19 @@ module FrameTiming(
 );
 
 	parameter rowCols = 9'd458;
-	parameter hsyncCols = 9'd28;
 	parameter rows0 = 9'd257;
 	parameter rows1 = 9'd310;
-	parameter vsyncRows = 9'd8;
+	parameter vsyncStart = 9'd3;
+	parameter vsyncEnd = 9'd8;
+	parameter vblankBoundary = 9'd10;
 	parameter portx = 9'd129;
 	parameter maxPortX = 9'd385;
 	parameter porty0 = 9'd63;
 	parameter porty1 = 9'd88;
 	parameter portHeight = 9'd191;
-	parameter blankBoundary = 9'd38;
+	parameter hsyncStart = 9'd10;
+	parameter hsyncEnd = 9'd34;
+	parameter blankBoundary = 9'd78;
 	
 	reg [8:0] maxRows;
 	reg [8:0] portY;
@@ -31,6 +34,7 @@ module FrameTiming(
 	
 	wire [8:0] nPreload;
 	wire [4:0] dataCount;
+	wire blank;
 	
 	assign nPreload = portx - 9'd8;
 
@@ -77,17 +81,20 @@ module FrameTiming(
 	counter #(.WIDTH(5)) dataCounter (
 		.clk		(dataClock),
 		.reset	(dataReset),
+		.enable	(1'b1),
 		.counter (dataCount)
 	);
 	
-	assign fsn = !(rowCount < vsyncRows);
-	assign hsn = !(colCount < hsyncCols);
+	assign fsn = !((rowCount > vsyncStart) && (rowCount < vsyncEnd));
+	assign hsn = !((colCount > hsyncStart) && (colCount < hsyncEnd));
+	assign blank = colCount < blankBoundary || rowCount < vblankBoundary;
 
 	wire alphaReset;
 	assign alphaReset = (rowCount < portY) || (rowCount > maxPortY) || (alphaCount == 4'd12);
 	counter #(.WIDTH(4)) alphaCounter (
 		.clk		(~hsn),
 		.reset	(alphaReset),
+		.enable  (1'b1),
 		.counter	(alphaCount)
 	);
 	
@@ -98,10 +105,10 @@ module FrameTiming(
 		activeRow = {4'b0000, dataCount};
 	end
 	
-	always @(colCount, rowCount, fsn, portY, maxPortY) begin
-		if (!fsn || (colCount < blankBoundary)) 
+	always @(colCount, rowCount, blank, portY, maxPortY) begin
+		if (blank) 
 			active = 2'b00;
-		else if (colCount > portx && colCount < maxPortX && rowCount > portY && rowCount < maxPortY)
+		else if ((colCount > portx) && (colCount < maxPortX) && (rowCount > portY) && (rowCount < maxPortY))
 			active = 2'b11;
 		else
 			active = 2'b10;

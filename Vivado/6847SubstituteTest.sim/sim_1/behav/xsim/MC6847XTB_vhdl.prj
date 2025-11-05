@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../6847SubstituteTest.srcs/sources_1/new/colour_mux.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/border_mux.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/ext_counter_vhdl.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/col_counter_vhdl.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/data_counter_vhdl.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/graphic_mode_to_palette.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/mode_mux.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/reg_counter_vhdl.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/res_mode_to_palette.vhd" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/row_counter_vhdl.vhd" \
+
+# Do not sort compile order
+nosort

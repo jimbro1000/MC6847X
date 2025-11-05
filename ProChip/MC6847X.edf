@@ -1,0 +1,1308 @@
+(edif MC6847X 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2025 10 28 08 30 25)
+   (program "Precision RTL Synthesis" (version "2013a.10OEM_Atmelcpld"))
+   (author "Mentor Graphics Corporation")))
+ (external atf15as 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell AND3 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell NAND2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell DFFAR (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port CLK (direction INPUT))
+     (port D (direction INPUT))
+     (port AR (direction INPUT))
+     (port Q (direction OUTPUT))
+     (port QN (direction OUTPUT)))))
+  (cell XOR (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND7 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port F (direction INPUT))
+     (port G (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND5 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND4I1 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port DN (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND6 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port F (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell OR7 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port F (direction INPUT))
+     (port G (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell NAND3I1 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port CN (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell OR6 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port F (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND3I1 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port CN (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND3I2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port BN (direction INPUT))
+     (port CN (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND8 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port F (direction INPUT))
+     (port G (direction INPUT))
+     (port H (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell NAND5 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell OR8 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port F (direction INPUT))
+     (port G (direction INPUT))
+     (port H (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell OR5 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell NAND3I2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port BN (direction INPUT))
+     (port CN (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell NAND2I2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port AN (direction INPUT))
+     (port BN (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell NAND4i3 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port BN (direction INPUT))
+     (port CN (direction INPUT))
+     (port DN (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell NAND3 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell XNOR2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell NOR8 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port F (direction INPUT))
+     (port G (direction INPUT))
+     (port H (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell NAND4I1 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port DN (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell NAND4 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell NAND7 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port C (direction INPUT))
+     (port D (direction INPUT))
+     (port E (direction INPUT))
+     (port F (direction INPUT))
+     (port G (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell AND2I1 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port BN (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell AND4I2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port CN (direction INPUT))
+     (port DN (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell NAND2I1 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port BN (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell NAND4i2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port B (direction INPUT))
+     (port CN (direction INPUT))
+     (port DN (direction INPUT))
+     (port QN (direction OUTPUT)))))
+  (cell INBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell BUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port A (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell VCC (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port Q (direction OUTPUT)))))
+  (cell GND (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port Q (direction OUTPUT))))))
+ (library work 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell FrameTiming (cellType GENERIC)
+   (view INTERFACE_unfold_1051  (viewType NETLIST)
+    (interface 
+     (port clk (direction INPUT))
+     (port format (direction INPUT))
+     (port (array (rename width "width(5:0)") 6 )(direction INPUT))
+     (port hsn (direction OUTPUT))
+     (port fsn (direction OUTPUT))
+     (port preload (direction OUTPUT))
+     (port rowclear (direction OUTPUT))
+     (port (array (rename active "active(1:0)") 2 )(direction OUTPUT))
+     (port (array (rename debug "debug(8:0)") 9 )(direction OUTPUT)))
+    (contents 
+     (instance ix59967z48515 (viewRef NETLIST  (cellRef AND3 (libraryRef atf15as ))))
+     (instance ix59967z24339 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24340 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance (rename pixelCols_col_counter_modgen_counter_count_reg_q_8_ "pixelCols_col_counter_modgen_counter_count_reg_q(8)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix35159z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix35159z48520 (viewRef NETLIST  (cellRef AND7 (libraryRef atf15as ))))
+     (instance (rename pixelCols_col_counter_modgen_counter_count_reg_q_6_ "pixelCols_col_counter_modgen_counter_count_reg_q(6)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix37153z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix37153z48518 (viewRef NETLIST  (cellRef AND5 (libraryRef atf15as ))))
+     (instance (rename pixelCols_col_counter_modgen_counter_count_reg_q_5_ "pixelCols_col_counter_modgen_counter_count_reg_q(5)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix38150z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance (rename pixelCols_col_counter_modgen_counter_count_reg_q_4_ "pixelCols_col_counter_modgen_counter_count_reg_q(4)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix39147z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance (rename pixelCols_col_counter_modgen_counter_count_reg_q_3_ "pixelCols_col_counter_modgen_counter_count_reg_q(3)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix40144z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance (rename pixelCols_col_counter_modgen_counter_count_reg_q_2_ "pixelCols_col_counter_modgen_counter_count_reg_q(2)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance (rename pixelCols_col_counter_modgen_counter_count_reg_q_1_ "pixelCols_col_counter_modgen_counter_count_reg_q(1)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix42138z48514 (viewRef NETLIST  (cellRef AND2 (libraryRef atf15as ))))
+     (instance ix42138z16011 (viewRef NETLIST  (cellRef AND4I1 (libraryRef atf15as ))))
+     (instance (rename pixelCols_col_counter_modgen_counter_count_reg_q_7_ "pixelCols_col_counter_modgen_counter_count_reg_q(7)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix36156z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix36156z48519 (viewRef NETLIST  (cellRef AND6 (libraryRef atf15as ))))
+     (instance ix59967z24341 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z30861 (viewRef NETLIST  (cellRef OR7 (libraryRef atf15as ))))
+     (instance ix59967z6168 (viewRef NETLIST  (cellRef NAND3I1 (libraryRef atf15as ))))
+     (instance ix59967z30862 (viewRef NETLIST  (cellRef OR6 (libraryRef atf15as ))))
+     (instance ix58970z48514 (viewRef NETLIST  (cellRef AND2 (libraryRef atf15as ))))
+     (instance ix53955z30856 (viewRef NETLIST  (cellRef OR6 (libraryRef atf15as ))))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_4_ "pixelRows_row_counter_modgen_counter_count_reg_q(4)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix17697z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_3_ "pixelRows_row_counter_modgen_counter_count_reg_q(3)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix16700z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_2_ "pixelRows_row_counter_modgen_counter_count_reg_q(2)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix15703z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_1_ "pixelRows_row_counter_modgen_counter_count_reg_q(1)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_0_ "pixelRows_row_counter_modgen_counter_count_reg_q(0)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix13709z5041 (viewRef NETLIST  (cellRef AND3I1 (libraryRef atf15as ))))
+     (instance ix13709z5043 (viewRef NETLIST  (cellRef AND3I2 (libraryRef atf15as ))))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_8_ "pixelRows_row_counter_modgen_counter_count_reg_q(8)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix21685z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix21685z48521 (viewRef NETLIST  (cellRef AND8 (libraryRef atf15as ))))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_6_ "pixelRows_row_counter_modgen_counter_count_reg_q(6)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix19691z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix19691z48519 (viewRef NETLIST  (cellRef AND6 (libraryRef atf15as ))))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_5_ "pixelRows_row_counter_modgen_counter_count_reg_q(5)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix18694z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix18694z48518 (viewRef NETLIST  (cellRef AND5 (libraryRef atf15as ))))
+     (instance (rename pixelRows_row_counter_modgen_counter_count_reg_q_7_ "pixelRows_row_counter_modgen_counter_count_reg_q(7)") (viewRef NETLIST  (cellRef DFFAR (libraryRef atf15as )))
+      (property no_enable_dff (string "TRUE")))
+     (instance ix20688z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix20688z48520 (viewRef NETLIST  (cellRef AND7 (libraryRef atf15as ))))
+     (instance ix13709z24340 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix13709z24338 (viewRef NETLIST  (cellRef NAND5 (libraryRef atf15as ))))
+     (instance ix13709z30862 (viewRef NETLIST  (cellRef OR8 (libraryRef atf15as ))))
+     (instance ix13709z30861 (viewRef NETLIST  (cellRef OR5 (libraryRef atf15as ))))
+     (instance ix58970z6163 (viewRef NETLIST  (cellRef NAND3I2 (libraryRef atf15as ))))
+     (instance ix58970z24340 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix58970z17134 (viewRef NETLIST  (cellRef NAND2I2 (libraryRef atf15as ))))
+     (instance ix58970z28828 (viewRef NETLIST  (cellRef NAND4i3 (libraryRef atf15as ))))
+     (instance ix59967z24344 (viewRef NETLIST  (cellRef NAND3 (libraryRef atf15as ))))
+     (instance ix59967z24346 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z36411 (viewRef NETLIST  (cellRef XNOR2 (libraryRef atf15as ))))
+     (instance ix59967z24347 (viewRef NETLIST  (cellRef NAND3 (libraryRef atf15as ))))
+     (instance ix59967z24348 (viewRef NETLIST  (cellRef NAND3 (libraryRef atf15as ))))
+     (instance ix59967z29548 (viewRef NETLIST  (cellRef NOR8 (libraryRef atf15as ))))
+     (instance ix59967z24351 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24352 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z61093 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z24354 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24355 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z60748 (viewRef NETLIST  (cellRef NAND4I1 (libraryRef atf15as ))))
+     (instance ix59967z48533 (viewRef NETLIST  (cellRef AND2 (libraryRef atf15as ))))
+     (instance ix59967z5062 (viewRef NETLIST  (cellRef AND3I2 (libraryRef atf15as ))))
+     (instance ix59967z24359 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24358 (viewRef NETLIST  (cellRef NAND4 (libraryRef atf15as ))))
+     (instance ix59967z61101 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z61102 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z61103 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z61104 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z30882 (viewRef NETLIST  (cellRef OR5 (libraryRef atf15as ))))
+     (instance ix59967z61106 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z61107 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z30886 (viewRef NETLIST  (cellRef OR6 (libraryRef atf15as ))))
+     (instance ix59967z61109 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z24371 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24372 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24410 (viewRef NETLIST  (cellRef NAND3 (libraryRef atf15as ))))
+     (instance ix59967z24370 (viewRef NETLIST  (cellRef NAND7 (libraryRef atf15as ))))
+     (instance ix59967z61116 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z24376 (viewRef NETLIST  (cellRef NAND3 (libraryRef atf15as ))))
+     (instance ix59967z48558 (viewRef NETLIST  (cellRef AND5 (libraryRef atf15as ))))
+     (instance ix59967z24380 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24381 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24382 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24379 (viewRef NETLIST  (cellRef NAND7 (libraryRef atf15as ))))
+     (instance ix59967z24385 (viewRef NETLIST  (cellRef NAND2 (libraryRef atf15as ))))
+     (instance ix59967z24434 (viewRef NETLIST  (cellRef NAND7 (libraryRef atf15as ))))
+     (instance ix59967z61129 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix59967z61130 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (instance ix10357z30855 (viewRef NETLIST  (cellRef OR5 (libraryRef atf15as ))))
+     (instance ix10357z48516 (viewRef NETLIST  (cellRef AND3 (libraryRef atf15as ))))
+     (instance ix38150z16011 (viewRef NETLIST  (cellRef AND4I1 (libraryRef atf15as ))))
+     (instance ix39147z5042 (viewRef NETLIST  (cellRef AND3I1 (libraryRef atf15as ))))
+     (instance ix40144z59609 (viewRef NETLIST  (cellRef AND2I1 (libraryRef atf15as ))))
+     (instance ix41141z36402 (viewRef NETLIST  (cellRef XNOR2 (libraryRef atf15as ))))
+     (instance ix42138z16013 (viewRef NETLIST  (cellRef AND4I2 (libraryRef atf15as ))))
+     (instance ix17697z16011 (viewRef NETLIST  (cellRef AND4I1 (libraryRef atf15as ))))
+     (instance ix16700z5042 (viewRef NETLIST  (cellRef AND3I1 (libraryRef atf15as ))))
+     (instance ix15703z59609 (viewRef NETLIST  (cellRef AND2I1 (libraryRef atf15as ))))
+     (instance ix14706z36402 (viewRef NETLIST  (cellRef XNOR2 (libraryRef atf15as ))))
+     (instance ix13709z59613 (viewRef NETLIST  (cellRef AND2I1 (libraryRef atf15as ))))
+     (instance ix58970z17137 (viewRef NETLIST  (cellRef NAND2I1 (libraryRef atf15as ))))
+     (instance ix59967z6194 (viewRef NETLIST  (cellRef NAND3I2 (libraryRef atf15as ))))
+     (instance ix59967z28865 (viewRef NETLIST  (cellRef NAND4i2 (libraryRef atf15as ))))
+     (instance ix59967z17177 (viewRef NETLIST  (cellRef NAND2I1 (libraryRef atf15as ))))
+     (instance ix59967z17180 (viewRef NETLIST  (cellRef NAND2I1 (libraryRef atf15as ))))
+     (net clk 
+      (joined 
+       (portRef clk )
+       (portRef CLK (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_8_ ))
+       (portRef CLK (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_6_ ))
+       (portRef CLK (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_5_ ))
+       (portRef CLK (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_4_ ))
+       (portRef CLK (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_3_ ))
+       (portRef CLK (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_2_ ))
+       (portRef CLK (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_1_ ))
+       (portRef CLK (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_7_ ))
+       (portRef A (instanceRef ix59967z30861 ))
+       (portRef A (instanceRef ix13709z59613 ))))
+     (net hsn 
+      (joined 
+       (portRef hsn )
+       (portRef Q (instanceRef ix10357z30855 ))))
+     (net fsn 
+      (joined 
+       (portRef fsn )
+       (portRef Q (instanceRef ix53955z30856 ))
+       (portRef A (instanceRef ix58970z48514 ))))
+     (net (rename active_1_ "active(1)") 
+      (joined 
+       (portRef (member active 0))
+       (portRef Q (instanceRef ix58970z48514 ))
+       (portRef B (instanceRef ix59967z48515 ))))
+     (net (rename active_0_ "active(0)") 
+      (joined 
+       (portRef (member active 1))
+       (portRef Q (instanceRef ix59967z48515 ))))
+     (net (rename colCount_2_ "colCount(2)") 
+      (joined 
+       (portRef Q (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_2_ ))
+       (portRef E (instanceRef ix36156z48519 ))
+       (portRef D (instanceRef ix37153z48518 ))
+       (portRef E (instanceRef ix35159z48520 ))
+       (portRef G (instanceRef ix59967z30861 ))
+       (portRef F (instanceRef ix59967z30862 ))
+       (portRef C (instanceRef ix13709z30862 ))
+       (portRef C (instanceRef ix59967z29548 ))
+       (portRef A (instanceRef ix10357z48516 ))
+       (portRef C (instanceRef ix38150z16011 ))
+       (portRef B (instanceRef ix39147z5042 ))
+       (portRef A (instanceRef ix40144z59609 ))
+       (portRef A (instanceRef ix41141z36402 ))
+       (portRef DN (instanceRef ix42138z16013 ))
+       (portRef A (instanceRef ix58970z17137 ))))
+     (net (rename colCount_1_ "colCount(1)") 
+      (joined 
+       (portRef Q (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_1_ ))
+       (portRef F (instanceRef ix36156z48519 ))
+       (portRef E (instanceRef ix37153z48518 ))
+       (portRef F (instanceRef ix35159z48520 ))
+       (portRef F (instanceRef ix59967z30861 ))
+       (portRef E (instanceRef ix59967z30862 ))))
+     (net (rename NOT_colCount_1_ "NOT_colCount(1)") 
+      (joined 
+       (portRef QN (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_1_ ))
+       (portRef D (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_1_ ))
+       (portRef DN (instanceRef ix38150z16011 ))
+       (portRef CN (instanceRef ix39147z5042 ))
+       (portRef BN (instanceRef ix40144z59609 ))
+       (portRef B (instanceRef ix41141z36402 ))
+       (portRef B (instanceRef ix42138z16013 ))
+       (portRef BN (instanceRef ix13709z59613 ))
+       (portRef BN (instanceRef ix58970z17137 ))))
+     (net (rename colCount_8_ "colCount(8)") 
+      (joined 
+       (portRef Q (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_8_ ))
+       (portRef A (instanceRef ix35159z61078 ))
+       (portRef A (instanceRef ix42138z16011 ))
+       (portRef A (instanceRef ix59967z24340 ))
+       (portRef CN (instanceRef ix59967z6168 ))
+       (portRef B (instanceRef ix13709z30862 ))
+       (portRef CN (instanceRef ix58970z6163 ))
+       (portRef B (instanceRef ix59967z29548 ))
+       (portRef E (instanceRef ix10357z30855 ))))
+     (net (rename colCount_7_ "colCount(7)") 
+      (joined 
+       (portRef Q (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_7_ ))
+       (portRef A (instanceRef ix36156z61078 ))
+       (portRef B (instanceRef ix42138z16011 ))
+       (portRef G (instanceRef ix35159z48520 ))
+       (portRef B (instanceRef ix59967z24341 ))
+       (portRef B (instanceRef ix59967z6168 ))
+       (portRef A (instanceRef ix13709z30862 ))
+       (portRef BN (instanceRef ix58970z6163 ))
+       (portRef A (instanceRef ix59967z29548 ))
+       (portRef D (instanceRef ix10357z30855 ))))
+     (net (rename colCount_6_ "colCount(6)") 
+      (joined 
+       (portRef Q (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_6_ ))
+       (portRef A (instanceRef ix37153z61078 ))
+       (portRef A (instanceRef ix36156z48519 ))
+       (portRef C (instanceRef ix42138z16011 ))
+       (portRef A (instanceRef ix35159z48520 ))
+       (portRef E (instanceRef ix59967z30861 ))
+       (portRef D (instanceRef ix59967z30862 ))
+       (portRef H (instanceRef ix13709z30862 ))
+       (portRef BN (instanceRef ix58970z17134 ))
+       (portRef BN (instanceRef ix58970z28828 ))
+       (portRef H (instanceRef ix59967z29548 ))
+       (portRef C (instanceRef ix10357z30855 ))))
+     (net (rename colCount_5_ "colCount(5)") 
+      (joined 
+       (portRef Q (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_5_ ))
+       (portRef A (instanceRef ix38150z61078 ))
+       (portRef B (instanceRef ix36156z48519 ))
+       (portRef DN (instanceRef ix42138z16011 ))
+       (portRef A (instanceRef ix37153z48518 ))
+       (portRef B (instanceRef ix35159z48520 ))
+       (portRef D (instanceRef ix59967z30861 ))
+       (portRef C (instanceRef ix59967z30862 ))
+       (portRef G (instanceRef ix13709z30862 ))
+       (portRef AN (instanceRef ix58970z17134 ))
+       (portRef G (instanceRef ix59967z29548 ))
+       (portRef B (instanceRef ix10357z30855 ))))
+     (net (rename colCount_4_ "colCount(4)") 
+      (joined 
+       (portRef Q (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_4_ ))
+       (portRef A (instanceRef ix39147z61078 ))
+       (portRef C (instanceRef ix36156z48519 ))
+       (portRef B (instanceRef ix37153z48518 ))
+       (portRef C (instanceRef ix35159z48520 ))
+       (portRef C (instanceRef ix59967z30861 ))
+       (portRef B (instanceRef ix59967z30862 ))
+       (portRef F (instanceRef ix13709z30862 ))
+       (portRef DN (instanceRef ix58970z28828 ))
+       (portRef F (instanceRef ix59967z29548 ))
+       (portRef B (instanceRef ix10357z48516 ))
+       (portRef A (instanceRef ix38150z16011 ))
+       (portRef CN (instanceRef ix42138z16013 ))))
+     (net (rename colCount_3_ "colCount(3)") 
+      (joined 
+       (portRef Q (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_3_ ))
+       (portRef A (instanceRef ix40144z61078 ))
+       (portRef D (instanceRef ix36156z48519 ))
+       (portRef C (instanceRef ix37153z48518 ))
+       (portRef D (instanceRef ix35159z48520 ))
+       (portRef B (instanceRef ix59967z30861 ))
+       (portRef A (instanceRef ix59967z30862 ))
+       (portRef E (instanceRef ix13709z30862 ))
+       (portRef CN (instanceRef ix58970z28828 ))
+       (portRef E (instanceRef ix59967z29548 ))
+       (portRef C (instanceRef ix10357z48516 ))
+       (portRef B (instanceRef ix38150z16011 ))
+       (portRef A (instanceRef ix39147z5042 ))
+       (portRef A (instanceRef ix42138z16013 ))))
+     (net nx40144z2 
+      (joined 
+       (portRef Q (instanceRef ix40144z59609 ))
+       (portRef B (instanceRef ix40144z61078 ))))
+     (net nx40144z1 
+      (joined 
+       (portRef Q (instanceRef ix40144z61078 ))
+       (portRef D (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_3_ ))))
+     (net nx42138z1 
+      (joined 
+       (portRef Q (instanceRef ix42138z48514 ))
+       (portRef AR (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_7_ ))
+       (portRef AR (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_1_ ))
+       (portRef AR (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_2_ ))
+       (portRef AR (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_3_ ))
+       (portRef AR (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_4_ ))
+       (portRef AR (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_5_ ))
+       (portRef AR (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_6_ ))
+       (portRef AR (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_8_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_4_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_3_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_2_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_1_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_0_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_8_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_6_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_5_ ))
+       (portRef CLK (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_7_ ))))
+     (net nx39147z2 
+      (joined 
+       (portRef Q (instanceRef ix39147z5042 ))
+       (portRef B (instanceRef ix39147z61078 ))))
+     (net nx39147z1 
+      (joined 
+       (portRef Q (instanceRef ix39147z61078 ))
+       (portRef D (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_4_ ))))
+     (net nx38150z2 
+      (joined 
+       (portRef Q (instanceRef ix38150z16011 ))
+       (portRef B (instanceRef ix38150z61078 ))))
+     (net nx38150z1 
+      (joined 
+       (portRef Q (instanceRef ix38150z61078 ))
+       (portRef D (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_5_ ))))
+     (net nx37153z2 
+      (joined 
+       (portRef Q (instanceRef ix37153z48518 ))
+       (portRef B (instanceRef ix37153z61078 ))))
+     (net nx37153z1 
+      (joined 
+       (portRef Q (instanceRef ix37153z61078 ))
+       (portRef D (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_6_ ))))
+     (net nx36156z2 
+      (joined 
+       (portRef Q (instanceRef ix36156z48519 ))
+       (portRef B (instanceRef ix36156z61078 ))))
+     (net nx36156z1 
+      (joined 
+       (portRef Q (instanceRef ix36156z61078 ))
+       (portRef D (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_7_ ))))
+     (net nx35159z1 
+      (joined 
+       (portRef Q (instanceRef ix35159z61078 ))
+       (portRef D (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_8_ ))))
+     (net nx42138z2 
+      (joined 
+       (portRef Q (instanceRef ix42138z16011 ))
+       (portRef A (instanceRef ix42138z48514 ))))
+     (net nx42138z3 
+      (joined 
+       (portRef Q (instanceRef ix42138z16013 ))
+       (portRef B (instanceRef ix42138z48514 ))))
+     (net nx41141z1 
+      (joined 
+       (portRef QN (instanceRef ix41141z36402 ))
+       (portRef D (instanceRef pixelCols_col_counter_modgen_counter_count_reg_q_2_ ))))
+     (net nx58970z3 
+      (joined 
+       (portRef QN (instanceRef ix58970z17134 ))
+       (portRef A (instanceRef ix58970z24340 ))))
+     (net nx59967z6 
+      (joined 
+       (portRef Q (instanceRef ix59967z30862 ))
+       (portRef A (instanceRef ix59967z6168 ))))
+     (net nx59967z3 
+      (joined 
+       (portRef QN (instanceRef ix59967z24341 ))
+       (portRef B (instanceRef ix59967z24340 ))))
+     (net nx59967z1 
+      (joined 
+       (portRef QN (instanceRef ix59967z24339 ))
+       (portRef A (instanceRef ix59967z48515 ))))
+     (net (rename rowCount_6_ "rowCount(6)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_6_ ))
+       (portRef A (instanceRef ix19691z61078 ))
+       (portRef A (instanceRef ix21685z48521 ))
+       (portRef A (instanceRef ix20688z48520 ))
+       (portRef BN (instanceRef ix13709z5043 ))
+       (portRef F (instanceRef ix53955z30856 ))
+       (portRef A (instanceRef ix59967z61093 ))
+       (portRef A (instanceRef ix59967z24359 ))
+       (portRef A (instanceRef ix59967z61104 ))
+       (portRef A (instanceRef ix59967z24376 ))))
+     (net (rename rowCount_5_ "rowCount(5)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_5_ ))
+       (portRef A (instanceRef ix18694z61078 ))
+       (portRef A (instanceRef ix19691z48519 ))
+       (portRef B (instanceRef ix21685z48521 ))
+       (portRef B (instanceRef ix20688z48520 ))
+       (portRef B (instanceRef ix13709z24338 ))
+       (portRef B (instanceRef ix13709z30861 ))
+       (portRef B (instanceRef ix53955z30856 ))
+       (portRef A (instanceRef ix59967z24355 ))
+       (portRef DN (instanceRef ix59967z60748 ))
+       (portRef A (instanceRef ix59967z61101 ))
+       (portRef A (instanceRef ix59967z61106 ))
+       (portRef C (instanceRef ix59967z24376 ))))
+     (net (rename rowCount_4_ "rowCount(4)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_4_ ))
+       (portRef A (instanceRef ix17697z61078 ))
+       (portRef A (instanceRef ix18694z48518 ))
+       (portRef B (instanceRef ix19691z48519 ))
+       (portRef C (instanceRef ix21685z48521 ))
+       (portRef C (instanceRef ix20688z48520 ))
+       (portRef C (instanceRef ix13709z24338 ))
+       (portRef C (instanceRef ix13709z30861 ))
+       (portRef A (instanceRef ix53955z30856 ))
+       (portRef A (instanceRef ix59967z48533 ))
+       (portRef B (instanceRef ix59967z30882 ))
+       (portRef D (instanceRef ix59967z24370 ))
+       (portRef B (instanceRef ix59967z48558 ))
+       (portRef D (instanceRef ix59967z24379 ))))
+     (net (rename rowCount_3_ "rowCount(3)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_3_ ))
+       (portRef A (instanceRef ix16700z61078 ))
+       (portRef B (instanceRef ix18694z48518 ))
+       (portRef C (instanceRef ix19691z48519 ))
+       (portRef D (instanceRef ix21685z48521 ))
+       (portRef D (instanceRef ix20688z48520 ))
+       (portRef CN (instanceRef ix13709z5041 ))
+       (portRef C (instanceRef ix53955z30856 ))
+       (portRef B (instanceRef ix59967z48533 ))
+       (portRef A (instanceRef ix59967z61103 ))
+       (portRef A (instanceRef ix59967z61109 ))
+       (portRef E (instanceRef ix59967z24370 ))
+       (portRef C (instanceRef ix59967z48558 ))
+       (portRef E (instanceRef ix59967z24379 ))
+       (portRef A (instanceRef ix17697z16011 ))))
+     (net (rename rowCount_2_ "rowCount(2)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_2_ ))
+       (portRef A (instanceRef ix15703z61078 ))
+       (portRef C (instanceRef ix18694z48518 ))
+       (portRef D (instanceRef ix19691z48519 ))
+       (portRef E (instanceRef ix21685z48521 ))
+       (portRef E (instanceRef ix20688z48520 ))
+       (portRef A (instanceRef ix13709z24338 ))
+       (portRef A (instanceRef ix13709z30861 ))
+       (portRef C (instanceRef ix59967z60748 ))
+       (portRef A (instanceRef ix59967z61116 ))
+       (portRef B (instanceRef ix17697z16011 ))
+       (portRef A (instanceRef ix16700z5042 ))
+       (portRef CN (instanceRef ix59967z6194 ))))
+     (net (rename rowCount_1_ "rowCount(1)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_1_ ))
+       (portRef D (instanceRef ix18694z48518 ))
+       (portRef E (instanceRef ix19691z48519 ))
+       (portRef F (instanceRef ix21685z48521 ))
+       (portRef F (instanceRef ix20688z48520 ))
+       (portRef D (instanceRef ix13709z24338 ))
+       (portRef D (instanceRef ix13709z30861 ))
+       (portRef C (instanceRef ix59967z30886 ))
+       (portRef A (instanceRef ix59967z24370 ))
+       (portRef A (instanceRef ix59967z24379 ))
+       (portRef A (instanceRef ix59967z61130 ))
+       (portRef C (instanceRef ix17697z16011 ))
+       (portRef B (instanceRef ix16700z5042 ))
+       (portRef A (instanceRef ix15703z59609 ))
+       (portRef A (instanceRef ix14706z36402 ))
+       (portRef DN (instanceRef ix59967z28865 ))))
+     (net (rename rowCount_0_ "rowCount(0)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_0_ ))
+       (portRef E (instanceRef ix18694z48518 ))
+       (portRef F (instanceRef ix19691z48519 ))
+       (portRef G (instanceRef ix21685z48521 ))
+       (portRef G (instanceRef ix20688z48520 ))
+       (portRef F (instanceRef ix59967z24434 ))))
+     (net (rename NOT_rowCount_0_ "NOT_rowCount(0)") 
+      (joined 
+       (portRef QN (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_0_ ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_0_ ))
+       (portRef DN (instanceRef ix17697z16011 ))
+       (portRef CN (instanceRef ix16700z5042 ))
+       (portRef BN (instanceRef ix15703z59609 ))
+       (portRef B (instanceRef ix14706z36402 ))
+       (portRef CN (instanceRef ix59967z28865 ))
+       (portRef A (instanceRef ix59967z17180 ))))
+     (net (rename rowCount_8_ "rowCount(8)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_8_ ))
+       (portRef A (instanceRef ix21685z61078 ))
+       (portRef A (instanceRef ix13709z5043 ))
+       (portRef E (instanceRef ix53955z30856 ))
+       (portRef B (instanceRef ix59967z36411 ))
+       (portRef CN (instanceRef ix59967z5062 ))
+       (portRef B (instanceRef ix59967z61129 ))))
+     (net (rename rowCount_7_ "rowCount(7)") 
+      (joined 
+       (portRef Q (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_7_ ))
+       (portRef A (instanceRef ix20688z61078 ))
+       (portRef H (instanceRef ix21685z48521 ))
+       (portRef CN (instanceRef ix13709z5043 ))
+       (portRef D (instanceRef ix53955z30856 ))
+       (portRef BN (instanceRef ix59967z5062 ))
+       (portRef A (instanceRef ix59967z61102 ))
+       (portRef A (instanceRef ix59967z61107 ))))
+     (net nx19691z2 
+      (joined 
+       (portRef Q (instanceRef ix19691z48519 ))
+       (portRef B (instanceRef ix19691z61078 ))))
+     (net nx20688z2 
+      (joined 
+       (portRef Q (instanceRef ix20688z48520 ))
+       (portRef B (instanceRef ix20688z61078 ))))
+     (net nx20688z1 
+      (joined 
+       (portRef Q (instanceRef ix20688z61078 ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_7_ ))))
+     (net nx13709z1 
+      (joined 
+       (portRef Q (instanceRef ix13709z5041 ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_5_ ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_6_ ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_7_ ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_8_ ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_0_ ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_1_ ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_2_ ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_3_ ))
+       (portRef AR (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_4_ ))))
+     (net nx21685z1 
+      (joined 
+       (portRef Q (instanceRef ix21685z61078 ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_8_ ))))
+     (net nx13709z2 
+      (joined 
+       (portRef Q (instanceRef ix13709z5043 ))
+       (portRef A (instanceRef ix13709z5041 ))))
+     (net nx13709z6 
+      (joined 
+       (portRef Q (instanceRef ix13709z59613 ))
+       (portRef D (instanceRef ix13709z30862 ))
+       (portRef D (instanceRef ix59967z29548 ))))
+     (net nx13709z5 
+      (joined 
+       (portRef Q (instanceRef ix13709z30862 ))
+       (portRef E (instanceRef ix13709z24338 ))
+       (portRef E (instanceRef ix13709z30861 ))
+       (portRef A (instanceRef ix59967z36411 ))
+       (portRef B (instanceRef ix59967z24355 ))
+       (portRef A (instanceRef ix59967z60748 ))
+       (portRef B (instanceRef ix59967z61101 ))
+       (portRef B (instanceRef ix59967z61102 ))
+       (portRef B (instanceRef ix59967z61103 ))
+       (portRef B (instanceRef ix59967z61104 ))
+       (portRef B (instanceRef ix59967z24370 ))
+       (portRef B (instanceRef ix59967z61116 ))
+       (portRef B (instanceRef ix59967z24376 ))
+       (portRef A (instanceRef ix59967z24380 ))
+       (portRef B (instanceRef ix59967z24379 ))
+       (portRef A (instanceRef ix59967z61129 ))
+       (portRef B (instanceRef ix59967z61130 ))
+       (portRef A (instanceRef ix59967z28865 ))))
+     (net nx13709z3 
+      (joined 
+       (portRef QN (instanceRef ix13709z24340 ))
+       (portRef B (instanceRef ix13709z5041 ))))
+     (net nx14706z1 
+      (joined 
+       (portRef QN (instanceRef ix14706z36402 ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_1_ ))))
+     (net nx15703z2 
+      (joined 
+       (portRef Q (instanceRef ix15703z59609 ))
+       (portRef B (instanceRef ix15703z61078 ))))
+     (net nx15703z1 
+      (joined 
+       (portRef Q (instanceRef ix15703z61078 ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_2_ ))))
+     (net nx16700z2 
+      (joined 
+       (portRef Q (instanceRef ix16700z5042 ))
+       (portRef B (instanceRef ix16700z61078 ))))
+     (net nx16700z1 
+      (joined 
+       (portRef Q (instanceRef ix16700z61078 ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_3_ ))))
+     (net nx17697z2 
+      (joined 
+       (portRef Q (instanceRef ix17697z16011 ))
+       (portRef B (instanceRef ix17697z61078 ))))
+     (net nx17697z1 
+      (joined 
+       (portRef Q (instanceRef ix17697z61078 ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_4_ ))))
+     (net nx18694z2 
+      (joined 
+       (portRef Q (instanceRef ix18694z48518 ))
+       (portRef B (instanceRef ix18694z61078 ))))
+     (net nx18694z1 
+      (joined 
+       (portRef Q (instanceRef ix18694z61078 ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_5_ ))))
+     (net nx19691z1 
+      (joined 
+       (portRef Q (instanceRef ix19691z61078 ))
+       (portRef D (instanceRef pixelRows_row_counter_modgen_counter_count_reg_q_6_ ))))
+     (net nx58970z4 
+      (joined 
+       (portRef QN (instanceRef ix58970z28828 ))
+       (portRef B (instanceRef ix58970z24340 ))))
+     (net nx58970z1 
+      (joined 
+       (portRef QN (instanceRef ix58970z6163 ))
+       (portRef B (instanceRef ix58970z48514 ))))
+     (net nx59967z49 
+      (joined 
+       (portRef Q (instanceRef ix59967z61129 ))
+       (portRef B (instanceRef ix59967z24434 ))))
+     (net nx59967z26 
+      (joined 
+       (portRef Q (instanceRef ix59967z61104 ))
+       (portRef D (instanceRef ix59967z24358 ))))
+     (net nx59967z28 
+      (joined 
+       (portRef Q (instanceRef ix59967z61106 ))
+       (portRef A (instanceRef ix59967z30882 ))
+       (portRef D (instanceRef ix59967z30886 ))))
+     (net nx59967z19 
+      (joined 
+       (portRef Q (instanceRef ix59967z48533 ))
+       (portRef B (instanceRef ix59967z60748 ))
+       (portRef E (instanceRef ix59967z24434 ))))
+     (net nx59967z40 
+      (joined 
+       (portRef Q (instanceRef ix59967z48558 ))
+       (portRef B (instanceRef ix59967z28865 ))))
+     (net nx59967z31 
+      (joined 
+       (portRef Q (instanceRef ix59967z61109 ))
+       (portRef F (instanceRef ix59967z30886 ))))
+     (net nx59967z29 
+      (joined 
+       (portRef Q (instanceRef ix59967z61107 ))
+       (portRef C (instanceRef ix59967z30882 ))
+       (portRef E (instanceRef ix59967z30886 ))))
+     (net nx59967z22 
+      (joined 
+       (portRef QN (instanceRef ix59967z24358 ))
+       (portRef C (instanceRef ix59967z24348 ))
+       (portRef BN (instanceRef ix59967z6194 ))
+       (portRef BN (instanceRef ix59967z17180 ))))
+     (net nx59967z16 
+      (joined 
+       (portRef QN (instanceRef ix59967z24354 ))
+       (portRef B (instanceRef ix59967z24352 ))))
+     (net nx59967z13 
+      (joined 
+       (portRef QN (instanceRef ix59967z24351 ))
+       (portRef B (instanceRef ix59967z24348 ))
+       (portRef BN (instanceRef ix59967z17177 ))))
+     (net nx59967z44 
+      (joined 
+       (portRef QN (instanceRef ix59967z17177 ))
+       (portRef A (instanceRef ix59967z24382 ))))
+     (net nx59967z46 
+      (joined 
+       (portRef QN (instanceRef ix59967z24385 ))
+       (portRef B (instanceRef ix59967z24382 ))))
+     (net nx59967z42 
+      (joined 
+       (portRef QN (instanceRef ix59967z24381 ))
+       (portRef B (instanceRef ix59967z24380 ))))
+     (net nx59967z35 
+      (joined 
+       (portRef QN (instanceRef ix59967z24410 ))
+       (portRef B (instanceRef ix59967z24372 ))))
+     (net nx59967z33 
+      (joined 
+       (portRef QN (instanceRef ix59967z24371 ))
+       (portRef A (instanceRef ix59967z6194 ))))
+     (net nx59967z10 
+      (joined 
+       (portRef QN (instanceRef ix59967z24347 ))
+       (portRef B (instanceRef ix59967z24346 ))))
+     (net nx59967z7 
+      (joined 
+       (portRef QN (instanceRef ix59967z24344 ))
+       (portRef C (instanceRef ix59967z48515 ))))
+     (net nx10357z1 
+      (joined 
+       (portRef Q (instanceRef ix10357z48516 ))
+       (portRef A (instanceRef ix10357z30855 ))))
+     (net nx59967z2 
+      (joined 
+       (portRef QN (instanceRef ix59967z24340 ))
+       (portRef A (instanceRef ix59967z24339 ))))
+     (net nx35159z2 
+      (joined 
+       (portRef Q (instanceRef ix35159z48520 ))
+       (portRef B (instanceRef ix35159z61078 ))))
+     (net nx59967z4 
+      (joined 
+       (portRef Q (instanceRef ix59967z30861 ))
+       (portRef A (instanceRef ix59967z24341 ))))
+     (net nx59967z5 
+      (joined 
+       (portRef QN (instanceRef ix59967z6168 ))
+       (portRef B (instanceRef ix59967z24339 ))))
+     (net nx21685z2 
+      (joined 
+       (portRef Q (instanceRef ix21685z48521 ))
+       (portRef B (instanceRef ix21685z61078 ))))
+     (net nx13709z4 
+      (joined 
+       (portRef QN (instanceRef ix13709z24338 ))
+       (portRef A (instanceRef ix13709z24340 ))))
+     (net nx13709z7 
+      (joined 
+       (portRef Q (instanceRef ix13709z30861 ))
+       (portRef B (instanceRef ix13709z24340 ))))
+     (net nx58970z2 
+      (joined 
+       (portRef QN (instanceRef ix58970z24340 ))
+       (portRef A (instanceRef ix58970z6163 ))))
+     (net nx58970z5 
+      (joined 
+       (portRef QN (instanceRef ix58970z17137 ))
+       (portRef A (instanceRef ix58970z28828 ))))
+     (net nx59967z8 
+      (joined 
+       (portRef QN (instanceRef ix59967z24346 ))
+       (portRef A (instanceRef ix59967z24344 ))))
+     (net nx59967z9 
+      (joined 
+       (portRef QN (instanceRef ix59967z36411 ))
+       (portRef A (instanceRef ix59967z24346 ))
+       (portRef A (instanceRef ix59967z24372 ))
+       (portRef B (instanceRef ix59967z24385 ))))
+     (net nx59967z11 
+      (joined 
+       (portRef QN (instanceRef ix59967z24348 ))
+       (portRef A (instanceRef ix59967z24347 ))))
+     (net nx59967z12 
+      (joined 
+       (portRef QN (instanceRef ix59967z29548 ))
+       (portRef A (instanceRef ix59967z24348 ))
+       (portRef B (instanceRef ix59967z61093 ))
+       (portRef B (instanceRef ix59967z24359 ))
+       (portRef B (instanceRef ix59967z61106 ))
+       (portRef B (instanceRef ix59967z61107 ))
+       (portRef B (instanceRef ix59967z61109 ))))
+     (net nx59967z14 
+      (joined 
+       (portRef QN (instanceRef ix59967z24352 ))
+       (portRef A (instanceRef ix59967z24351 ))))
+     (net nx59967z15 
+      (joined 
+       (portRef Q (instanceRef ix59967z61093 ))
+       (portRef A (instanceRef ix59967z24352 ))
+       (portRef D (instanceRef ix59967z30882 ))
+       (portRef A (instanceRef ix59967z30886 ))
+       (portRef G (instanceRef ix59967z24370 ))
+       (portRef E (instanceRef ix59967z48558 ))
+       (portRef G (instanceRef ix59967z24379 ))
+       (portRef C (instanceRef ix59967z24434 ))))
+     (net nx59967z17 
+      (joined 
+       (portRef QN (instanceRef ix59967z24355 ))
+       (portRef A (instanceRef ix59967z24354 ))))
+     (net nx59967z18 
+      (joined 
+       (portRef QN (instanceRef ix59967z60748 ))
+       (portRef B (instanceRef ix59967z24354 ))))
+     (net nx59967z20 
+      (joined 
+       (portRef Q (instanceRef ix59967z5062 ))
+       (portRef B (instanceRef ix59967z24351 ))
+       (portRef E (instanceRef ix59967z30882 ))
+       (portRef B (instanceRef ix59967z30886 ))
+       (portRef C (instanceRef ix59967z24410 ))))
+     (net nx59967z21 
+      (joined 
+       (portRef QN (instanceRef ix59967z24359 ))
+       (portRef A (instanceRef ix59967z5062 ))))
+     (net nx59967z23 
+      (joined 
+       (portRef Q (instanceRef ix59967z61101 ))
+       (portRef A (instanceRef ix59967z24358 ))
+       (portRef C (instanceRef ix59967z24370 ))
+       (portRef A (instanceRef ix59967z48558 ))
+       (portRef C (instanceRef ix59967z24379 ))
+       (portRef D (instanceRef ix59967z24434 ))))
+     (net nx59967z24 
+      (joined 
+       (portRef Q (instanceRef ix59967z61102 ))
+       (portRef B (instanceRef ix59967z24358 ))))
+     (net nx59967z25 
+      (joined 
+       (portRef Q (instanceRef ix59967z61103 ))
+       (portRef C (instanceRef ix59967z24358 ))))
+     (net nx59967z27 
+      (joined 
+       (portRef Q (instanceRef ix59967z30882 ))
+       (portRef B (instanceRef ix59967z24347 ))))
+     (net nx59967z30 
+      (joined 
+       (portRef Q (instanceRef ix59967z30886 ))
+       (portRef C (instanceRef ix59967z24347 ))))
+     (net nx59967z32 
+      (joined 
+       (portRef QN (instanceRef ix59967z6194 ))
+       (portRef B (instanceRef ix59967z24344 ))))
+     (net nx59967z34 
+      (joined 
+       (portRef QN (instanceRef ix59967z24372 ))
+       (portRef A (instanceRef ix59967z24371 ))))
+     (net nx59967z36 
+      (joined 
+       (portRef QN (instanceRef ix59967z24370 ))
+       (portRef A (instanceRef ix59967z24410 ))))
+     (net nx59967z37 
+      (joined 
+       (portRef Q (instanceRef ix59967z61116 ))
+       (portRef F (instanceRef ix59967z24370 ))
+       (portRef D (instanceRef ix59967z48558 ))
+       (portRef F (instanceRef ix59967z24379 ))
+       (portRef A (instanceRef ix59967z24434 ))))
+     (net nx59967z38 
+      (joined 
+       (portRef QN (instanceRef ix59967z24376 ))
+       (portRef B (instanceRef ix59967z24410 ))))
+     (net nx59967z39 
+      (joined 
+       (portRef QN (instanceRef ix59967z28865 ))
+       (portRef B (instanceRef ix59967z24371 ))))
+     (net nx59967z41 
+      (joined 
+       (portRef QN (instanceRef ix59967z24380 ))
+       (portRef C (instanceRef ix59967z24344 ))))
+     (net nx59967z43 
+      (joined 
+       (portRef QN (instanceRef ix59967z24382 ))
+       (portRef A (instanceRef ix59967z24381 ))))
+     (net nx59967z45 
+      (joined 
+       (portRef QN (instanceRef ix59967z24379 ))
+       (portRef A (instanceRef ix59967z17177 ))))
+     (net nx59967z47 
+      (joined 
+       (portRef QN (instanceRef ix59967z17180 ))
+       (portRef A (instanceRef ix59967z24385 ))))
+     (net nx59967z48 
+      (joined 
+       (portRef QN (instanceRef ix59967z24434 ))
+       (portRef B (instanceRef ix59967z24381 ))))
+     (net nx59967z50 
+      (joined 
+       (portRef Q (instanceRef ix59967z61130 ))
+       (portRef G (instanceRef ix59967z24434 )))))))
+  (cell MC6847X (cellType GENERIC)
+   (view INTERFACE  (viewType NETLIST)
+    (interface 
+     (port NTSCClk (direction INPUT))
+     (port PALClk (direction INPUT))
+     (port RequestFormat (direction INPUT))
+     (port DA0 (direction OUTPUT))
+     (port FSn (direction OUTPUT))
+     (port HSn (direction OUTPUT))
+     (port FormatClk (direction OUTPUT))
+     (port Format (direction OUTPUT))
+     (port (array (rename rgb "rgb(8:0)") 9 )(direction OUTPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance Frame (viewRef INTERFACE_unfold_1051  (cellRef FrameTiming )))
+     (instance io_NTSCClk (viewRef NETLIST  (cellRef INBUF (libraryRef atf15as ))))
+     (instance io_PALClk (viewRef NETLIST  (cellRef INBUF (libraryRef atf15as ))))
+     (instance io_DA0 (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance io_FSn (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance io_HSn (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance io_FormatClk (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance io_Format (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_8_ "io_rgb(8)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_7_ "io_rgb(7)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_6_ "io_rgb(6)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_5_ "io_rgb(5)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_4_ "io_rgb(4)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_3_ "io_rgb(3)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_2_ "io_rgb(2)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_1_ "io_rgb(1)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance (rename io_rgb_0_ "io_rgb(0)") (viewRef NETLIST  (cellRef BUF (libraryRef atf15as ))))
+     (instance ps_vcc (viewRef NETLIST  (cellRef VCC (libraryRef atf15as ))))
+     (instance ps_gnd (viewRef NETLIST  (cellRef GND (libraryRef atf15as ))))
+     (instance ix3833z59608 (viewRef NETLIST  (cellRef AND2I1 (libraryRef atf15as ))))
+     (instance ix9815z61078 (viewRef NETLIST  (cellRef XOR (libraryRef atf15as ))))
+     (net int_NTSCClk 
+      (joined 
+       (portRef Q (instanceRef io_NTSCClk ))
+       (portRef clk (instanceRef Frame ))))
+     (net int_FormatClk 
+      (joined 
+       (portRef Q (instanceRef io_PALClk ))
+       (portRef A (instanceRef io_FormatClk ))))
+     (net int_FSn 
+      (joined 
+       (portRef fsn (instanceRef Frame ))
+       (portRef A (instanceRef io_FSn ))))
+     (net int_HSn 
+      (joined 
+       (portRef hsn (instanceRef Frame ))
+       (portRef A (instanceRef io_HSn ))))
+     (net (rename int_rgb_6_ "int_rgb(6)") 
+      (joined 
+       (portRef Q (instanceRef ix9815z61078 ))
+       (portRef A (instanceRef io_rgb_8_ ))
+       (portRef A (instanceRef io_rgb_7_ ))
+       (portRef A (instanceRef io_rgb_6_ ))))
+     (net (rename int_rgb_3_ "int_rgb(3)") 
+      (joined 
+       (portRef (member active 1)(instanceRef Frame ))
+       (portRef A (instanceRef io_rgb_5_ ))
+       (portRef A (instanceRef io_rgb_4_ ))
+       (portRef A (instanceRef io_rgb_3_ ))
+       (portRef A (instanceRef ix3833z59608 ))
+       (portRef A (instanceRef ix9815z61078 ))))
+     (net (rename int_rgb_0_ "int_rgb(0)") 
+      (joined 
+       (portRef Q (instanceRef ix3833z59608 ))
+       (portRef A (instanceRef io_rgb_2_ ))
+       (portRef A (instanceRef io_rgb_1_ ))
+       (portRef A (instanceRef io_rgb_0_ ))))
+     (net (rename outputSelect_1_ "outputSelect(1)") 
+      (joined 
+       (portRef (member active 0)(instanceRef Frame ))
+       (portRef BN (instanceRef ix3833z59608 ))
+       (portRef B (instanceRef ix9815z61078 ))))
+     (net int_DA0 
+      (joined 
+       (portRef Q (instanceRef ps_gnd ))
+       (portRef A (instanceRef io_DA0 ))))
+     (net int_Format 
+      (joined 
+       (portRef Q (instanceRef ps_vcc ))
+       (portRef A (instanceRef io_Format ))))
+     (net NTSCClk 
+      (joined 
+       (portRef NTSCClk )
+       (portRef A (instanceRef io_NTSCClk ))))
+     (net PALClk 
+      (joined 
+       (portRef PALClk )
+       (portRef A (instanceRef io_PALClk ))))
+     (net DA0 
+      (joined 
+       (portRef DA0 )
+       (portRef Q (instanceRef io_DA0 ))))
+     (net FSn 
+      (joined 
+       (portRef FSn )
+       (portRef Q (instanceRef io_FSn ))))
+     (net HSn 
+      (joined 
+       (portRef HSn )
+       (portRef Q (instanceRef io_HSn ))))
+     (net FormatClk 
+      (joined 
+       (portRef FormatClk )
+       (portRef Q (instanceRef io_FormatClk ))))
+     (net Format 
+      (joined 
+       (portRef Format )
+       (portRef Q (instanceRef io_Format ))))
+     (net (rename rgb_8_ "rgb(8)") 
+      (joined 
+       (portRef (member rgb 0))
+       (portRef Q (instanceRef io_rgb_8_ ))))
+     (net (rename rgb_7_ "rgb(7)") 
+      (joined 
+       (portRef (member rgb 1))
+       (portRef Q (instanceRef io_rgb_7_ ))))
+     (net (rename rgb_6_ "rgb(6)") 
+      (joined 
+       (portRef (member rgb 2))
+       (portRef Q (instanceRef io_rgb_6_ ))))
+     (net (rename rgb_5_ "rgb(5)") 
+      (joined 
+       (portRef (member rgb 3))
+       (portRef Q (instanceRef io_rgb_5_ ))))
+     (net (rename rgb_4_ "rgb(4)") 
+      (joined 
+       (portRef (member rgb 4))
+       (portRef Q (instanceRef io_rgb_4_ ))))
+     (net (rename rgb_3_ "rgb(3)") 
+      (joined 
+       (portRef (member rgb 5))
+       (portRef Q (instanceRef io_rgb_3_ ))))
+     (net (rename rgb_2_ "rgb(2)") 
+      (joined 
+       (portRef (member rgb 6))
+       (portRef Q (instanceRef io_rgb_2_ ))))
+     (net (rename rgb_1_ "rgb(1)") 
+      (joined 
+       (portRef (member rgb 7))
+       (portRef Q (instanceRef io_rgb_1_ ))))
+     (net (rename rgb_0_ "rgb(0)") 
+      (joined 
+       (portRef (member rgb 8))
+       (portRef Q (instanceRef io_rgb_0_ ))))))))
+ (design MC6847X (cellRef MC6847X (libraryRef work ))))

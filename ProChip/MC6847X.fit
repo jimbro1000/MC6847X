@@ -1,0 +1,796 @@
+Atmel ATF1508 Fitter Version 1918 ,running Tue Oct 28 08:35:39 2025
+
+
+
+
+fit1508
+-i h:\MC6847X\ProChip\MC6847X.edf
+-ifmt EDIF
+-lib c:\ATMEL_PLS_Tools\ProChip\PLDFit\aprim.lib
+-pinfile 
+-tech ATF1508AS
+-device PLCC84
+-preassign try
+-logic_doubling off
+-pin_keep DA0,Format,FormatClk,FSn,HSn,NTSCClk,PALClk,RequestFormat,rgb_0,rgb_1,rgb_2,rgb_3,rgb_4,rgb_5,rgb_6,rgb_7,rgb_8
+-JTAG ON
+-TDI_pullup ON
+-TMS_pullup ON
+-verilog_sim SDF
+-tPD 10
+-power_reset OFF
+-Optimize ON
+-PUSH_GATE ON
+-output_fast DA0,Format,FormatClk,FSn,HSn,rgb_0,rgb_1,rgb_2,rgb_3,rgb_4,rgb_5,rgb_6,rgb_7,rgb_8
+-fast_inlatch NTSCClk,PALClk,RequestFormat
+-Foldback_Logic DA0,Format,FormatClk,FSn,HSn,rgb_0,rgb_1,rgb_2,rgb_3,rgb_4,rgb_5,rgb_6,rgb_7,rgb_8
+-Global_OE DA0,Format,FormatClk,FSn,HSn,rgb_0,rgb_1,rgb_2,rgb_3,rgb_4,rgb_5,rgb_6,rgb_7,rgb_8
+-XOR_Synthesis ON
+-pd1 off
+-pd2 off
+Hierarchical Design 
+Checking MC6847X ... 
+Connector format of instance FrameTiming is not connected
+Connector width_5 of instance FrameTiming is not connected
+Connector width_4 of instance FrameTiming is not connected
+Connector width_3 of instance FrameTiming is not connected
+Connector width_2 of instance FrameTiming is not connected
+Connector width_1 of instance FrameTiming is not connected
+Connector width_0 of instance FrameTiming is not connected
+Checking FrameTiming ... 
+
+****** Initial fitting strategy and property ******
+ Netlist_in_file = MC6847X.edf
+ Netlist_out_file = MC6847X.tt3
+ Jedec_file = MC6847X.jed
+ Time_file = MC6847X.VO
+ Time_file = MC6847X.SDO
+ Log_file = MC6847X.fit
+ Device_name = PLCC84
+ Tech_name = ATF1508AS 
+ Package_type = PLCC
+ Preassign_file = h:\MC6847X\ProChip\MC6847X.pin
+ Preassignment = try 
+ Security_mode = OFF
+ Pin-Keeper = DA0 Format FormatClk FSn HSn NTSCClk PALClk RequestFormat rgb_0 rgb_1 rgb_2 rgb_3 rgb_4 rgb_5 rgb_6 rgb_7 rgb_8 
+ supporter = ABEL
+ optimize = ON
+ Xor_synthesis =  ON
+ Foldback_logic =  DA0 Format FormatClk FSn HSn rgb_0 rgb_1 rgb_2 rgb_3 rgb_4 rgb_5 rgb_6 rgb_7 rgb_8
+ Cascade_logic = OFF
+ Output_fast =  DA0  Format  FormatClk  FSn  HSn  rgb_0  rgb_1  rgb_2  rgb_3  rgb_4  rgb_5  rgb_6  rgb_7  rgb_8 
+ SSTL_input = off
+ *******************************
+ Power down pin 1 = OFF
+ Power down pin 2 = OFF
+ power_reset = OFF
+ JTAG = ON
+ TDI pullup = ON
+ TMS pullup = ON
+ MC_power = OFF
+ Open_collector = OFF
+ ITD0 = ON
+ ITD1 = ON
+ ITD2 = ON
+ Fast_inlatch = NTSCClk PALClk RequestFormat 
+ TPD = 10
+ Latch_synthesis = off 
+ Push_gate = on 
+ Verilog_sim = on 
+ VHDL_sim = off 
+ Out_Edif = off 
+ Logic Doubling = off 
+ ****** End of fitting strategy and property ******
+---------------------------------------------------------
+ Fitter_Pass 1, Preassign = KEEP, LOGIC_DOUBLING : OFF 
+ ... 
+## Warning : rgb_0 is not foldback
+## Warning : rgb_1 is not foldback
+## Warning : rgb_2 is not foldback
+## Warning : rgb_3 is not foldback
+## Warning : rgb_5 is not foldback
+## Warning : rgb_7 is not foldback
+## Warning : rgb_6 is not foldback
+## Warning : rgb_8 is not foldback
+## Warning : rgb_4 is not foldback
+## Warning : DA0 is not foldback
+## Warning : format is not foldback
+## Warning : FormatClk is not foldback
+## Warning : fsn is not foldback
+## Warning : hsn is not foldback
+ ## Warning : Placement fail 
+---------------------------------------------------------
+ Fitter_Pass 2, Preassign = KEEP, CASCADE_LOGIC : (TRY) 
+ ... 
+
+Performing global Output Enable pin assignments ...
+
+Performing global pin assignments ...
+--------------------------------------
+
+
+
+Final global control pins assignment (if applicable)...
+-------------------------------------------------------
+
+
+
+Performing input pin pre-assignments ...
+------------------------------------
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR equation needs patching.
+1 control equation needs patching
+
+Attempt to place floating signals ...
+------------------------------------
+FramepixelRows_row_counter_modgen_counter_count_reg_q_5 is placed at feedback node 601 (MC 1)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_6 is placed at feedback node 602 (MC 2)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_0 is placed at feedback node 603 (MC 3)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_7 is placed at feedback node 604 (MC 4)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_4 is placed at feedback node 605 (MC 5)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_6 is placed at feedback node 606 (MC 6)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_8 is placed at feedback node 607 (MC 7)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_8 is placed at feedback node 608 (MC 8)
+XXL_260 is placed at feedback node 609 (MC 9)
+XXL_263 is placed at feedback node 610 (MC 10)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_1 is placed at feedback node 611 (MC 11)
+XXL_261 is placed at feedback node 612 (MC 12)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_2 is placed at feedback node 613 (MC 13)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3 is placed at feedback node 614 (MC 14)
+XXL_262 is placed at feedback node 615 (MC 15)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4 is placed at feedback node 616 (MC 16)
+Frameix58970z6163QN is placed at feedback node 618 (MC 18)
+DA0 is placed at pin 21 (MC 19)
+XXL_264 is placed at feedback node 620 (MC 20)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_1 is placed at feedback node 622 (MC 22)
+SF207 is placed at feedback node 623 (MC 23)
+Frameix13709z30862Q is placed at feedback node 625 (MC 25)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_7 is placed at feedback node 626 (MC 26)
+Frameix59967z29548QN is placed at feedback node 627 (MC 27)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_2 is placed at feedback node 628 (MC 28)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR is placed at feedback node 629 (MC 29)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_5 is placed at feedback node 630 (MC 30)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_3 is placed at feedback node 631 (MC 31)
+TDI is placed at pin 14 (MC 32)
+XXL_259 is placed at feedback node 632 (MC 32)
+TMS is placed at pin 23 (MC 48)
+PALClk is placed at pin 34 (MC 61)
+NTSCClk is placed at pin 33 (MC 64)
+rgb_2 is placed at pin 44 (MC 65)
+rgb_1 is placed at pin 45 (MC 67)
+rgb_0 is placed at pin 46 (MC 69)
+rgb_5 is placed at pin 50 (MC 75)
+rgb_4 is placed at pin 51 (MC 77)
+rgb_3 is placed at pin 52 (MC 80)
+rgb_8 is placed at pin 56 (MC 86)
+rgb_7 is placed at pin 57 (MC 88)
+rgb_6 is placed at pin 58 (MC 91)
+TCK is placed at pin 62 (MC 96)
+format is placed at pin 68 (MC 105)
+TDO is placed at pin 71 (MC 112)
+FormatClk is placed at pin 74 (MC 117)
+fsn is placed at pin 75 (MC 118)
+hsn is placed at pin 76 (MC 120)
+
+                                 G           V              G           V     h  f  
+                                 N           C              N           C     s  s  
+                                 D           C              D           C     n  n  
+                 +------------------------------------------------------------------+
+                 |  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75  |
+                 | 12                                                            74 |FormatClk
+              VCC| 13                                                            73 |   
+              TDI| 14                                                            72 |GND
+                 | 15                                                            71 |TDO
+                 | 16                                                            70 |   
+                 | 17                                                            69 |   
+                 | 18                                                            68 |format
+              GND| 19                                                            67 |   
+                 | 20                                                            66 |VCC
+              DA0| 21                                                            65 |   
+                 | 22                           ATF1508                          64 |   
+              TMS| 23                         84-Lead PLCC                       63 |   
+                 | 24                                                            62 |TCK
+                 | 25                                                            61 |   
+              VCC| 26                                                            60 |   
+                 | 27                                                            59 |GND
+                 | 28                                                            58 |rgb_6
+                 | 29                                                            57 |rgb_7
+                 | 30                                                            56 |rgb_8
+                 | 31                                                            55 |   
+              GND| 32                                                            54 |   
+                 |  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  |
+                 +------------------------------------------------------------------+
+                     N  P           V           G  V  r  r  r  G        r  r  r  V  
+                     T  A           C           N  C  g  g  g  N        g  g  g  C  
+                     S  L           C           D  C  b  b  b  D        b  b  b  C  
+                     C  C                             _  _  _           _  _  _     
+                     C  l                             2  1  0           5  4  3     
+                     l  k                                                           
+                     k                                                              
+
+
+
+
+VCC = Supply Voltage pin for the device core
+
+GND = GND pin which must be connected to ground
+
+TMS,TDI,TDO,TDI = JTAG pins reserved for JTAG interface
+
+NC = Unused I/O pins which must be unconnected on the board
+
+Universal-Interconnect-Multiplexer assignments
+------------------------------------------------
+FanIn assignment for block A [24]
+{
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4,FramepixelCols_col_counter_modgen_counter_count_reg_q_4,FramepixelCols_col_counter_modgen_counter_count_reg_q_3,FramepixelCols_col_counter_modgen_counter_count_reg_q_8,Frameix59967z29548QN,FramepixelRows_row_counter_modgen_counter_count_reg_q_8,FramepixelRows_row_counter_modgen_counter_count_reg_q_3,FramepixelRows_row_counter_modgen_counter_count_reg_q_6,FramepixelCols_col_counter_modgen_counter_count_reg_q_6,FramepixelCols_col_counter_modgen_counter_count_reg_q_2,FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR,FramepixelCols_col_counter_modgen_counter_count_reg_q_5,FramepixelCols_col_counter_modgen_counter_count_reg_q_7,FramepixelRows_row_counter_modgen_counter_count_reg_q_1,FramepixelRows_row_counter_modgen_counter_count_reg_q_5,Frameix58970z6163QN,FramepixelRows_row_counter_modgen_counter_count_reg_q_2,FramepixelCols_col_counter_modgen_counter_count_reg_q_1,FramepixelRows_row_counter_modgen_counter_count_reg_q_0,Frameix13709z30862Q,FramepixelRows_row_counter_modgen_counter_count_reg_q_7,
+NTSCClk,
+SF207,
+fsn,
+}
+Multiplexer assignment for block A
+SF207			(MC15	FB)  : MUX 0		Ref (B23fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4		(MC12	FB)  : MUX 1		Ref (A16fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_4		(MC5	FB)  : MUX 2		Ref (A5fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_3		(MC22	FB)  : MUX 3		Ref (B31fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_8		(MC8	FB)  : MUX 4		Ref (A8fb)
+Frameix59967z29548QN		(MC18	FB)  : MUX 5		Ref (B27fb)
+NTSCClk			(MC24	P)   : MUX 6		Ref (D64p)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_8		(MC7	FB)  : MUX 8		Ref (A7fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3		(MC11	FB)  : MUX 9		Ref (A14fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_6		(MC2	FB)  : MUX 10		Ref (A2fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_6		(MC6	FB)  : MUX 12		Ref (A6fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_2		(MC19	FB)  : MUX 13		Ref (B28fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR		(MC20	FB)  : MUX 15		Ref (B29fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_5		(MC21	FB)  : MUX 19		Ref (B30fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_7		(MC17	FB)  : MUX 21		Ref (B26fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_1		(MC9	FB)  : MUX 23		Ref (A11fb)
+fsn			(MC23	P)   : MUX 25		Ref (H118p)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_5		(MC1	FB)  : MUX 26		Ref (A1fb)
+Frameix58970z6163QN		(MC13	FB)  : MUX 28		Ref (B18fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_2		(MC10	FB)  : MUX 33		Ref (A13fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_1		(MC14	FB)  : MUX 34		Ref (B22fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_0		(MC3	FB)  : MUX 36		Ref (A3fb)
+Frameix13709z30862Q		(MC16	FB)  : MUX 37		Ref (B25fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_7		(MC4	FB)  : MUX 38		Ref (A4fb)
+
+FanIn assignment for block B [23]
+{
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4,FramepixelCols_col_counter_modgen_counter_count_reg_q_4,FramepixelRows_row_counter_modgen_counter_count_reg_q_1,FramepixelCols_col_counter_modgen_counter_count_reg_q_8,FramepixelRows_row_counter_modgen_counter_count_reg_q_8,FramepixelRows_row_counter_modgen_counter_count_reg_q_3,FramepixelRows_row_counter_modgen_counter_count_reg_q_6,FramepixelCols_col_counter_modgen_counter_count_reg_q_6,FramepixelCols_col_counter_modgen_counter_count_reg_q_2,FramepixelRows_row_counter_modgen_counter_count_reg_q_2,FramepixelCols_col_counter_modgen_counter_count_reg_q_3,FramepixelCols_col_counter_modgen_counter_count_reg_q_5,FramepixelRows_row_counter_modgen_counter_count_reg_q_7,FramepixelCols_col_counter_modgen_counter_count_reg_q_7,Frameix59967z29548QN,FramepixelRows_row_counter_modgen_counter_count_reg_q_5,Frameix58970z6163QN,FramepixelCols_col_counter_modgen_counter_count_reg_q_1,Frameix13709z30862Q,
+NTSCClk,
+SF207,
+XXL_259,
+fsn,
+}
+Multiplexer assignment for block B
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4		(MC11	FB)  : MUX 1		Ref (A16fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_4		(MC4	FB)  : MUX 2		Ref (A5fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_1		(MC8	FB)  : MUX 3		Ref (A11fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_8		(MC7	FB)  : MUX 4		Ref (A8fb)
+NTSCClk			(MC23	P)   : MUX 6		Ref (D64p)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_8		(MC6	FB)  : MUX 8		Ref (A7fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3		(MC10	FB)  : MUX 9		Ref (A14fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_6		(MC2	FB)  : MUX 10		Ref (A2fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_6		(MC5	FB)  : MUX 12		Ref (A6fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_2		(MC18	FB)  : MUX 13		Ref (B28fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_2		(MC9	FB)  : MUX 15		Ref (A13fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_3		(MC20	FB)  : MUX 17		Ref (B31fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_5		(MC19	FB)  : MUX 19		Ref (B30fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_7		(MC3	FB)  : MUX 20		Ref (A4fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_7		(MC16	FB)  : MUX 21		Ref (B26fb)
+Frameix59967z29548QN		(MC17	FB)  : MUX 23		Ref (B27fb)
+fsn			(MC22	P)   : MUX 25		Ref (H118p)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_5		(MC1	FB)  : MUX 26		Ref (A1fb)
+Frameix58970z6163QN		(MC12	FB)  : MUX 28		Ref (B18fb)
+XXL_259			(MC21	FB)  : MUX 33		Ref (B32fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_1		(MC13	FB)  : MUX 34		Ref (B22fb)
+Frameix13709z30862Q		(MC15	FB)  : MUX 35		Ref (B25fb)
+SF207			(MC14	FB)  : MUX 38		Ref (B23fb)
+
+FanIn assignment for block E [8]
+{
+Frameix58970z6163QN,
+XXL_261,XXL_264,XXL_262,XXL_263,XXL_260,
+fsn,
+rgb_4,
+}
+Multiplexer assignment for block E
+rgb_4			(MC7	P)   : MUX 0		Ref (E77p)
+XXL_261			(MC3	FB)  : MUX 1		Ref (A12fb)
+XXL_264			(MC6	FB)  : MUX 2		Ref (B20fb)
+Frameix58970z6163QN		(MC5	FB)  : MUX 6		Ref (B18fb)
+XXL_262			(MC4	FB)  : MUX 7		Ref (A15fb)
+fsn			(MC8	P)   : MUX 11		Ref (H118p)
+XXL_263			(MC2	FB)  : MUX 13		Ref (A10fb)
+XXL_260			(MC1	FB)  : MUX 15		Ref (A9fb)
+
+FanIn assignment for block F [3]
+{
+Frameix58970z6163QN,
+fsn,
+rgb_4,
+}
+Multiplexer assignment for block F
+rgb_4			(MC2	P)   : MUX 0		Ref (E77p)
+Frameix58970z6163QN		(MC1	FB)  : MUX 6		Ref (B18fb)
+fsn			(MC3	P)   : MUX 7		Ref (H118p)
+
+FanIn assignment for block H [14]
+{
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4,FramepixelRows_row_counter_modgen_counter_count_reg_q_7,FramepixelRows_row_counter_modgen_counter_count_reg_q_5,FramepixelCols_col_counter_modgen_counter_count_reg_q_2,FramepixelRows_row_counter_modgen_counter_count_reg_q_6,FramepixelRows_row_counter_modgen_counter_count_reg_q_3,FramepixelCols_col_counter_modgen_counter_count_reg_q_8,FramepixelCols_col_counter_modgen_counter_count_reg_q_5,FramepixelCols_col_counter_modgen_counter_count_reg_q_7,FramepixelRows_row_counter_modgen_counter_count_reg_q_8,FramepixelCols_col_counter_modgen_counter_count_reg_q_6,FramepixelCols_col_counter_modgen_counter_count_reg_q_4,FramepixelCols_col_counter_modgen_counter_count_reg_q_3,
+PALClk,
+}
+Multiplexer assignment for block H
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4		(MC9	FB)  : MUX 1		Ref (A16fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_7		(MC3	FB)  : MUX 2		Ref (A4fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_5		(MC1	FB)  : MUX 4		Ref (A1fb)
+PALClk			(MC14	P)   : MUX 8		Ref (D61p)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_2		(MC11	FB)  : MUX 9		Ref (B28fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_6		(MC2	FB)  : MUX 10		Ref (A2fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3		(MC8	FB)  : MUX 11		Ref (A14fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_8		(MC7	FB)  : MUX 16		Ref (A8fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_5		(MC12	FB)  : MUX 19		Ref (B30fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_7		(MC10	FB)  : MUX 21		Ref (B26fb)
+FramepixelRows_row_counter_modgen_counter_count_reg_q_8		(MC6	FB)  : MUX 22		Ref (A7fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_6		(MC5	FB)  : MUX 26		Ref (A6fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_4		(MC4	FB)  : MUX 28		Ref (A5fb)
+FramepixelCols_col_counter_modgen_counter_count_reg_q_3		(MC13	FB)  : MUX 39		Ref (B31fb)
+
+Creating JEDEC file h:\MC6847X\ProChip\MC6847X.jed ...
+
+PLCC84 programmed logic:
+-----------------------------------
+DA0 = 0;
+
+!hsn = ((!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q));
+
+FormatClk = PALClk;
+
+format = 1;
+
+!fsn = (!FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q);
+
+Frameix58970z6163QN = ((!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q));
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_1.D = !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_0.D = !FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q;
+
+Frameix13709z30862Q = ((!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !NTSCClk)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q));
+
+Frameix59967z29548QN = ((!FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !NTSCClk));
+
+SF207 = ((!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q)
+	# XXL_259
+	# (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q));
+
+ATM_210 = (FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q);
+
+ATM_216 = (FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q);
+
+ATM_222 = (FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q);
+
+ATM_225 = (FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q);
+
+ATM_228 = (FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q);
+
+ATM_231 = (FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q);
+
+ATM_234 = (FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q);
+
+ATM_237 = (FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q);
+
+ATM_240 = (FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q);
+
+ATM_243 = (FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q);
+
+ATM_246 = (FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q);
+
+ATM_249 = (FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q);
+
+ATM_252 = (FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q);
+
+rgb_4 = (XXL_261
+	# XXL_262
+	# XXL_263
+	# XXL_264
+	# XXL_260);
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_3.D = ATM_210 $ FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_2.D = FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q $ FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_2.D = ATM_216 $ FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_1.D = FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q $ FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_8.D = ATM_222 $ FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_6.D = ATM_225 $ FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_7.D = ATM_228 $ FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_8.D = ATM_231 $ FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_6.D = ATM_234 $ FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_5.D = ATM_237 $ FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_7.D = ATM_240 $ FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_4.D = ATM_243 $ FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_5.D = ATM_246 $ FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4.D = ATM_249 $ FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3.D = ATM_252 $ FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q;
+
+ATM_255 = (!Frameix58970z6163QN & fsn);
+
+ATM_258 = (fsn & !Frameix58970z6163QN);
+
+rgb_5 = rgb_4;
+
+rgb_3 = rgb_4;
+
+rgb_1 = ((rgb_4 & Frameix58970z6163QN)
+	# (rgb_4 & !fsn));
+
+rgb_0 = ((rgb_4 & !fsn)
+	# (rgb_4 & Frameix58970z6163QN));
+
+rgb_2 = ((rgb_4 & !fsn)
+	# (rgb_4 & Frameix58970z6163QN));
+
+rgb_7 = ATM_255 $ rgb_4;
+
+rgb_8 = ATM_258 $ rgb_4;
+
+rgb_6 = ATM_258 $ rgb_4;
+
+XXL_259 = ((!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q)
+	# (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !NTSCClk)
+	# (!FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q));
+
+XXL_260 = ((!Frameix58970z6163QN & Frameix59967z29548QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q)
+	# (!Frameix58970z6163QN & Frameix59967z29548QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q)
+	# (!Frameix58970z6163QN & Frameix59967z29548QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q)
+	# (!Frameix58970z6163QN & !Frameix13709z30862Q & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q)
+	# (!Frameix58970z6163QN & !Frameix13709z30862Q & Frameix59967z29548QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q));
+
+XXL_261 = ((!Frameix58970z6163QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & !Frameix13709z30862Q)
+	# (!Frameix58970z6163QN & !Frameix59967z29548QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & !Frameix13709z30862Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q)
+	# (!Frameix58970z6163QN & Frameix59967z29548QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q)
+	# (!Frameix58970z6163QN & !Frameix59967z29548QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & !Frameix13709z30862Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q)
+	# (!Frameix58970z6163QN & Frameix59967z29548QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q));
+
+XXL_262 = ((!Frameix58970z6163QN & Frameix59967z29548QN & SF207 & fsn & !Frameix13709z30862Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q)
+	# (!Frameix58970z6163QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !Frameix13709z30862Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_0.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q)
+	# (!Frameix58970z6163QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & !Frameix13709z30862Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q)
+	# (!Frameix58970z6163QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q)
+	# (!Frameix58970z6163QN & Frameix59967z29548QN & SF207 & fsn & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q));
+
+XXL_263 = ((!Frameix58970z6163QN & !Frameix13709z30862Q & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q)
+	# (!Frameix58970z6163QN & !Frameix13709z30862Q & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q)
+	# (!Frameix58970z6163QN & !Frameix13709z30862Q & Frameix59967z29548QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q)
+	# (!Frameix58970z6163QN & !Frameix13709z30862Q & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q)
+	# (!Frameix58970z6163QN & !Frameix13709z30862Q & Frameix59967z29548QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q));
+
+XXL_264 = ((!Frameix58970z6163QN & !Frameix13709z30862Q & Frameix59967z29548QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q)
+	# (!Frameix58970z6163QN & !Frameix13709z30862Q & Frameix59967z29548QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q)
+	# (!Frameix58970z6163QN & !Frameix13709z30862Q & Frameix59967z29548QN & SF207 & fsn & FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q));
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_1.C = NTSCClk;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_1.AR = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_0.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_0.AR = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_3.C = NTSCClk;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_3.AR = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_2.C = NTSCClk;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_2.AR = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_2.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_2.AR = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_1.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_1.AR = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_8.C = NTSCClk;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_8.AR = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_6.C = NTSCClk;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_6.AR = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_7.C = NTSCClk;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_7.AR = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_8.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_8.AR = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_6.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_6.AR = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_5.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_5.AR = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_7.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_7.AR = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_4.C = NTSCClk;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_4.AR = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_5.C = NTSCClk;
+
+FramepixelCols_col_counter_modgen_counter_count_reg_q_5.AR = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_4.AR = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR;
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3.C = (FramepixelCols_col_counter_modgen_counter_count_reg_q_8.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_7.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_6.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_5.Q & FramepixelCols_col_counter_modgen_counter_count_reg_q_3.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_1.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_4.Q & !FramepixelCols_col_counter_modgen_counter_count_reg_q_2.Q);
+
+FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR = ((!FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & Frameix13709z30862Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q)
+	# (FramepixelRows_row_counter_modgen_counter_count_reg_q_2.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_5.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_4.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_1.Q & !Frameix13709z30862Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_3.Q & FramepixelRows_row_counter_modgen_counter_count_reg_q_8.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_6.Q & !FramepixelRows_row_counter_modgen_counter_count_reg_q_7.Q));
+
+
+PLCC84 Pin/Node Placement:
+------------------------------------
+Pin 14 = TDI; /* MC 32 */ 
+Pin 21 = DA0; /* MC 19 */ 
+Pin 23 = TMS; /* MC 48 */ 
+Pin 33 = NTSCClk; /* MC 64 */ 
+Pin 34 = PALClk; /* MC 61 */ 
+Pin 44 = rgb_2; /* MC 65 */ 
+Pin 45 = rgb_1; /* MC 67 */ 
+Pin 46 = rgb_0; /* MC 69 */ 
+Pin 50 = rgb_5; /* MC 75 */ 
+Pin 51 = rgb_4; /* MC 77 */ 
+Pin 52 = rgb_3; /* MC 80 */ 
+Pin 56 = rgb_8; /* MC 86 */ 
+Pin 57 = rgb_7; /* MC 88 */ 
+Pin 58 = rgb_6; /* MC 91 */ 
+Pin 62 = TCK; /* MC 96 */ 
+Pin 68 = format; /* MC 105 */ 
+Pin 71 = TDO; /* MC 112 */ 
+Pin 74 = FormatClk; /* MC 117 */ 
+Pin 75 = fsn; /* MC 118 */ 
+Pin 76 = hsn; /* MC 120 */ 
+PINNODE 601 = FramepixelRows_row_counter_modgen_counter_count_reg_q_5; /* MC 1 Feedback */
+PINNODE 602 = FramepixelRows_row_counter_modgen_counter_count_reg_q_6; /* MC 2 Feedback */
+PINNODE 603 = FramepixelRows_row_counter_modgen_counter_count_reg_q_0; /* MC 3 Feedback */
+PINNODE 604 = FramepixelRows_row_counter_modgen_counter_count_reg_q_7; /* MC 4 Feedback */
+PINNODE 605 = FramepixelCols_col_counter_modgen_counter_count_reg_q_4; /* MC 5 Feedback */
+PINNODE 606 = FramepixelCols_col_counter_modgen_counter_count_reg_q_6; /* MC 6 Feedback */
+PINNODE 607 = FramepixelRows_row_counter_modgen_counter_count_reg_q_8; /* MC 7 Feedback */
+PINNODE 608 = FramepixelCols_col_counter_modgen_counter_count_reg_q_8; /* MC 8 Feedback */
+PINNODE 609 = XXL_260; /* MC 9 Feedback */
+PINNODE 610 = XXL_263; /* MC 10 Feedback */
+PINNODE 611 = FramepixelRows_row_counter_modgen_counter_count_reg_q_1; /* MC 11 Feedback */
+PINNODE 612 = XXL_261; /* MC 12 Feedback */
+PINNODE 613 = FramepixelRows_row_counter_modgen_counter_count_reg_q_2; /* MC 13 Feedback */
+PINNODE 614 = FramepixelRows_row_counter_modgen_counter_count_reg_q_3; /* MC 14 Feedback */
+PINNODE 615 = XXL_262; /* MC 15 Feedback */
+PINNODE 616 = FramepixelRows_row_counter_modgen_counter_count_reg_q_4; /* MC 16 Feedback */
+PINNODE 618 = Frameix58970z6163QN; /* MC 18 Feedback */
+PINNODE 620 = XXL_264; /* MC 20 Feedback */
+PINNODE 622 = FramepixelCols_col_counter_modgen_counter_count_reg_q_1; /* MC 22 Feedback */
+PINNODE 623 = SF207; /* MC 23 Feedback */
+PINNODE 625 = Frameix13709z30862Q; /* MC 25 Feedback */
+PINNODE 626 = FramepixelCols_col_counter_modgen_counter_count_reg_q_7; /* MC 26 Feedback */
+PINNODE 627 = Frameix59967z29548QN; /* MC 27 Feedback */
+PINNODE 628 = FramepixelCols_col_counter_modgen_counter_count_reg_q_2; /* MC 28 Feedback */
+PINNODE 629 = FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR; /* MC 29 Feedback */
+PINNODE 630 = FramepixelCols_col_counter_modgen_counter_count_reg_q_5; /* MC 30 Feedback */
+PINNODE 631 = FramepixelCols_col_counter_modgen_counter_count_reg_q_3; /* MC 31 Feedback */
+PINNODE 632 = XXL_259; /* MC 32 Feedback */
+
+** Resource Usage **
+
+
+DCERP Field = Summary of Allocations.
+|||||
+|||||_Preset [p,-]       ==  p = PT preset, - No Preset.
+||||
+||||__Reset [g,r,-]      ==  g= Global AR, r = PT reset, - No reset.
+|||
+|||___Clock Enable [e,-] ==  e = Product Term, - always enabled.
+||
+||____Clock [c,g,-],     ==  c = Product term, g = Global term, - No Clock.
+|
+|_____Type [C,D,L,T],    ==  Register type C= combin, D=dff, L=latch, T=tff.
+
+For input only = INPUT.
+
+
+SO Pin Options Field = Summary of Allocations.
+||
+||_OpenCol [o,-]      ==  o = Open Collector enabled, - CMOS drive.
+|
+|__Slew [s,f]         ==  Output Slew/Drive rate, s = slow/low, f = fast/hi drive.
+
+
+MCell Pin# Oe   PinDrive  DCERP  FBDrive                                                    DCERP  Foldback  CascadeOut     TotPT SO
+MC1   0         --               FramepixelRows_row_counter_modgen_counter_count_reg_q_5    Dc-r-  --        --             4     s- 
+MC2   0         --               FramepixelRows_row_counter_modgen_counter_count_reg_q_6    Dc-r-  --        --             4     s- 
+MC3   12        --               FramepixelRows_row_counter_modgen_counter_count_reg_q_0    Dc-r-  --        --             3     s- 
+MC4   0         --               FramepixelRows_row_counter_modgen_counter_count_reg_q_7    Dc-r-  --        --             4     s- 
+MC5   11        --               FramepixelCols_col_counter_modgen_counter_count_reg_q_4    Dc-r-  --        --             4     s- 
+MC6   10        --               FramepixelCols_col_counter_modgen_counter_count_reg_q_6    Dc-r-  --        --             4     s- 
+MC7   0         --               FramepixelRows_row_counter_modgen_counter_count_reg_q_8    Dc-r-  --        --             4     s- 
+MC8   9         --               FramepixelCols_col_counter_modgen_counter_count_reg_q_8    Dc-r-  --        --             4     s- 
+MC9   0         --               XXL_260                                                    C----  NA        --             5     s- 
+MC10  0         --               XXL_263                                                    C----  NA        --             5     s- 
+MC11  8         --               FramepixelRows_row_counter_modgen_counter_count_reg_q_1    Dc-r-  --        --             4     s- 
+MC12  0         --               XXL_261                                                    C----  NA        --             5     s- 
+MC13  6         --               FramepixelRows_row_counter_modgen_counter_count_reg_q_2    Dc-r-  --        --             4     s- 
+MC14  5         --               FramepixelRows_row_counter_modgen_counter_count_reg_q_3    Dc-r-  --        --             4     s- 
+MC15  0         --               XXL_262                                                    C----  NA        --             5     s- 
+MC16  4         --               FramepixelRows_row_counter_modgen_counter_count_reg_q_4    Dc-r-  --        --             4     s- 
+MC17  22        --               --                                                                --        --             0     s- 
+MC18  0         --               Frameix58970z6163QN                                        C----  --        --             3     s- 
+MC19  21   on   DA0       C----  --                                                                --        --             0     f- 
+MC20  0         --               XXL_264                                                    C----  --        --             3     s- 
+MC21  20        --               --                                                                --        --             0     s- 
+MC22  0         --               FramepixelCols_col_counter_modgen_counter_count_reg_q_1    Dc-r-  --        --             3     s- 
+MC23  0         --               SF207                                                      C----  --        --             4     s- 
+MC24  18        --               --                                                                --        --             0     s- 
+MC25  17        --               Frameix13709z30862Q                                        C----  --        --             2     s- 
+MC26  0         --               FramepixelCols_col_counter_modgen_counter_count_reg_q_7    Dc-r-  --        --             4     s- 
+MC27  16        --               Frameix59967z29548QN                                       C----  --        --             2     s- 
+MC28  0         --               FramepixelCols_col_counter_modgen_counter_count_reg_q_2    Dc-r-  --        --             4     s- 
+MC29  15        --               FramepixelRows_row_counter_modgen_counter_count_reg_q_3.AR C----  --        --             2     s- 
+MC30  0         --               FramepixelCols_col_counter_modgen_counter_count_reg_q_5    Dc-r-  --        --             4     s- 
+MC31  0         --               FramepixelCols_col_counter_modgen_counter_count_reg_q_3    Dc-r-  --        --             4     s- 
+MC32  14   --   TDI       INPUT  XXL_259                                                    C----  NA        --             5     s- 
+MC33  0         --               --                                                                --        --             0     s- 
+MC34  0         --               --                                                                --        --             0     s- 
+MC35  31        --               --                                                                --        --             0     s- 
+MC36  0         --               --                                                                --        --             0     s- 
+MC37  30        --               --                                                                --        --             0     s- 
+MC38  29        --               --                                                                --        --             0     s- 
+MC39  0         --               --                                                                --        --             0     s- 
+MC40  28        --               --                                                                --        --             0     s- 
+MC41  0         --               --                                                                --        --             0     s- 
+MC42  0         --               --                                                                --        --             0     s- 
+MC43  27        --               --                                                                --        --             0     s- 
+MC44  0         --               --                                                                --        --             0     s- 
+MC45  25        --               --                                                                --        --             0     s- 
+MC46  24        --               --                                                                --        --             0     s- 
+MC47  0         --               --                                                                --        --             0     s- 
+MC48  23   --   TMS       INPUT  --                                                                --        --             0     s- 
+MC49  41        --               --                                                                --        --             0     s- 
+MC50  0         --               --                                                                --        --             0     s- 
+MC51  40        --               --                                                                --        --             0     s- 
+MC52  0         --               --                                                                --        --             0     s- 
+MC53  39        --               --                                                                --        --             0     s- 
+MC54  0         --               --                                                                --        --             0     s- 
+MC55  0         --               --                                                                --        --             0     s- 
+MC56  37        --               --                                                                --        --             0     s- 
+MC57  36        --               --                                                                --        --             0     s- 
+MC58  0         --               --                                                                --        --             0     s- 
+MC59  35        --               --                                                                --        --             0     s- 
+MC60  0         --               --                                                                --        --             0     s- 
+MC61  34   --   PALClk    INPUT  --                                                                --        --             0     s- 
+MC62  0         --               --                                                                --        --             0     s- 
+MC63  0         --               --                                                                --        --             0     s- 
+MC64  33   --   NTSCClk   INPUT  --                                                                --        --             0     s- 
+MC65  44   on   rgb_2     C----  --                                                                --        --             2     f- 
+MC66  0         --               --                                                                --        --             0     s- 
+MC67  45   on   rgb_1     C----  --                                                                --        --             2     f- 
+MC68  0         --               --                                                                --        --             0     s- 
+MC69  46   on   rgb_0     C----  --                                                                --        --             2     f- 
+MC70  0         --               --                                                                --        --             0     s- 
+MC71  0         --               --                                                                --        --             0     s- 
+MC72  48        --               --                                                                --        --             0     s- 
+MC73  49        --               --                                                                --        --             0     s- 
+MC74  0         --               --                                                                --        --             0     s- 
+MC75  50   on   rgb_5     C----  --                                                                --        --             1     f- 
+MC76  0         --               --                                                                --        --             0     s- 
+MC77  51   on   rgb_4     C----  --                                                                NA        --             5     f- 
+MC78  0         --               --                                                                --        --             0     s- 
+MC79  0         --               --                                                                --        --             0     s- 
+MC80  52   on   rgb_3     C----  --                                                                --        --             1     f- 
+MC81  0         --               --                                                                --        --             0     s- 
+MC82  0         --               --                                                                --        --             0     s- 
+MC83  54        --               --                                                                --        --             0     s- 
+MC84  0         --               --                                                                --        --             0     s- 
+MC85  55        --               --                                                                --        --             0     s- 
+MC86  56   on   rgb_8     C----  --                                                                --        --             2     f- 
+MC87  0         --               --                                                                --        --             0     s- 
+MC88  57   on   rgb_7     C----  --                                                                --        --             2     f- 
+MC89  0         --               --                                                                --        --             0     s- 
+MC90  0         --               --                                                                --        --             0     s- 
+MC91  58   on   rgb_6     C----  --                                                                --        --             2     f- 
+MC92  0         --               --                                                                --        --             0     s- 
+MC93  60        --               --                                                                --        --             0     s- 
+MC94  61        --               --                                                                --        --             0     s- 
+MC95  0         --               --                                                                --        --             0     s- 
+MC96  62   --   TCK       INPUT  --                                                                --        --             0     s- 
+MC97  63        --               --                                                                --        --             0     s- 
+MC98  0         --               --                                                                --        --             0     s- 
+MC99  64        --               --                                                                --        --             0     s- 
+MC100 0         --               --                                                                --        --             0     s- 
+MC101 65        --               --                                                                --        --             0     s- 
+MC102 0         --               --                                                                --        --             0     s- 
+MC103 0         --               --                                                                --        --             0     s- 
+MC104 67        --               --                                                                --        --             0     s- 
+MC105 68   on   format    C----  --                                                                --        --             0     f- 
+MC106 0         --               --                                                                --        --             0     s- 
+MC107 69        --               --                                                                --        --             0     s- 
+MC108 0         --               --                                                                --        --             0     s- 
+MC109 70        --               --                                                                --        --             0     s- 
+MC110 0         --               --                                                                --        --             0     s- 
+MC111 0         --               --                                                                --        --             0     s- 
+MC112 71   --   TDO       C----  --                                                                --        --             0     s- 
+MC113 0         --               --                                                                --        --             0     s- 
+MC114 0         --               --                                                                --        --             0     s- 
+MC115 73        --               --                                                                --        --             0     s- 
+MC116 0         --               --                                                                --        --             0     s- 
+MC117 74   on   FormatClk C----  --                                                                --        --             1     f- 
+MC118 75   on   fsn       C----  --                                                                --        --             1     f- 
+MC119 0         --               --                                                                --        --             0     s- 
+MC120 76   on   hsn       C----  --                                                                --        --             3     f- 
+MC121 0         --               --                                                                --        --             0     s- 
+MC122 0         --               --                                                                --        --             0     s- 
+MC123 77        --               --                                                                --        --             0     s- 
+MC124 0         --               --                                                                --        --             0     s- 
+MC125 79        --               --                                                                --        --             0     s- 
+MC126 80        --               --                                                                --        --             0     s- 
+MC127 0         --               --                                                                --        --             0     s- 
+MC128 81        --               --                                                                --        --             0     s- 
+MC0   2         --               --                                                                --        --             0     s- 
+MC0   1         --               --                                                                --        --             0     s- 
+MC0   84        --               --                                                                --        --             0     s- 
+MC0   83        --               --                                                                --        --             0     s- 
+
+Logic Array Block			Macro Cells	I/O Pins	Foldbacks	TotalPT	FanIN		Cascades
+A: MC1	- MC16		16/16(100%)	0/16(0%)	0/16(0%)	67/80(83%)	24/40(60%)	0
+B: MC17	- MC32		13/16(81%)	2/16(12%)	0/16(0%)	40/80(50%)	23/40(57%)	0
+C: MC33	- MC48		0/16(0%)	1/16(6%)	0/16(0%)	0/80(0%)	8/40(20%)	0
+D: MC49	- MC64		0/16(0%)	2/16(12%)	0/16(0%)	0/80(0%)	3/40(7%)	0
+E: MC65	- MC80		6/16(37%)	6/16(37%)	0/16(0%)	13/80(16%)	14/40(35%)	0
+F: MC81	- MC96		3/16(18%)	4/16(25%)	0/16(0%)	6/80(7%)	14/40(35%)	0
+G: MC97	- MC112		2/16(12%)	2/16(12%)	0/16(0%)	0/80(0%)	14/40(35%)	0
+H: MC113- MC128		3/16(18%)	3/16(18%)	0/16(0%)	5/80(6%)	14/40(35%)	0
+
+Total dedicated input used:	0/4 	(0%)
+Total I/O pins used		20/64 	(31%)
+Total Macro cells used 		43/128 	(33%)
+Total Flip-Flop used 		17/128 	(13%)
+Total Foldback logic used 	0/128 	(0%)
+Total Nodes+FB/MCells 		43/128 	(33%)
+Total cascade used 		0
+Total input pins 			5
+Total output pins 		15
+Total Pts 				131
+Creating pla file h:\MC6847X\ProChip\MC6847X.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+
+----------------  End fitter, Design FITS
+$Device PLCC84 fits; JTAG ON; Secure OFF
+FIT1508 completed in 0.00 seconds

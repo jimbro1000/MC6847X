@@ -19,3 +19,6 @@ begin
 	end process;
 end rtl;
 
+/*
+Tested working in simulation
+*/

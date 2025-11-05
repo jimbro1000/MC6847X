@@ -66,7 +66,7 @@ GND+                         : 2         :        :                   :         
 VCCINT                       : 3         : power  :                   : 5.0V    :           :                
 Inv                          : 4         : input  : TTL               :         :           : Y              
 AnS                          : 5         : input  : TTL               :         :           : Y              
-RP                           : 6         : output : TTL               :         :           : N              
+RESERVED                     : 6         :        :                   :         :           :                
 GND                          : 7         : gnd    :                   :         :           :                
 Q[0]                         : 8         : input  : TTL               :         :           : Y              
 Q[1]                         : 9         : input  : TTL               :         :           : Y              
@@ -137,7 +137,7 @@ RESERVED                     : 73        :        :                   :         
 FormatClk                    : 74        : output : TTL               :         :           : Y              
 FSn                          : 75        : output : TTL               :         :           : Y              
 HSn                          : 76        : output : TTL               :         :           : Y              
-RESERVED                     : 77        :        :                   :         :           :                
+RP                           : 77        : output : TTL               :         :           : N              
 VCCIO                        : 78        : power  :                   : 5.0V    :           :                
 RESERVED                     : 79        :        :                   :         :           :                
 RESERVED                     : 80        :        :                   :         :           :                

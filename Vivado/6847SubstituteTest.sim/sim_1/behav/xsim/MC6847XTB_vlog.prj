@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "C:/Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/ClockSwitch.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/FormatSwitch.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/FrameTiming.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/MC6847X.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/alphaDataMux.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/counter.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/ext_counter.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/textModeToPixel.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/videoDataShiftRegister.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/videoMux.v" \
+"../../../../6847SubstituteTest.srcs/sources_1/new/videoShiftClock.v" \
+
+sv xil_defaultlib  --include "C:/Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../6847SubstituteTest.srcs/sim_1/new/6847XTB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,6 @@
+work "h:/MC6847X/ProChip/MC6847X.v"
+work "h:/MC6847X/ProChip/ClockSwitch.v"
+work "h:/MC6847X/ProChip/counter.v"
+work "h:/MC6847X/ProChip/FormatSwitch.v"
+work "h:/MC6847X/ProChip/FrameTiming.v"
+work "h:/MC6847X/ProChip/videoMux.v"

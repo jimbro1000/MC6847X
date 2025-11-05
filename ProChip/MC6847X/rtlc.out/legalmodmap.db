@@ -1,0 +1,12 @@
+row_counter_vhdl row_counter_vhdl
+col_counter_vhdl col_counter_vhdl
+FrameTiming FrameTiming
+reg_counter_vhdl reg_counter_vhdl
+MC6847X MC6847X
+videoMux videoMux
+ext_counter_vhdl ext_counter_vhdl
+rtlc_counter_WIDTH_4 counter_WIDTH_4
+FormatSwitch FormatSwitch
+rtlc_counter_WIDTH_5 counter_WIDTH_5
+ClockSwitch ClockSwitch
+#LEGALIZEDMOD_COUNTER 0

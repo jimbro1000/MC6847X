@@ -1,0 +1,4 @@
+work "h:/MC6847X/ProChip/ext_counter_vhdl.vhd" -2002
+work "h:/MC6847X/ProChip/col_counter_vhdl.vhd" -2002
+work "h:/MC6847X/ProChip/reg_counter_vhdl.vhd" -2002
+work "h:/MC6847X/ProChip/row_counter_vhdl.vhd" -2002

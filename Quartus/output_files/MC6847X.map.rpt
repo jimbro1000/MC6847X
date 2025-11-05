@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MC6847X
-Wed Oct 29 15:29:00 2025
+Tue Nov 04 20:57:40 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,27 +13,29 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. Parameter Settings for User Entity Instance: FrameTiming:Frame
- 11. Parameter Settings for User Entity Instance: FrameTiming:Frame|counter:dataCounter
- 12. Parameter Settings for User Entity Instance: FrameTiming:Frame|counter:alphaCounter
- 13. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0
- 14. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0
+  8. Parameter Settings for User Entity Instance: FrameTiming:Frame
+  9. Parameter Settings for User Entity Instance: FrameTiming:Frame|counter:dataCounter
+ 10. Parameter Settings for User Entity Instance: FrameTiming:Frame|counter:alphaCounter
+ 11. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0
+ 12. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0
+ 13. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0
+ 14. Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0
  15. Parameter Settings for Inferred Entity Instance: data_counter_vhdl:dataAddress|lpm_add_sub:Add0
  16. Port Connectivity Checks: "data_counter_vhdl:dataAddress"
  17. Port Connectivity Checks: "borderMux:borderSelect|colourMux:col_mux"
- 18. Port Connectivity Checks: "textModeToPixel:textMode"
- 19. Port Connectivity Checks: "videoMux:outputStream"
- 20. Port Connectivity Checks: "alphaDataMux:charDataSelect"
- 21. Port Connectivity Checks: "videoDataShiftRegister:videoDataRegister|videoShiftClock:shiftClock"
- 22. Port Connectivity Checks: "videoDataShiftRegister:videoDataRegister"
- 23. Port Connectivity Checks: "FrameTiming:Frame|counter:alphaCounter"
- 24. Port Connectivity Checks: "FrameTiming:Frame|counter:dataCounter"
- 25. Port Connectivity Checks: "FrameTiming:Frame|row_counter_vhdl:pixelRows"
- 26. Port Connectivity Checks: "FrameTiming:Frame"
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+ 18. Port Connectivity Checks: "borderMux:borderSelect"
+ 19. Port Connectivity Checks: "colourMux:colourSelect"
+ 20. Port Connectivity Checks: "modeMux:modeSelector"
+ 21. Port Connectivity Checks: "textModeToPixel:textMode"
+ 22. Port Connectivity Checks: "videoMux:outputStream"
+ 23. Port Connectivity Checks: "alphaDataMux:charDataSelect"
+ 24. Port Connectivity Checks: "videoDataShiftRegister:videoDataRegister"
+ 25. Port Connectivity Checks: "FrameTiming:Frame|counter:alphaCounter"
+ 26. Port Connectivity Checks: "FrameTiming:Frame|counter:dataCounter"
+ 27. Port Connectivity Checks: "FrameTiming:Frame|row_counter_vhdl:pixelRows"
+ 28. Port Connectivity Checks: "FrameTiming:Frame"
+ 29. Analysis & Synthesis Equations
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -59,12 +61,12 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Oct 29 15:29:00 2025           ;
+; Analysis & Synthesis Status ; Successful - Tue Nov 04 20:57:40 2025           ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name               ; MC6847X                                         ;
 ; Top-level Entity Name       ; MC6847X                                         ;
 ; Family                      ; MAX7000S                                        ;
-; Total macrocells            ; 59                                              ;
+; Total macrocells            ; 90                                              ;
 ; Total pins                  ; 46                                              ;
 +-----------------------------+-------------------------------------------------+
 
@@ -153,26 +155,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; MC6847X.v                        ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/MC6847X.v                                              ;         ;
-; FormatSwitch.v                   ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/FormatSwitch.v                                         ;         ;
-; FrameTiming.v                    ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/FrameTiming.v                                          ;         ;
-; counter.v                        ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/counter.v                                              ;         ;
-; ClockSwitch.v                    ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/ClockSwitch.v                                          ;         ;
-; ext_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/ext_counter_vhdl.vhd                                   ;         ;
-; reg_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/reg_counter_vhdl.vhd                                   ;         ;
-; col_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/col_counter_vhdl.vhd                                   ;         ;
-; row_counter_vhdl.vhd             ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/row_counter_vhdl.vhd                                   ;         ;
-; videoMux.v                       ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/videoMux.v                                             ;         ;
-; border_mux.vhd                   ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/border_mux.vhd                                         ;         ;
-; colour_mux.vhd                   ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/colour_mux.vhd                                         ;         ;
-; res_mode_to_palette.vhd          ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/res_mode_to_palette.vhd                                ;         ;
-; graphic_mode_to_palette.vhd      ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/graphic_mode_to_palette.vhd                            ;         ;
-; mode_mux.vhd                     ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/mode_mux.vhd                                           ;         ;
-; alphaDataMux.v                   ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/alphaDataMux.v                                         ;         ;
-; textModeToPixel.v                ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/textModeToPixel.v                                      ;         ;
-; data_counter_vhdl.vhd            ; yes             ; User VHDL File         ; E:/MC6847X/Quartus/data_counter_vhdl.vhd                                  ;         ;
-; videoDataShiftRegister.v         ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/videoDataShiftRegister.v                               ;         ;
-; videoShiftClock.v                ; yes             ; User Verilog HDL File  ; E:/MC6847X/Quartus/videoShiftClock.v                                      ;         ;
+; MC6847X.v                        ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/MC6847X.v                                              ;         ;
+; FormatSwitch.v                   ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/FormatSwitch.v                                         ;         ;
+; FrameTiming.v                    ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/FrameTiming.v                                          ;         ;
+; counter.v                        ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/counter.v                                              ;         ;
+; ClockSwitch.v                    ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/ClockSwitch.v                                          ;         ;
+; ext_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/ext_counter_vhdl.vhd                                   ;         ;
+; reg_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/reg_counter_vhdl.vhd                                   ;         ;
+; col_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/col_counter_vhdl.vhd                                   ;         ;
+; row_counter_vhdl.vhd             ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/row_counter_vhdl.vhd                                   ;         ;
+; videoMux.v                       ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/videoMux.v                                             ;         ;
+; border_mux.vhd                   ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/border_mux.vhd                                         ;         ;
+; colour_mux.vhd                   ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/colour_mux.vhd                                         ;         ;
+; res_mode_to_palette.vhd          ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/res_mode_to_palette.vhd                                ;         ;
+; graphic_mode_to_palette.vhd      ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/graphic_mode_to_palette.vhd                            ;         ;
+; mode_mux.vhd                     ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/mode_mux.vhd                                           ;         ;
+; alphaDataMux.v                   ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/alphaDataMux.v                                         ;         ;
+; textModeToPixel.v                ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/textModeToPixel.v                                      ;         ;
+; data_counter_vhdl.vhd            ; yes             ; User VHDL File         ; H:/MC6847X/Quartus/data_counter_vhdl.vhd                                  ;         ;
+; videoDataShiftRegister.v         ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/videoDataShiftRegister.v                               ;         ;
+; videoShiftClock.v                ; yes             ; User Verilog HDL File  ; H:/MC6847X/Quartus/videoShiftClock.v                                      ;         ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
@@ -192,6 +194,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; addcore.tdf                      ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.tdf             ;         ;
 ; a_csnbuffer.inc                  ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_csnbuffer.inc         ;         ;
 ; a_csnbuffer.tdf                  ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_csnbuffer.tdf         ;         ;
+; look_add.tdf                     ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.tdf            ;         ;
 ; altshift.tdf                     ; yes             ; Megafunction           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.tdf            ;         ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 
@@ -201,15 +204,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------+-------------------------------------------------------------------------------------------------------------+
 ; Resource             ; Usage                                                                                                       ;
 +----------------------+-------------------------------------------------------------------------------------------------------------+
-; Logic cells          ; 59                                                                                                          ;
-; Total registers      ; 23                                                                                                          ;
+; Logic cells          ; 90                                                                                                          ;
+; Total registers      ; 40                                                                                                          ;
 ; I/O pins             ; 46                                                                                                          ;
-; Shareable expanders  ; 30                                                                                                          ;
-; Parallel expanders   ; 3                                                                                                           ;
-; Maximum fan-out node ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] ;
-; Maximum fan-out      ; 29                                                                                                          ;
-; Total fan-out        ; 626                                                                                                         ;
-; Average fan-out      ; 4.64                                                                                                        ;
+; Shareable expanders  ; 26                                                                                                          ;
+; Parallel expanders   ; 20                                                                                                          ;
+; Maximum fan-out node ; FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] ;
+; Maximum fan-out      ; 71                                                                                                          ;
+; Total fan-out        ; 1216                                                                                                        ;
+; Average fan-out      ; 7.51                                                                                                        ;
 +----------------------+-------------------------------------------------------------------------------------------------------------+
 
 
@@ -218,45 +221,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------+------------+------+--------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node              ; Macrocells ; Pins ; Full Hierarchy Name                                                                                          ; Library Name ;
 +-----------------------------------------+------------+------+--------------------------------------------------------------------------------------------------------------+--------------+
-; |MC6847X                                ; 59         ; 46   ; |MC6847X                                                                                                     ; work         ;
+; |MC6847X                                ; 90         ; 46   ; |MC6847X                                                                                                     ; work         ;
 ;    |ClockSwitch:ColourClock|            ; 1          ; 0    ; |MC6847X|ClockSwitch:ColourClock                                                                             ; work         ;
 ;    |FormatSwitch:FormatSelect|          ; 1          ; 0    ; |MC6847X|FormatSwitch:FormatSelect                                                                           ; work         ;
-;    |FrameTiming:Frame|                  ; 32         ; 0    ; |MC6847X|FrameTiming:Frame                                                                                   ; work         ;
+;    |FrameTiming:Frame|                  ; 67         ; 0    ; |MC6847X|FrameTiming:Frame                                                                                   ; work         ;
 ;       |col_counter_vhdl:pixelCols|      ; 8          ; 0    ; |MC6847X|FrameTiming:Frame|col_counter_vhdl:pixelCols                                                        ; work         ;
 ;          |ext_counter_vhdl:col_counter| ; 8          ; 0    ; |MC6847X|FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter                           ; work         ;
 ;             |lpm_counter:counter_rtl_0| ; 8          ; 0    ; |MC6847X|FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0 ; work         ;
-;       |row_counter_vhdl:pixelRows|      ; 11         ; 0    ; |MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows                                                        ; work         ;
+;       |counter:alphaCounter|            ; 4          ; 0    ; |MC6847X|FrameTiming:Frame|counter:alphaCounter                                                              ; work         ;
+;          |lpm_counter:count_rtl_0|      ; 4          ; 0    ; |MC6847X|FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0                                      ; work         ;
+;       |counter:dataCounter|             ; 11         ; 0    ; |MC6847X|FrameTiming:Frame|counter:dataCounter                                                               ; work         ;
+;          |lpm_counter:count_rtl_0|      ; 11         ; 0    ; |MC6847X|FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0                                       ; work         ;
+;       |row_counter_vhdl:pixelRows|      ; 10         ; 0    ; |MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows                                                        ; work         ;
 ;          |reg_counter_vhdl:row_counter| ; 9          ; 0    ; |MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter                           ; work         ;
 ;             |lpm_counter:counter_rtl_0| ; 9          ; 0    ; |MC6847X|FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0 ; work         ;
-;    |data_counter_vhdl:dataAddress|      ; 7          ; 0    ; |MC6847X|data_counter_vhdl:dataAddress                                                                       ; work         ;
-;    |videoMux:outputStream|              ; 9          ; 0    ; |MC6847X|videoMux:outputStream                                                                               ; work         ;
+;    |data_counter_vhdl:dataAddress|      ; 21         ; 0    ; |MC6847X|data_counter_vhdl:dataAddress                                                                       ; work         ;
+;       |lpm_add_sub:Add0|                ; 1          ; 0    ; |MC6847X|data_counter_vhdl:dataAddress|lpm_add_sub:Add0                                                      ; work         ;
+;          |addcore:adder[1]|             ; 1          ; 0    ; |MC6847X|data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder[1]                                     ; work         ;
+;             |a_csnbuffer:result_node|   ; 1          ; 0    ; |MC6847X|data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node             ; work         ;
 +-----------------------------------------+------------+------+--------------------------------------------------------------------------------------------------------------+--------------+
-
-
-+---------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                          ;
-+----------------------------------------------------+----------------------------------------+
-; Register name                                      ; Reason for Removal                     ;
-+----------------------------------------------------+----------------------------------------+
-; FrameTiming:Frame|counter:alphaCounter|count[0..3] ; Stuck at GND due to stuck port data_in ;
-; FrameTiming:Frame|counter:dataCounter|count[0..4]  ; Stuck at GND due to stuck port data_in ;
-; data_counter_vhdl:dataAddress|counter[5..12]       ; Stuck at GND due to stuck port clock   ;
-; Total Number of Removed Registers = 17             ;                                        ;
-+----------------------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                      ;
-+------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; Register name                                  ; Reason for Removal        ; Registers Removed due to This Register                                              ;
-+------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; FrameTiming:Frame|counter:dataCounter|count[0] ; Stuck at GND              ; data_counter_vhdl:dataAddress|counter[5], data_counter_vhdl:dataAddress|counter[6], ;
-;                                                ; due to stuck port data_in ; data_counter_vhdl:dataAddress|counter[7], data_counter_vhdl:dataAddress|counter[8], ;
-;                                                ;                           ; data_counter_vhdl:dataAddress|counter[9],                                           ;
-;                                                ;                           ; data_counter_vhdl:dataAddress|counter[10],                                          ;
-;                                                ;                           ; data_counter_vhdl:dataAddress|counter[11],                                          ;
-;                                                ;                           ; data_counter_vhdl:dataAddress|counter[12]                                           ;
-+------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -265,16 +248,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Parameter Name ; Value     ; Type                              ;
 +----------------+-----------+-----------------------------------+
 ; rowCols        ; 111001010 ; Unsigned Binary                   ;
-; hsyncCols      ; 000011100 ; Unsigned Binary                   ;
 ; rows0          ; 100000001 ; Unsigned Binary                   ;
 ; rows1          ; 100110110 ; Unsigned Binary                   ;
-; vsyncRows      ; 000001000 ; Unsigned Binary                   ;
+; vsyncStart     ; 000000011 ; Unsigned Binary                   ;
+; vsyncEnd       ; 000001000 ; Unsigned Binary                   ;
+; vblankBoundary ; 000001010 ; Unsigned Binary                   ;
 ; portx          ; 010000001 ; Unsigned Binary                   ;
 ; maxPortX       ; 110000001 ; Unsigned Binary                   ;
 ; porty0         ; 000111111 ; Unsigned Binary                   ;
 ; porty1         ; 001011000 ; Unsigned Binary                   ;
 ; portHeight     ; 010111111 ; Unsigned Binary                   ;
-; blankBoundary  ; 000100110 ; Unsigned Binary                   ;
+; hsyncStart     ; 000001010 ; Unsigned Binary                   ;
+; hsyncEnd       ; 000100010 ; Unsigned Binary                   ;
+; blankBoundary  ; 001001110 ; Unsigned Binary                   ;
 +----------------+-----------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -353,12 +339,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0 ;
++------------------------+-------------------+--------------------------------------------------------------------+
+; Parameter Name         ; Value             ; Type                                                               ;
++------------------------+-------------------+--------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                                       ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                                                     ;
+; LPM_WIDTH              ; 4                 ; Untyped                                                            ;
+; LPM_DIRECTION          ; UP                ; Untyped                                                            ;
+; LPM_MODULUS            ; 0                 ; Untyped                                                            ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                                            ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                                            ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                                            ;
+; DEVICE_FAMILY          ; MAX7000S          ; Untyped                                                            ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                                            ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                                                 ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                                                 ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                                            ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                                            ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                                            ;
+; CBXI_PARAMETER         ; NOTHING           ; Untyped                                                            ;
++------------------------+-------------------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0 ;
++------------------------+-------------------+-------------------------------------------------------------------+
+; Parameter Name         ; Value             ; Type                                                              ;
++------------------------+-------------------+-------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                                                    ;
+; LPM_WIDTH              ; 5                 ; Untyped                                                           ;
+; LPM_DIRECTION          ; UP                ; Untyped                                                           ;
+; LPM_MODULUS            ; 0                 ; Untyped                                                           ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                                           ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                                           ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                                           ;
+; DEVICE_FAMILY          ; MAX7000S          ; Untyped                                                           ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                                           ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                                                ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                                                ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                                           ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                                           ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                                           ;
+; CBXI_PARAMETER         ; NOTHING           ; Untyped                                                           ;
++------------------------+-------------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: data_counter_vhdl:dataAddress|lpm_add_sub:Add0 ;
 +------------------------+-------------+----------------------------------------------------------+
 ; Parameter Name         ; Value       ; Type                                                     ;
 +------------------------+-------------+----------------------------------------------------------+
-; LPM_WIDTH              ; 5           ; Untyped                                                  ;
+; LPM_WIDTH              ; 13          ; Untyped                                                  ;
 ; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                                  ;
 ; LPM_DIRECTION          ; ADD         ; Untyped                                                  ;
 ; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                                  ;
@@ -372,7 +412,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                                  ;
 ; USE_WYS                ; OFF         ; Untyped                                                  ;
 ; STYLE                  ; FAST        ; Untyped                                                  ;
-; CBXI_PARAMETER         ; add_sub_uch ; Untyped                                                  ;
+; CBXI_PARAMETER         ; add_sub_7ph ; Untyped                                                  ;
 ; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                               ;
 ; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                             ;
 ; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                             ;
@@ -402,6 +442,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+--------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "borderMux:borderSelect"                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; rgb  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "colourMux:colourSelect" ;
++------------+-------+----------+--------------------+
+; Port       ; Type  ; Severity ; Details            ;
++------------+-------+----------+--------------------+
+; data[1..0] ; Input ; Info     ; Stuck at GND       ;
+; data[3]    ; Input ; Info     ; Stuck at GND       ;
+; data[2]    ; Input ; Info     ; Stuck at VCC       ;
++------------+-------+----------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "modeMux:modeSelector"                                                                  ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; palette ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +------------------------------------------------------+
 ; Port Connectivity Checks: "textModeToPixel:textMode" ;
 +--------------+-------+----------+--------------------+
@@ -414,12 +483,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +---------------------------------------------------+
 ; Port Connectivity Checks: "videoMux:outputStream" ;
-+----------+-------+----------+---------------------+
-; Port     ; Type  ; Severity ; Details             ;
-+----------+-------+----------+---------------------+
-; channel1 ; Input ; Info     ; Stuck at GND        ;
-; channel2 ; Input ; Info     ; Stuck at VCC        ;
-+----------+-------+----------+---------------------+
++----------------+-------+----------+---------------+
+; Port           ; Type  ; Severity ; Details       ;
++----------------+-------+----------+---------------+
+; channel1       ; Input ; Info     ; Stuck at GND  ;
+; channel2       ; Input ; Info     ; Stuck at VCC  ;
+; channel3[8..7] ; Input ; Info     ; Stuck at GND  ;
+; channel3[5..4] ; Input ; Info     ; Stuck at GND  ;
+; channel3[2..1] ; Input ; Info     ; Stuck at GND  ;
+; channel3[6]    ; Input ; Info     ; Stuck at VCC  ;
+; channel3[3]    ; Input ; Info     ; Stuck at VCC  ;
+; channel3[0]    ; Input ; Info     ; Stuck at VCC  ;
++----------------+-------+----------+---------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -438,15 +513,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "videoDataShiftRegister:videoDataRegister|videoShiftClock:shiftClock"                 ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; vsclk ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "videoDataShiftRegister:videoDataRegister"                                                                                                   ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -457,22 +523,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FrameTiming:Frame|counter:alphaCounter"                                                                                                       ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; enable ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "FrameTiming:Frame|counter:alphaCounter" ;
++--------+-------+----------+----------------------------------------+
+; Port   ; Type  ; Severity ; Details                                ;
++--------+-------+----------+----------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                           ;
++--------+-------+----------+----------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FrameTiming:Frame|counter:dataCounter"                                                                                                        ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; enable ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "FrameTiming:Frame|counter:dataCounter" ;
++--------+-------+----------+---------------------------------------+
+; Port   ; Type  ; Severity ; Details                               ;
++--------+-------+----------+---------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                          ;
++--------+-------+----------+---------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -498,15 +564,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
++--------------------------------+
+; Analysis & Synthesis Equations ;
++--------------------------------+
+The equations can be found in H:/MC6847X/Quartus/output_files/MC6847X.map.eqn.
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 29 15:28:59 2025
+    Info: Processing started: Tue Nov 04 20:57:36 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 6847substitute -c MC6847X
-Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mc6847x.v
     Info (12023): Found entity 1: MC6847X
 Info (12021): Found 1 design units, including 1 entities, in source file formatswitch.v
@@ -561,7 +632,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file videosh
     Info (12023): Found entity 1: videoShiftClock
 Warning (10236): Verilog HDL Implicit Net warning at MC6847X.v(82): created implicit net for "videoData"
 Warning (10236): Verilog HDL Implicit Net warning at MC6847X.v(90): created implicit net for "charRowData"
-Warning (10236): Verilog HDL Implicit Net warning at videoDataShiftRegister.v(29): created implicit net for "pixeldata"
 Info (12127): Elaborating entity "MC6847X" for the top level hierarchy
 Info (12128): Elaborating entity "FormatSwitch" for hierarchy "FormatSwitch:FormatSelect"
 Info (12128): Elaborating entity "ClockSwitch" for hierarchy "ClockSwitch:ColourClock"
@@ -573,9 +643,6 @@ Info (12128): Elaborating entity "reg_counter_vhdl" for hierarchy "FrameTiming:F
 Info (12128): Elaborating entity "counter" for hierarchy "FrameTiming:Frame|counter:dataCounter"
 Info (12128): Elaborating entity "counter" for hierarchy "FrameTiming:Frame|counter:alphaCounter"
 Info (12128): Elaborating entity "videoDataShiftRegister" for hierarchy "videoDataShiftRegister:videoDataRegister"
-Warning (10036): Verilog HDL or VHDL warning at videoDataShiftRegister.v(29): object "pixeldata" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at videoDataShiftRegister.v(29): truncated value with size 2 to match size of target (1)
-Warning (10034): Output port "pixelData" at videoDataShiftRegister.v(7) has no driver
 Info (12128): Elaborating entity "videoShiftClock" for hierarchy "videoDataShiftRegister:videoDataRegister|videoShiftClock:shiftClock"
 Warning (10235): Verilog HDL Always Construct warning at videoShiftClock.v(14): variable "vsclk" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10240): Verilog HDL Always Construct warning at videoShiftClock.v(11): inferring latch(es) for variable "vsclk", which holds its previous value in one or more paths through the always construct
@@ -599,9 +666,11 @@ Warning (10492): VHDL Process Statement warning at data_counter_vhdl.vhd(29): si
 Warning (10492): VHDL Process Statement warning at data_counter_vhdl.vhd(31): signal "div12" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at data_counter_vhdl.vhd(31): signal "rp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at data_counter_vhdl.vhd(32): signal "counter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (19000): Inferred 2 megafunctions from design logic
+Info (19000): Inferred 4 megafunctions from design logic
     Info (19001): Inferred lpm_counter megafunction (LPM_WIDTH=9) from the following logic: "FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|counter_rtl_0"
     Info (19001): Inferred lpm_counter megafunction (LPM_WIDTH=8) from the following logic: "FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|counter_rtl_0"
+    Info (19001): Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "FrameTiming:Frame|counter:alphaCounter|count_rtl_0"
+    Info (19001): Inferred lpm_counter megafunction (LPM_WIDTH=5) from the following logic: "FrameTiming:Frame|counter:dataCounter|count_rtl_0"
 Info (278001): Inferred 1 megafunctions from design logic
     Info (278002): Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "data_counter_vhdl:dataAddress|Add0"
 Info (12130): Elaborated megafunction instantiation "FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0"
@@ -614,34 +683,33 @@ Info (12133): Instantiated megafunction "FrameTiming:Frame|col_counter_vhdl:pixe
     Info (12134): Parameter "LPM_WIDTH" = "8"
     Info (12134): Parameter "LPM_DIRECTION" = "UP"
     Info (12134): Parameter "LPM_TYPE" = "LPM_COUNTER"
+Info (12130): Elaborated megafunction instantiation "FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0"
+Info (12133): Instantiated megafunction "FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "4"
+    Info (12134): Parameter "LPM_DIRECTION" = "UP"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_COUNTER"
+Info (12130): Elaborated megafunction instantiation "FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0"
+Info (12133): Instantiated megafunction "FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "5"
+    Info (12134): Parameter "LPM_DIRECTION" = "UP"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_COUNTER"
 Info (12130): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
 Info (12133): Instantiated megafunction "data_counter_vhdl:dataAddress|lpm_add_sub:Add0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "5"
+    Info (12134): Parameter "LPM_WIDTH" = "13"
     Info (12134): Parameter "LPM_DIRECTION" = "ADD"
     Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
-Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
-Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:oflow_node", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
-Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
-Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
-Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|a_csnbuffer:oflow_node", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
-Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|a_csnbuffer:result_node", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
+Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder[1]", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
+Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:oflow_node", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
+Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
+Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder[0]", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
+Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|look_add:look_ahead_unit", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
 Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
 Info (12131): Elaborated megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0|altshift:carry_ext_latency_ffs", which is child of megafunction instantiation "data_counter_vhdl:dataAddress|lpm_add_sub:Add0"
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13014): Ignored 6 buffer(s)
-    Info (13019): Ignored 6 SOFT buffer(s)
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DA[5]" is stuck at GND
-    Warning (13410): Pin "DA[6]" is stuck at GND
-    Warning (13410): Pin "DA[7]" is stuck at GND
-    Warning (13410): Pin "DA[8]" is stuck at GND
-    Warning (13410): Pin "DA[9]" is stuck at GND
-    Warning (13410): Pin "DA[10]" is stuck at GND
-    Warning (13410): Pin "DA[11]" is stuck at GND
-    Warning (13410): Pin "DA[12]" is stuck at GND
-    Warning (13410): Pin "RP" is stuck at GND
-Warning (21074): Design contains 13 input pin(s) that do not drive logic
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 13 buffer(s)
+    Info (13019): Ignored 13 SOFT buffer(s)
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Q[0]"
     Warning (15610): No output dependent on input pin "Q[1]"
     Warning (15610): No output dependent on input pin "Q[2]"
@@ -651,26 +719,22 @@ Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Q[6]"
     Warning (15610): No output dependent on input pin "Q[7]"
     Warning (15610): No output dependent on input pin "Inv"
+    Warning (15610): No output dependent on input pin "AnG"
     Warning (15610): No output dependent on input pin "AnS"
+    Warning (15610): No output dependent on input pin "CSS"
+    Warning (15610): No output dependent on input pin "GM[0]"
     Warning (15610): No output dependent on input pin "GM[1]"
     Warning (15610): No output dependent on input pin "GM[2]"
     Warning (15610): No output dependent on input pin "Ext"
-Info (21057): Implemented 135 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 162 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 27 output pins
-    Info (21063): Implemented 59 macrocells
-    Info (21073): Implemented 30 shareable expanders
-Info (144001): Generated suppressed messages file E:/MC6847X/Quartus/output_files/MC6847X.map.smsg
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 4628 megabytes
-    Info: Processing ended: Wed Oct 29 15:29:00 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in E:/MC6847X/Quartus/output_files/MC6847X.map.smsg.
+    Info (21063): Implemented 90 macrocells
+    Info (21073): Implemented 26 shareable expanders
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 4629 megabytes
+    Info: Processing ended: Tue Nov 04 20:57:40 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

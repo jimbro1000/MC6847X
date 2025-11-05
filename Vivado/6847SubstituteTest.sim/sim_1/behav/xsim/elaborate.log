@@ -1,0 +1,50 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot MC6847XTB_behav xil_defaultlib.MC6847XTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 13 for port 'DA' [H:/MC6847X/Vivado/6847SubstituteTest.srcs/sim_1/new/6847XTB.sv:51]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data' [H:/MC6847X/Vivado/6847SubstituteTest.srcs/sources_1/new/MC6847X.v:82]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'chardata' [H:/MC6847X/Vivado/6847SubstituteTest.srcs/sources_1/new/MC6847X.v:90]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "H:/MC6847X/Vivado/6847SubstituteTest.srcs/sources_1/new/FormatSwitch.v" Line 1. Module FormatSwitch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:/MC6847X/Vivado/6847SubstituteTest.srcs/sources_1/new/ClockSwitch.v" Line 1. Module ClockSwitch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:/MC6847X/Vivado/6847SubstituteTest.srcs/sources_1/new/FrameTiming.v" Line 1. Module FrameTiming doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:/MC6847X/Vivado/6847SubstituteTest.srcs/sources_1/new/FormatSwitch.v" Line 1. Module FormatSwitch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:/MC6847X/Vivado/6847SubstituteTest.srcs/sources_1/new/ClockSwitch.v" Line 1. Module ClockSwitch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:/MC6847X/Vivado/6847SubstituteTest.srcs/sources_1/new/FrameTiming.v" Line 1. Module FrameTiming doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.FormatSwitch
+Compiling module xil_defaultlib.ClockSwitch
+Compiling architecture rtl of entity xil_defaultlib.ext_counter_vhdl [ext_counter_vhdl_default]
+Compiling architecture rtl of entity xil_defaultlib.col_counter_vhdl [col_counter_vhdl_default]
+Compiling architecture rtl of entity xil_defaultlib.reg_counter_vhdl [reg_counter_vhdl_default]
+Compiling architecture rtl of entity xil_defaultlib.row_counter_vhdl [row_counter_vhdl_default]
+Compiling module xil_defaultlib.counter(WIDTH=5)
+Compiling module xil_defaultlib.counter(WIDTH=4)
+Compiling module xil_defaultlib.FrameTiming
+Compiling module xil_defaultlib.videoShiftClock
+Compiling module xil_defaultlib.videoDataShiftRegister
+Compiling module xil_defaultlib.alphaDataMux
+Compiling module xil_defaultlib.videoMux
+Compiling architecture rtl of entity xil_defaultlib.resModeToPalette [resmodetopalette_default]
+Compiling architecture rtl of entity xil_defaultlib.graphicModeToPalette [graphicmodetopalette_default]
+Compiling module xil_defaultlib.textModeToPixel
+Compiling architecture rtl of entity xil_defaultlib.modeMux [modemux_default]
+Compiling architecture rtl of entity xil_defaultlib.colourMux [colourmux_default]
+Compiling architecture rtl of entity xil_defaultlib.borderMux [bordermux_default]
+Compiling architecture rtl of entity xil_defaultlib.data_counter_vhdl [data_counter_vhdl_default]
+Compiling module xil_defaultlib.MC6847X
+Compiling module xil_defaultlib.ext_counter
+Compiling module xil_defaultlib.MC6847XTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MC6847XTB_behav

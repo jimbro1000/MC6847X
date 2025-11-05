@@ -94,8 +94,8 @@ wire	[1:0] pixelData;
 		.select		(outputSelect),
 		.channel1	(9'b000000000),
 		.channel2	(9'b111111111),
-		.channel3	(BDStream),
-		.channel4	(VPStream),
+		.channel3	(9'b001001001), //BDStream
+		.channel4	(VPStream), //VPStream
 		.result		(rgb)
 	);
 	
@@ -130,7 +130,7 @@ wire	[1:0] pixelData;
 	);
 	
 	colourMux		colourSelect(
-		.data			(paletteValue),
+		.data			(4'b0100), //paletteValue
 		.RGB			(VPStream)
 	);
 	

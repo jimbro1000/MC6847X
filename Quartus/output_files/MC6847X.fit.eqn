@@ -11,143 +11,216 @@
 -- programming logic devices manufactured by Altera and sold by 
 -- Altera or its authorized distributors.  Please refer to the 
 -- applicable agreement for further details.
---S2_dffs[6] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] at LC93
-S2_dffs[6]_p1_out = S2_dffs[1] & S2_dffs[0] & S2_dffs[2] & S2_dffs[3] & S2_dffs[4] & S2_dffs[5];
-S2_dffs[6]_or_out = S2_dffs[6]_p1_out;
-S2_dffs[6]_reg_input = S2_dffs[6]_or_out;
-S2_dffs[6]_p2_out = !S2_dffs[1] & !S2_dffs[0] & S2_dffs[2] & !S2_dffs[3] & !S2_dffs[4] & S2_dffs[5] & S2_dffs[7] & S2_dffs[6];
-S2_dffs[6] = TFFE(S2_dffs[6]_reg_input, NTSCClk, !S2_dffs[6]_p2_out, , );
+--T2_dffs[5] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] at LC87
+T2_dffs[5]_p1_out = T2_dffs[3] & T2_dffs[2] & T2_dffs[1] & T2_dffs[0] & T2_dffs[4];
+T2_dffs[5]_or_out = T2_dffs[5]_p1_out;
+T2_dffs[5]_reg_input = T2_dffs[5]_or_out;
+T2_dffs[5]_p2_out = !T2_dffs[3] & T2_dffs[2] & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[4] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5];
+T2_dffs[5] = TFFE(T2_dffs[5]_reg_input, NTSCClk, !T2_dffs[5]_p2_out, , );
 
 
---S2_dffs[7] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] at LC92
-S2_dffs[7]_p1_out = S2_dffs[1] & S2_dffs[0] & S2_dffs[2] & S2_dffs[3] & S2_dffs[4] & S2_dffs[5] & S2_dffs[6];
-S2_dffs[7]_or_out = S2_dffs[7]_p1_out;
-S2_dffs[7]_reg_input = S2_dffs[7]_or_out;
-S2_dffs[7]_p2_out = !S2_dffs[1] & !S2_dffs[0] & S2_dffs[2] & !S2_dffs[3] & !S2_dffs[4] & S2_dffs[5] & S2_dffs[6] & S2_dffs[7];
-S2_dffs[7] = TFFE(S2_dffs[7]_reg_input, NTSCClk, !S2_dffs[7]_p2_out, , );
+--T2_dffs[6] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[6] at LC78
+T2_dffs[6]_p1_out = T2_dffs[3] & T2_dffs[2] & T2_dffs[1] & T2_dffs[0] & T2_dffs[4] & T2_dffs[5];
+T2_dffs[6]_or_out = T2_dffs[6]_p1_out;
+T2_dffs[6]_reg_input = T2_dffs[6]_or_out;
+T2_dffs[6]_p2_out = !T2_dffs[3] & T2_dffs[2] & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[4] & T2_dffs[5] & T2_dffs[7] & T2_dffs[6];
+T2_dffs[6] = TFFE(T2_dffs[6]_reg_input, NTSCClk, !T2_dffs[6]_p2_out, , );
 
 
---S2_dffs[4] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] at LC84
-S2_dffs[4]_p1_out = S2_dffs[1] & S2_dffs[0] & S2_dffs[2] & S2_dffs[3];
-S2_dffs[4]_or_out = S2_dffs[4]_p1_out;
-S2_dffs[4]_reg_input = S2_dffs[4]_or_out;
-S2_dffs[4]_p2_out = !S2_dffs[1] & !S2_dffs[0] & S2_dffs[2] & !S2_dffs[3] & S2_dffs[5] & !S2_dffs[4] & S2_dffs[7] & S2_dffs[6];
-S2_dffs[4] = TFFE(S2_dffs[4]_reg_input, NTSCClk, !S2_dffs[4]_p2_out, , );
+--T2_dffs[7] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[7] at LC70
+T2_dffs[7]_p1_out = T2_dffs[3] & T2_dffs[2] & T2_dffs[1] & T2_dffs[0] & T2_dffs[4] & T2_dffs[5] & T2_dffs[6];
+T2_dffs[7]_or_out = T2_dffs[7]_p1_out;
+T2_dffs[7]_reg_input = T2_dffs[7]_or_out;
+T2_dffs[7]_p2_out = !T2_dffs[3] & T2_dffs[2] & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[4] & T2_dffs[5] & T2_dffs[6] & T2_dffs[7];
+T2_dffs[7] = TFFE(T2_dffs[7]_reg_input, NTSCClk, !T2_dffs[7]_p2_out, , );
 
 
---S2_dffs[3] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] at LC70
-S2_dffs[3]_p1_out = S2_dffs[1] & S2_dffs[0] & S2_dffs[2];
-S2_dffs[3]_or_out = S2_dffs[3]_p1_out;
-S2_dffs[3]_reg_input = S2_dffs[3]_or_out;
-S2_dffs[3]_p2_out = !S2_dffs[1] & !S2_dffs[0] & S2_dffs[2] & S2_dffs[5] & !S2_dffs[4] & !S2_dffs[3] & S2_dffs[7] & S2_dffs[6];
-S2_dffs[3] = TFFE(S2_dffs[3]_reg_input, NTSCClk, !S2_dffs[3]_p2_out, , );
+--T1_dffs[7] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[7] at LC96
+T1_dffs[7]_p1_out = T1_dffs[2] & T1_dffs[1] & T1_dffs[0] & T1_dffs[3] & T1_dffs[4] & T1_dffs[5] & T1_dffs[6];
+T1_dffs[7]_or_out = T1_dffs[7]_p1_out;
+T1_dffs[7]_reg_input = T1_dffs[7]_or_out;
+T1_dffs[7]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[7]_p2_out = !T1_dffs[3] & !T1_dffs[6] & S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8] & !T1_dffs[7];
+T1_dffs[7] = TFFE(T1_dffs[7]_reg_input, T1_dffs[7]_p3_out, !T1_dffs[7]_p2_out, , );
 
 
---S2_dffs[2] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] at LC68
-S2_dffs[2]_p1_out = S2_dffs[1] & S2_dffs[0];
-S2_dffs[2]_or_out = S2_dffs[2]_p1_out;
-S2_dffs[2]_reg_input = S2_dffs[2]_or_out;
-S2_dffs[2]_p2_out = !S2_dffs[1] & !S2_dffs[0] & S2_dffs[5] & S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & S2_dffs[7] & S2_dffs[6];
-S2_dffs[2] = TFFE(S2_dffs[2]_reg_input, NTSCClk, !S2_dffs[2]_p2_out, , );
+--S1L1 is FrameTiming:Frame|row_counter_vhdl:pixelRows|Equal0~10 at LC113
+S1L1_p2_out = !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+S1L1_p3_out = !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+S1L1_or_out = S1L1_p2_out # S1L1_p3_out # !C1_FormatOut;
+S1L1 = T1_dffs[4] $ S1L1_or_out;
 
 
---S2_dffs[0] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] at LC76
-S2_dffs[0]_reg_input = VCC;
-S2_dffs[0]_p2_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S2_dffs[0] = TFFE(S2_dffs[0]_reg_input, NTSCClk, !S2_dffs[0]_p2_out, , );
+--D1L10 is FrameTiming:Frame|LessThan12~14 at LC127
+D1L10_p2_out = !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L10_p3_out = !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+D1L10_or_out = D1L10_p2_out # D1L10_p3_out # !C1_FormatOut;
+D1L10 = T1_dffs[2] $ D1L10_or_out;
 
 
---S2_dffs[1] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] at LC74
-S2_dffs[1]_or_out = S2_dffs[0];
-S2_dffs[1]_reg_input = S2_dffs[1]_or_out;
-S2_dffs[1]_p2_out = !S2_dffs[0] & S2_dffs[5] & S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S2_dffs[1] = TFFE(S2_dffs[1]_reg_input, NTSCClk, !S2_dffs[1]_p2_out, , );
+--D1L11 is FrameTiming:Frame|LessThan12~20 at LC128
+D1L11_p2_out = !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L11_p3_out = !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+D1L11_or_out = D1L11_p2_out # D1L11_p3_out # !C1_FormatOut;
+D1L11 = T1_dffs[1] $ D1L11_or_out;
 
 
---S2_dffs[5] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[5] at LC71
-S2_dffs[5]_p1_out = S2_dffs[1] & S2_dffs[0] & S2_dffs[2] & S2_dffs[3] & S2_dffs[4];
-S2_dffs[5]_or_out = S2_dffs[5]_p1_out;
-S2_dffs[5]_reg_input = S2_dffs[5]_or_out;
-S2_dffs[5]_p2_out = !S2_dffs[1] & !S2_dffs[0] & S2_dffs[2] & !S2_dffs[3] & !S2_dffs[4] & S2_dffs[5] & S2_dffs[7] & S2_dffs[6];
-S2_dffs[5] = TFFE(S2_dffs[5]_reg_input, NTSCClk, !S2_dffs[5]_p2_out, , );
+--D1L12 is FrameTiming:Frame|LessThan12~26 at LC119
+D1L12_p2_out = !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L12_p3_out = !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+D1L12_or_out = D1L12_p2_out # D1L12_p3_out # !C1_FormatOut;
+D1L12 = T1_dffs[5] $ D1L12_or_out;
 
 
---D1L3 is FrameTiming:Frame|LessThan3~6 at LC120
-D1L3_p1_out = !S2_dffs[3] & !S2_dffs[4] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6];
-D1L3_p2_out = !S2_dffs[4] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[2];
-D1L3_p3_out = !S2_dffs[4] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[1];
-D1L3_or_out = D1L3_p1_out # D1L3_p2_out # D1L3_p3_out;
-D1L3 = !(D1L3_or_out);
+--T2_dffs[0] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0] at LC76
+T2_dffs[0]_reg_input = VCC;
+T2_dffs[0]_p2_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T2_dffs[0] = TFFE(T2_dffs[0]_reg_input, NTSCClk, !T2_dffs[0]_p2_out, , );
 
 
---S1_dffs[7] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[7] at LC123
-S1_dffs[7]_p1_out = S1_dffs[3] & S1_dffs[2] & S1_dffs[1] & S1_dffs[0] & S1_dffs[4] & S1_dffs[5] & S1_dffs[6];
-S1_dffs[7]_or_out = S1_dffs[7]_p1_out;
-S1_dffs[7]_reg_input = S1_dffs[7]_or_out;
-S1_dffs[7]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[7]_p2_out = !S1_dffs[3] & !S1_dffs[6] & Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8] & !S1_dffs[7];
-S1_dffs[7] = TFFE(S1_dffs[7]_reg_input, S1_dffs[7]_p3_out, !S1_dffs[7]_p2_out, , );
+--T2_dffs[1] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[1] at LC71
+T2_dffs[1]_or_out = T2_dffs[0];
+T2_dffs[1]_reg_input = T2_dffs[1]_or_out;
+T2_dffs[1]_p2_out = !T2_dffs[0] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T2_dffs[1] = TFFE(T2_dffs[1]_reg_input, NTSCClk, !T2_dffs[1]_p2_out, , );
 
 
---Q1L1 is FrameTiming:Frame|row_counter_vhdl:pixelRows|Equal0~12 at LC127
-Q1L1_p2_out = !NTSCClk & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6];
-Q1L1_p3_out = !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-Q1L1_or_out = Q1L1_p2_out # Q1L1_p3_out # !C1_FormatOut;
-Q1L1 = S1_dffs[1] $ Q1L1_or_out;
+--T1_dffs[8] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[8] at LC95
+T1_dffs[8]_p1_out = T1_dffs[2] & T1_dffs[1] & T1_dffs[0] & T1_dffs[3] & T1_dffs[4] & T1_dffs[5] & T1_dffs[6] & T1_dffs[7];
+T1_dffs[8]_or_out = T1_dffs[8]_p1_out;
+T1_dffs[8]_reg_input = T1_dffs[8]_or_out;
+T1_dffs[8]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[8]_p2_out = !T1_dffs[3] & !T1_dffs[6] & !T1_dffs[7] & S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8];
+T1_dffs[8] = TFFE(T1_dffs[8]_reg_input, T1_dffs[8]_p3_out, !T1_dffs[8]_p2_out, , );
 
 
---Q1L2 is FrameTiming:Frame|row_counter_vhdl:pixelRows|Equal0~18 at LC128
-Q1L2_p2_out = !NTSCClk & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6];
-Q1L2_p3_out = !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-Q1L2_or_out = Q1L2_p2_out # Q1L2_p3_out # !C1_FormatOut;
-Q1L2 = S1_dffs[4] $ Q1L2_or_out;
+--T1_dffs[5] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[5] at LC92
+T1_dffs[5]_p1_out = T1_dffs[2] & T1_dffs[1] & T1_dffs[0] & T1_dffs[3] & T1_dffs[4];
+T1_dffs[5]_or_out = T1_dffs[5]_p1_out;
+T1_dffs[5]_reg_input = T1_dffs[5]_or_out;
+T1_dffs[5]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[5]_p2_out = !T1_dffs[3] & S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8] & !T1_dffs[7] & !T1_dffs[6];
+T1_dffs[5] = TFFE(T1_dffs[5]_reg_input, T1_dffs[5]_p3_out, !T1_dffs[5]_p2_out, , );
 
 
---D1L6 is FrameTiming:Frame|LessThan9~12 at LC95
-D1L6_p2_out = !NTSCClk & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6];
-D1L6_p3_out = !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-D1L6_or_out = D1L6_p2_out # D1L6_p3_out # !C1_FormatOut;
-D1L6 = S1_dffs[2] $ D1L6_or_out;
+--T2_dffs[2] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2] at LC66
+T2_dffs[2]_p1_out = T2_dffs[1] & T2_dffs[0];
+T2_dffs[2]_or_out = T2_dffs[2]_p1_out;
+T2_dffs[2]_reg_input = T2_dffs[2]_or_out;
+T2_dffs[2]_p2_out = !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[4] & !T2_dffs[3] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T2_dffs[2] = TFFE(T2_dffs[2]_reg_input, NTSCClk, !T2_dffs[2]_p2_out, , );
 
 
---D1L7 is FrameTiming:Frame|LessThan9~18 at LC94
-D1L7_p2_out = !NTSCClk & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6];
-D1L7_p3_out = !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-D1L7_or_out = D1L7_p2_out # D1L7_p3_out # !C1_FormatOut;
-D1L7 = S1_dffs[5] $ D1L7_or_out;
+--T1_dffs[4] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[4] at LC94
+T1_dffs[4]_p1_out = T1_dffs[2] & T1_dffs[1] & T1_dffs[0] & T1_dffs[3];
+T1_dffs[4]_or_out = T1_dffs[4]_p1_out;
+T1_dffs[4]_reg_input = T1_dffs[4]_or_out;
+T1_dffs[4]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[4]_p2_out = !T1_dffs[3] & S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8] & !T1_dffs[7] & !T1_dffs[6];
+T1_dffs[4] = TFFE(T1_dffs[4]_reg_input, T1_dffs[4]_p3_out, !T1_dffs[4]_p2_out, , );
 
 
---S1_dffs[6] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[6] at LC119
-S1_dffs[6]_p1_out = S1_dffs[3] & S1_dffs[2] & S1_dffs[1] & S1_dffs[0] & S1_dffs[4] & S1_dffs[5];
-S1_dffs[6]_or_out = S1_dffs[6]_p1_out;
-S1_dffs[6]_reg_input = S1_dffs[6]_or_out;
-S1_dffs[6]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[6]_p2_out = !S1_dffs[3] & Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8] & !S1_dffs[7] & !S1_dffs[6];
-S1_dffs[6] = TFFE(S1_dffs[6]_reg_input, S1_dffs[6]_p3_out, !S1_dffs[6]_p2_out, , );
+--T2_dffs[3] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3] at LC29
+T2_dffs[3]_p1_out = T2_dffs[2] & T2_dffs[1] & T2_dffs[0];
+T2_dffs[3]_or_out = T2_dffs[3]_p1_out;
+T2_dffs[3]_reg_input = T2_dffs[3]_or_out;
+T2_dffs[3]_p2_out = T2_dffs[2] & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[4] & !T2_dffs[3] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5];
+T2_dffs[3] = TFFE(T2_dffs[3]_reg_input, NTSCClk, !T2_dffs[3]_p2_out, , );
 
 
---S1_dffs[4] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[4] at LC115
-S1_dffs[4]_p1_out = S1_dffs[3] & S1_dffs[2] & S1_dffs[1] & S1_dffs[0];
-S1_dffs[4]_or_out = S1_dffs[4]_p1_out;
-S1_dffs[4]_reg_input = S1_dffs[4]_or_out;
-S1_dffs[4]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[4]_p2_out = !S1_dffs[3] & Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8] & !S1_dffs[7] & !S1_dffs[6];
-S1_dffs[4] = TFFE(S1_dffs[4]_reg_input, S1_dffs[4]_p3_out, !S1_dffs[4]_p2_out, , );
+--T2_dffs[4] is FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[4] at LC28
+T2_dffs[4]_p1_out = T2_dffs[3] & T2_dffs[2] & T2_dffs[1] & T2_dffs[0];
+T2_dffs[4]_or_out = T2_dffs[4]_p1_out;
+T2_dffs[4]_reg_input = T2_dffs[4]_or_out;
+T2_dffs[4]_p2_out = !T2_dffs[3] & T2_dffs[2] & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[4] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5];
+T2_dffs[4] = TFFE(T2_dffs[4]_reg_input, NTSCClk, !T2_dffs[4]_p2_out, , );
 
 
---S1_dffs[5] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[5] at LC116
-S1_dffs[5]_p1_out = S1_dffs[3] & S1_dffs[2] & S1_dffs[1] & S1_dffs[0] & S1_dffs[4];
-S1_dffs[5]_or_out = S1_dffs[5]_p1_out;
-S1_dffs[5]_reg_input = S1_dffs[5]_or_out;
-S1_dffs[5]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[5]_p2_out = !S1_dffs[3] & Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8] & !S1_dffs[7] & !S1_dffs[6];
-S1_dffs[5] = TFFE(S1_dffs[5]_reg_input, S1_dffs[5]_p3_out, !S1_dffs[5]_p2_out, , );
+--T1_dffs[6] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[6] at LC83
+T1_dffs[6]_p1_out = T1_dffs[2] & T1_dffs[1] & T1_dffs[0] & T1_dffs[3] & T1_dffs[4] & T1_dffs[5];
+T1_dffs[6]_or_out = T1_dffs[6]_p1_out;
+T1_dffs[6]_reg_input = T1_dffs[6]_or_out;
+T1_dffs[6]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[6]_p2_out = !T1_dffs[3] & S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8] & !T1_dffs[7] & !T1_dffs[6];
+T1_dffs[6] = TFFE(T1_dffs[6]_reg_input, T1_dffs[6]_p3_out, !T1_dffs[6]_p2_out, , );
+
+
+--D1L38 is FrameTiming:Frame|hsn~13 at LC120
+D1L38_p1_out = !T2_dffs[5] & !T2_dffs[4] & T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L38_p2_out = !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & NTSCClk & T2_dffs[0] & T2_dffs[2];
+D1L38_p3_out = !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & T2_dffs[2] & T2_dffs[1];
+D1L38_p4_out = !T2_dffs[5] & T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0] & !T2_dffs[2] & !T2_dffs[1];
+D1L38_or_out = D1L38_p1_out # D1L38_p2_out # D1L38_p3_out # D1L38_p4_out;
+D1L38 = !(D1L38_or_out);
+
+
+--D1L4 is FrameTiming:Frame|LessThan8~18 at LC82
+D1L4_p0_out = !C1_FormatOut & T1_dffs[6];
+D1L4_p1_out = !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & T1_dffs[6];
+D1L4_p2_out = !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & T1_dffs[5] & T1_dffs[2] & T1_dffs[1] & T1_dffs[0] & T1_dffs[4] & T1_dffs[3];
+D1L4_p3_out = T1_dffs[4] & T1_dffs[3] & T1_dffs[6];
+D1L4_p4_out = T1_dffs[5] & T1_dffs[6];
+D1L4_or_out = D1L5 # D1L4_p0_out # D1L4_p1_out # D1L4_p2_out # D1L4_p3_out # D1L4_p4_out;
+D1L4 = D1L4_or_out;
+
+
+--D1L24 is FrameTiming:Frame|alphaReset~14 at LC116
+D1L24_p1_out = !T1_dffs[7] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[3];
+D1L24_p2_out = !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L24_p3_out = !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+D1L24_or_out = D1L26 # !T1_dffs[8] # D1L24_p1_out # D1L24_p2_out # D1L24_p3_out # !C1_FormatOut;
+D1L24 = D1L24_or_out;
+
+
+--D1L25 is FrameTiming:Frame|alphaReset~22 at LC44
+D1L25_p0_out = T1_dffs[3] & T1_dffs[4] & T1_dffs[0] & T1_dffs[5] & T1_dffs[6] & T1_dffs[7] & T1_dffs[2] & T1_dffs[1] & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+D1L25_p1_out = !C1_FormatOut & T1_dffs[3] & T1_dffs[4] & T1_dffs[0] & T1_dffs[5] & T1_dffs[6] & T1_dffs[7] & T1_dffs[2] & T1_dffs[1];
+D1L25_p2_out = T1_dffs[8] & !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L25_p3_out = T1_dffs[3] & T1_dffs[4] & T1_dffs[0] & T1_dffs[5] & T1_dffs[6] & T1_dffs[7] & T1_dffs[2] & T1_dffs[1] & !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L25_p4_out = T1_dffs[8] & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+D1L25_or_out = D1L27 # D1L25_p0_out # D1L25_p1_out # D1L25_p2_out # D1L25_p3_out # D1L25_p4_out;
+D1L25 = D1L25_or_out;
+
+
+--T3_dffs[2] is FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0|dffs[2] at LC124
+T3_dffs[2]_p1_out = !T3_dffs[2] & D1L4 & D1L24 & !D1L25 & T3_dffs[1] & T3_dffs[0] & D1L1;
+T3_dffs[2]_p2_out = T3_dffs[2] & D1L4 & D1L24 & !D1L25 & T3L1 & D1L1;
+T3_dffs[2]_or_out = T3_dffs[2]_p1_out # T3_dffs[2]_p2_out;
+T3_dffs[2]_reg_input = T3_dffs[2]_or_out;
+T3_dffs[2]_p3_out = D1L39 & D1L40 & D1L41 & D1L42;
+T3_dffs[2] = DFFE(T3_dffs[2]_reg_input, T3_dffs[2]_p3_out, , , );
+
+
+--D1L39 is FrameTiming:Frame|hsn~15 at SEXP115
+D1L39 = EXP(!T2_dffs[5] & !T2_dffs[4] & T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6]);
+
+
+--D1L40 is FrameTiming:Frame|hsn~16 at SEXP114
+D1L40 = EXP(NTSCClk & !T2_dffs[5] & T2_dffs[0] & !T2_dffs[4] & T2_dffs[2] & !T2_dffs[7] & !T2_dffs[6]);
+
+
+--D1L41 is FrameTiming:Frame|hsn~17 at SEXP113
+D1L41 = EXP(!T2_dffs[5] & T2_dffs[1] & !T2_dffs[4] & T2_dffs[2] & !T2_dffs[7] & !T2_dffs[6]);
+
+
+--D1L42 is FrameTiming:Frame|hsn~18 at SEXP120
+D1L42 = EXP(!T2_dffs[5] & !T2_dffs[0] & !T2_dffs[1] & T2_dffs[4] & !T2_dffs[3] & !T2_dffs[2] & !T2_dffs[7] & !T2_dffs[6]);
 
 
 --C1_FormatOut is FormatSwitch:FormatSelect|FormatOut at LC105
 C1_FormatOut_or_out = RequestFormat;
 C1_FormatOut_reg_input = C1_FormatOut_or_out;
-C1_FormatOut = DFFE(C1_FormatOut_reg_input, D1L1, , , );
+C1_FormatOut = DFFE(C1_FormatOut_reg_input, D1L36, , , );
+
+
+--T4_dffs[0] is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[0] at LC61
+T4_dffs[0]_p0_out = !T4_dffs[0] & T2_dffs[6];
+T4_dffs[0]_p1_out = T2_dffs[1] & T2_dffs[4] & T2_dffs[3] & T2_dffs[5] & T2_dffs[2] & !T4_dffs[0];
+T4_dffs[0]_p2_out = T2_dffs[4] & T2_dffs[3] & T2_dffs[5] & T2_dffs[2] & !T4_dffs[0] & T2_dffs[0];
+T4_dffs[0]_p4_out = !T4_dffs[0] & T2_dffs[7];
+T4_dffs[0]_or_out = T4L3 # T4_dffs[0]_p0_out # T4_dffs[0]_p1_out # T4_dffs[0]_p2_out # T4_dffs[0]_p4_out;
+T4_dffs[0]_reg_input = T4_dffs[0]_or_out;
+T4_dffs[0] = DFFE(T4_dffs[0]_reg_input, !T2_dffs[2], , , );
 
 
 --B1L1 is ClockSwitch:ColourClock|Clk~5 at LC117
@@ -157,303 +230,594 @@ B1L1_or_out = B1L1_p1_out # B1L1_p2_out;
 B1L1 = B1L1_or_out;
 
 
---S1_dffs[0] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[0] at LC124
-S1_dffs[0]_reg_input = VCC;
-S1_dffs[0]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[0]_p2_out = Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-S1_dffs[0] = TFFE(S1_dffs[0]_reg_input, S1_dffs[0]_p3_out, !S1_dffs[0]_p2_out, , );
+--T4_dffs[1] is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[1] at LC63
+T4_dffs[1]_p0_out = T4_dffs[0] & T4_dffs[1];
+T4_dffs[1]_p1_out = !T2_dffs[5] & !T2_dffs[7] & !T2_dffs[6];
+T4_dffs[1]_p2_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[2];
+T4_dffs[1]_p4_out = !T4_dffs[0] & !T4_dffs[1];
+T4_dffs[1]_or_out = T4L5 # T4_dffs[1]_p0_out # T4_dffs[1]_p1_out # T4_dffs[1]_p2_out # T4_dffs[1]_p4_out;
+T4_dffs[1]_reg_input = !(T4_dffs[1]_or_out);
+T4_dffs[1] = DFFE(T4_dffs[1]_reg_input, !T2_dffs[2], , , );
 
 
---S1_dffs[1] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[1] at LC126
-S1_dffs[1]_or_out = S1_dffs[0];
-S1_dffs[1]_reg_input = S1_dffs[1]_or_out;
-S1_dffs[1]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[1]_p2_out = Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-S1_dffs[1] = TFFE(S1_dffs[1]_reg_input, S1_dffs[1]_p3_out, !S1_dffs[1]_p2_out, , );
+--T1_dffs[0] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[0] at LC89
+T1_dffs[0]_reg_input = VCC;
+T1_dffs[0]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[0]_p2_out = S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8] & !T1_dffs[7] & !T1_dffs[6] & !T1_dffs[3];
+T1_dffs[0] = TFFE(T1_dffs[0]_reg_input, T1_dffs[0]_p3_out, !T1_dffs[0]_p2_out, , );
 
 
---S1_dffs[2] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[2] at LC125
-S1_dffs[2]_p1_out = S1_dffs[1] & S1_dffs[0];
-S1_dffs[2]_or_out = S1_dffs[2]_p1_out;
-S1_dffs[2]_reg_input = S1_dffs[2]_or_out;
-S1_dffs[2]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[2]_p2_out = Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-S1_dffs[2] = TFFE(S1_dffs[2]_reg_input, S1_dffs[2]_p3_out, !S1_dffs[2]_p2_out, , );
+--T1_dffs[1] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[1] at LC84
+T1_dffs[1]_or_out = T1_dffs[0];
+T1_dffs[1]_reg_input = T1_dffs[1]_or_out;
+T1_dffs[1]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[1]_p2_out = S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8] & !T1_dffs[7] & !T1_dffs[6] & !T1_dffs[3];
+T1_dffs[1] = TFFE(T1_dffs[1]_reg_input, T1_dffs[1]_p3_out, !T1_dffs[1]_p2_out, , );
 
 
---S1_dffs[3] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] at LC122
-S1_dffs[3]_p1_out = S1_dffs[2] & S1_dffs[1] & S1_dffs[0];
-S1_dffs[3]_or_out = S1_dffs[3]_p1_out;
-S1_dffs[3]_reg_input = S1_dffs[3]_or_out;
-S1_dffs[3]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[3]_p2_out = Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-S1_dffs[3] = TFFE(S1_dffs[3]_reg_input, S1_dffs[3]_p3_out, !S1_dffs[3]_p2_out, , );
+--T4_dffs[2] is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[2] at LC24
+T4_dffs[2]_p0_out = T4_dffs[2] & T4_dffs[1] & T4_dffs[0];
+T4_dffs[2]_p1_out = !T2_dffs[2] & !T2_dffs[7] & !T2_dffs[6];
+T4_dffs[2]_p2_out = !T4_dffs[2] & !T4_dffs[1];
+T4_dffs[2]_p4_out = !T4_dffs[2] & !T4_dffs[0];
+T4_dffs[2]_or_out = T4L7 # T4_dffs[2]_p0_out # T4_dffs[2]_p1_out # T4_dffs[2]_p2_out # T4_dffs[2]_p4_out;
+T4_dffs[2]_reg_input = !(T4_dffs[2]_or_out);
+T4_dffs[2] = DFFE(T4_dffs[2]_reg_input, !T2_dffs[2], , , );
 
 
---S1_dffs[8] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[8] at LC121
-S1_dffs[8]_p1_out = S1_dffs[3] & S1_dffs[2] & S1_dffs[1] & S1_dffs[0] & S1_dffs[4] & S1_dffs[5] & S1_dffs[6] & S1_dffs[7];
-S1_dffs[8]_or_out = S1_dffs[8]_p1_out;
-S1_dffs[8]_reg_input = S1_dffs[8]_or_out;
-S1_dffs[8]_p3_out = S2_dffs[5] & S2_dffs[2] & !S2_dffs[0] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & S2_dffs[7] & S2_dffs[6];
-S1_dffs[8]_p2_out = !S1_dffs[3] & !S1_dffs[6] & !S1_dffs[7] & Q1L1 & Q1L2 & D1L6 & D1L7 & S1_dffs[8];
-S1_dffs[8] = TFFE(S1_dffs[8]_reg_input, S1_dffs[8]_p3_out, !S1_dffs[8]_p2_out, , );
+--T1_dffs[2] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[2] at LC85
+T1_dffs[2]_p1_out = T1_dffs[1] & T1_dffs[0];
+T1_dffs[2]_or_out = T1_dffs[2]_p1_out;
+T1_dffs[2]_reg_input = T1_dffs[2]_or_out;
+T1_dffs[2]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[2]_p2_out = S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8] & !T1_dffs[7] & !T1_dffs[6] & !T1_dffs[3];
+T1_dffs[2] = TFFE(T1_dffs[2]_reg_input, T1_dffs[2]_p3_out, !T1_dffs[2]_p2_out, , );
 
 
---D1L2 is FrameTiming:Frame|LessThan2~4 at LC118
-D1L2_p1_out = !S1_dffs[8] & !S1_dffs[5] & !S1_dffs[4] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
+--T4_dffs[3] is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[3] at LC26
+T4_dffs[3]_p0_out = T4_dffs[3] & T4_dffs[1] & T4_dffs[0] & T4_dffs[2];
+T4_dffs[3]_p1_out = !T4_dffs[3] & !T4_dffs[1];
+T4_dffs[3]_p2_out = !T4_dffs[3] & !T4_dffs[0];
+T4_dffs[3]_p4_out = !T4_dffs[3] & !T4_dffs[2];
+T4_dffs[3]_or_out = T4L9 # T4_dffs[3]_p0_out # T4_dffs[3]_p1_out # T4_dffs[3]_p2_out # T4_dffs[3]_p4_out;
+T4_dffs[3]_reg_input = !(T4_dffs[3]_or_out);
+T4_dffs[3] = DFFE(T4_dffs[3]_reg_input, !T2_dffs[2], , , );
+
+
+--T1_dffs[3] is FrameTiming:Frame|row_counter_vhdl:pixelRows|reg_counter_vhdl:row_counter|lpm_counter:counter_rtl_0|dffs[3] at LC93
+T1_dffs[3]_p1_out = T1_dffs[2] & T1_dffs[1] & T1_dffs[0];
+T1_dffs[3]_or_out = T1_dffs[3]_p1_out;
+T1_dffs[3]_reg_input = T1_dffs[3]_or_out;
+T1_dffs[3]_p3_out = !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1] & !T2_dffs[0] & T2_dffs[7] & T2_dffs[6] & T2_dffs[5] & T2_dffs[2];
+T1_dffs[3]_p2_out = S1L1 & D1L10 & D1L11 & D1L12 & T1_dffs[8] & !T1_dffs[7] & !T1_dffs[6] & !T1_dffs[3];
+T1_dffs[3] = TFFE(T1_dffs[3]_reg_input, T1_dffs[3]_p3_out, !T1_dffs[3]_p2_out, , );
+
+
+--D1L37 is FrameTiming:Frame|fsn~14 at LC118
+D1L37_p1_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L37_or_out = D1L37_p1_out;
+D1L37 = !(D1L37_or_out);
+
+
+--T4_dffs[4] is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[4] at LC22
+T4_dffs[4]_p0_out = T4_dffs[4] & T4_dffs[0] & T4_dffs[2] & T4_dffs[3] & T4_dffs[1];
+T4_dffs[4]_p1_out = !T4_dffs[4] & !T4_dffs[0];
+T4_dffs[4]_p2_out = !T4_dffs[4] & !T4_dffs[2];
+T4_dffs[4]_p4_out = !T4_dffs[4] & !T4_dffs[3];
+T4_dffs[4]_or_out = T4L12 # T4_dffs[4]_p0_out # T4_dffs[4]_p1_out # T4_dffs[4]_p2_out # T4_dffs[4]_p4_out;
+T4_dffs[4]_reg_input = !(T4_dffs[4]_or_out);
+T4_dffs[4] = DFFE(T4_dffs[4]_reg_input, !T2_dffs[2], , , );
+
+
+--D1L28 is FrameTiming:Frame|blank~17 at LC69
+D1L28_p0_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[0];
+D1L28_p1_out = !T1_dffs[2] & !T1_dffs[1] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L28_p2_out = !T2_dffs[5] & !T2_dffs[7] & !T2_dffs[6];
+D1L28_p3_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[2] & !T2_dffs[4] & !T2_dffs[3];
+D1L28_p4_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1];
+D1L28_or_out = D1L32 # D1L28_p0_out # D1L28_p1_out # D1L28_p2_out # D1L28_p3_out # D1L28_p4_out;
+D1L28 = !(D1L28_or_out);
+
+
+--D1L29 is FrameTiming:Frame|blank~24 at LC91
+D1L29_p0_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[0];
+D1L29_p1_out = !T1_dffs[2] & !T1_dffs[1] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L29_p2_out = !T2_dffs[5] & !T2_dffs[7] & !T2_dffs[6];
+D1L29_p3_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[2] & !T2_dffs[4] & !T2_dffs[3];
+D1L29_p4_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1];
+D1L29_or_out = D1L33 # D1L29_p0_out # D1L29_p1_out # D1L29_p2_out # D1L29_p3_out # D1L29_p4_out;
+D1L29 = !(D1L29_or_out);
+
+
+--D1L30 is FrameTiming:Frame|blank~31 at LC80
+D1L30_p0_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[0];
+D1L30_p1_out = !T1_dffs[2] & !T1_dffs[1] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L30_p2_out = !T2_dffs[5] & !T2_dffs[7] & !T2_dffs[6];
+D1L30_p3_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[2] & !T2_dffs[4] & !T2_dffs[3];
+D1L30_p4_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1];
+D1L30_or_out = D1L34 # D1L30_p0_out # D1L30_p1_out # D1L30_p2_out # D1L30_p3_out # D1L30_p4_out;
+D1L30 = !(D1L30_or_out);
+
+
+--H1_counter[0] is data_counter_vhdl:dataAddress|counter[0] at LC19
+H1_counter[0]_reg_input = VCC;
+H1_counter[0]_p4_out = H1_counter[0] & H1L21;
+H1_counter[0] = TFFE(H1_counter[0]_reg_input, D1L3, !H1L3, !H1_counter[0]_p4_out, );
+
+
+--H1L3 is data_counter_vhdl:dataAddress|counter[0]~45 at SEXP29
+H1L3 = EXP(D1L36 & H1L4 & H1L5 & H1L6 & H1L7);
+
+
+--H1L21 is data_counter_vhdl:dataAddress|counter[4]~55 at LC32
+H1L21_p1_out = !T2_dffs[5] & !T2_dffs[4] & T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & D1L36;
+H1L21_p2_out = !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & NTSCClk & T2_dffs[0] & T2_dffs[2] & D1L36;
+H1L21_p3_out = !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & T2_dffs[2] & T2_dffs[1] & D1L36;
+H1L21_p4_out = !T2_dffs[5] & T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0] & !T2_dffs[2] & !T2_dffs[1] & D1L36;
+H1L21_or_out = H1L21_p1_out # H1L21_p2_out # H1L21_p3_out # H1L21_p4_out;
+H1L21 = H1L21_or_out;
+
+
+--D1L15 is FrameTiming:Frame|active[0]~15 at LC42
+D1L15_p0_out = T1_dffs[8] & T1_dffs[4] & T1_dffs[3];
+D1L15_p1_out = T1_dffs[8] & !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L15_p2_out = T1_dffs[6] & T1_dffs[5] & !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & T1_dffs[4] & T1_dffs[3] & T1_dffs[2] & T1_dffs[1] & T1_dffs[7];
+D1L15_p3_out = T1_dffs[8] & T1_dffs[7];
+D1L15_p4_out = T1_dffs[8] & T1_dffs[4] & T1_dffs[2] & T1_dffs[1] & T1_dffs[0];
+D1L15_or_out = D1L23 # D1L15_p0_out # D1L15_p1_out # D1L15_p2_out # D1L15_p3_out # D1L15_p4_out;
+D1L15 = D1L15_or_out;
+
+
+--D1L13 is FrameTiming:Frame|LessThan12~35 at LC39
+D1L13_p1_out = T1_dffs[6] & T1_dffs[2] & T1_dffs[4] & T1_dffs[3];
+D1L13_p2_out = T1_dffs[6] & !NTSCClk & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L13_p3_out = T1_dffs[6] & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+D1L13_or_out = D1L14 # T1_dffs[7] # D1L13_p1_out # D1L13_p2_out # D1L13_p3_out # T1_dffs[8];
+D1L13 = D1L13_or_out;
+
+
+--D1L31 is FrameTiming:Frame|blank~38 at LC122
+D1L31_p0_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[0];
+D1L31_p1_out = !T1_dffs[2] & !T1_dffs[1] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L31_p2_out = !T2_dffs[5] & !T2_dffs[7] & !T2_dffs[6];
+D1L31_p3_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[2] & !T2_dffs[4] & !T2_dffs[3];
+D1L31_p4_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[1];
+D1L31_or_out = D1L35 # D1L31_p0_out # D1L31_p1_out # D1L31_p2_out # D1L31_p3_out # D1L31_p4_out;
+D1L31 = D1L31_or_out;
+
+
+--D1L16 is FrameTiming:Frame|active[0]~17 at LC67
+D1L16_p1_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[2] & !T2_dffs[0] & !T2_dffs[1] & !T2_dffs[5] & !T2_dffs[3] & !T2_dffs[4] & !NTSCClk & D1L6 & D1L7;
+D1L16_p2_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[7] & D1L6 & D1L7;
+D1L16_p3_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[6] & D1L6 & D1L7;
+D1L16_or_out = D1L16_p1_out # D1L16_p2_out # D1L16_p3_out;
+D1L16 = D1L16_or_out;
+
+
+--H1_counter[1] is data_counter_vhdl:dataAddress|counter[1] at LC17
+H1_counter[1]_or_out = H1_counter[0];
+H1_counter[1]_reg_input = H1_counter[1] $ H1_counter[1]_or_out;
+H1_counter[1]_p4_out = H1_counter[1] & H1L21;
+H1_counter[1] = DFFE(H1_counter[1]_reg_input, D1L3, !H1L9, !H1_counter[1]_p4_out, );
+
+
+--H1L9 is data_counter_vhdl:dataAddress|counter[1]~56 at SEXP28
+H1L9 = EXP(D1L36 & H1L10 & H1L11 & H1L12 & H1L13);
+
+
+--D1L17 is FrameTiming:Frame|active[0]~19 at LC86
+D1L17_p1_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[2] & !T2_dffs[0] & !T2_dffs[1] & !T2_dffs[5] & !T2_dffs[3] & !T2_dffs[4] & !NTSCClk & D1L8 & D1L9;
+D1L17_p2_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[7] & D1L8 & D1L9;
+D1L17_p3_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[6] & D1L8 & D1L9;
+D1L17_or_out = D1L17_p1_out # D1L17_p2_out # D1L17_p3_out;
+D1L17 = D1L17_or_out;
+
+
+--D1L18 is FrameTiming:Frame|active[0]~21 at LC88
+D1L18_p1_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[2] & !T2_dffs[0] & !T2_dffs[1] & !T2_dffs[5] & !T2_dffs[3] & !T2_dffs[4] & !NTSCClk & D1L8 & D1L9;
+D1L18_p2_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[7] & D1L8 & D1L9;
+D1L18_p3_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[6] & D1L8 & D1L9;
+D1L18_or_out = D1L18_p1_out # D1L18_p2_out # D1L18_p3_out;
+D1L18 = D1L18_or_out;
+
+
+--D1L19 is FrameTiming:Frame|active[0]~23 at LC75
+D1L19_p1_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[2] & !T2_dffs[0] & !T2_dffs[1] & !T2_dffs[5] & !T2_dffs[3] & !T2_dffs[4] & !NTSCClk & D1L6 & D1L7;
+D1L19_p2_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[7] & D1L6 & D1L7;
+D1L19_p3_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[6] & D1L6 & D1L7;
+D1L19_or_out = D1L19_p1_out # D1L19_p2_out # D1L19_p3_out;
+D1L19 = D1L19_or_out;
+
+
+--D1L20 is FrameTiming:Frame|active[0]~25 at LC77
+D1L20_p1_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[2] & !T2_dffs[0] & !T2_dffs[1] & !T2_dffs[5] & !T2_dffs[3] & !T2_dffs[4] & !NTSCClk & D1L6 & D1L7;
+D1L20_p2_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[7] & D1L6 & D1L7;
+D1L20_p3_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[6] & D1L6 & D1L7;
+D1L20_or_out = D1L20_p1_out # D1L20_p2_out # D1L20_p3_out;
+D1L20 = D1L20_or_out;
+
+
+--D1L21 is FrameTiming:Frame|active[0]~27 at LC65
+D1L21_p1_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[2] & !T2_dffs[0] & !T2_dffs[1] & !T2_dffs[5] & !T2_dffs[3] & !T2_dffs[4] & !NTSCClk & D1L6 & D1L7;
+D1L21_p2_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[7] & D1L6 & D1L7;
+D1L21_p3_out = !D1L15 & D1L13 & !D1L31 & !T2_dffs[6] & D1L6 & D1L7;
+D1L21_or_out = D1L21_p1_out # D1L21_p2_out # D1L21_p3_out;
+D1L21 = D1L21_or_out;
+
+
+--T3_dffs[0] is FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0|dffs[0] at LC125
+T3_dffs[0]_p1_out = !T3_dffs[0] & D1L4 & D1L24 & !D1L25 & D1L1;
+T3_dffs[0]_or_out = T3_dffs[0]_p1_out;
+T3_dffs[0]_reg_input = T3_dffs[0]_or_out;
+T3_dffs[0]_p3_out = D1L39 & D1L40 & D1L41 & D1L42;
+T3_dffs[0] = DFFE(T3_dffs[0]_reg_input, T3_dffs[0]_p3_out, , , );
+
+
+--H1_counter[2] is data_counter_vhdl:dataAddress|counter[2] at LC46
+H1_counter[2]_p1_out = H1_counter[1] & H1_counter[0];
+H1_counter[2]_or_out = H1_counter[2];
+H1_counter[2]_reg_input = H1_counter[2]_p1_out $ H1_counter[2]_or_out;
+H1_counter[2]_p4_out = H1_counter[2] & H1L21;
+H1_counter[2] = DFFE(H1_counter[2]_reg_input, D1L3, !H1L15, !H1_counter[2]_p4_out, );
+
+
+--H1L15 is data_counter_vhdl:dataAddress|counter[2]~62 at SEXP40
+H1L15 = EXP(D1L36 & H1L16);
+
+
+--T3_dffs[1] is FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0|dffs[1] at LC114
+T3_dffs[1]_p1_out = T3_dffs[1] & !T3_dffs[0] & D1L4 & D1L24 & !D1L25 & D1L1;
+T3_dffs[1]_p2_out = !T3_dffs[1] & T3_dffs[0] & D1L4 & D1L24 & !D1L25 & D1L1;
+T3_dffs[1]_or_out = T3_dffs[1]_p1_out # T3_dffs[1]_p2_out;
+T3_dffs[1]_reg_input = T3_dffs[1]_or_out;
+T3_dffs[1]_p3_out = D1L39 & D1L40 & D1L41 & D1L42;
+T3_dffs[1] = DFFE(T3_dffs[1]_reg_input, T3_dffs[1]_p3_out, , , );
+
+
+--T3_dffs[3] is FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0|dffs[3] at LC126
+T3_dffs[3]_p1_out = !T3_dffs[3] & D1L4 & D1L24 & !D1L25 & D1L1 & T3_dffs[1] & T3_dffs[0] & T3_dffs[2];
+T3_dffs[3]_p2_out = T3_dffs[3] & D1L4 & D1L24 & !D1L25 & D1L1 & T3L2;
+T3_dffs[3]_or_out = T3_dffs[3]_p1_out # T3_dffs[3]_p2_out;
+T3_dffs[3]_reg_input = T3_dffs[3]_or_out;
+T3_dffs[3]_p3_out = D1L39 & D1L40 & D1L41 & D1L42;
+T3_dffs[3] = DFFE(T3_dffs[3]_reg_input, T3_dffs[3]_p3_out, , , );
+
+
+--H1_counter[3] is data_counter_vhdl:dataAddress|counter[3] at LC45
+H1_counter[3]_p1_out = H1_counter[2] & H1_counter[1] & H1_counter[0];
+H1_counter[3]_or_out = H1_counter[3];
+H1_counter[3]_reg_input = H1_counter[3]_p1_out $ H1_counter[3]_or_out;
+H1_counter[3]_p4_out = H1_counter[3] & H1L21;
+H1_counter[3] = DFFE(H1_counter[3]_reg_input, D1L3, !H1L18, !H1_counter[3]_p4_out, );
+
+
+--H1L18 is data_counter_vhdl:dataAddress|counter[3]~68 at SEXP38
+H1L18 = EXP(D1L36 & H1L19);
+
+
+--D1L2 is FrameTiming:Frame|Equal3~5 at LC123
+D1L2_p1_out = T3_dffs[3] & T3_dffs[2] & !T3_dffs[1] & !T3_dffs[0];
 D1L2_or_out = D1L2_p1_out;
-D1L2 = !(D1L2_or_out);
-
+D1L2 = D1L2_or_out;
 
---L1L4 is videoMux:outputStream|Mux8~14 at LC67
-L1L4_p1_out = !S2_dffs[1] & !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6];
-L1L4_p2_out = !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-L1L4_p3_out = !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[4];
-L1L4_or_out = L1L12 # !CSS # L1L4_p1_out # L1L4_p2_out # L1L4_p3_out # !AnG;
-L1L4 = !(L1L4_or_out);
-
-
---L1L5 is videoMux:outputStream|Mux8~21 at LC86
-L1L5_p1_out = !S2_dffs[1] & !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6];
-L1L5_p2_out = !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-L1L5_p3_out = !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[4];
-L1L5_or_out = L1L13 # !CSS # L1L5_p1_out # L1L5_p2_out # L1L5_p3_out # !AnG;
-L1L5 = !(L1L5_or_out);
-
-
---L1L6 is videoMux:outputStream|Mux8~28 at LC88
-L1L6_p1_out = !S2_dffs[1] & !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6];
-L1L6_p2_out = !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-L1L6_p3_out = !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[4];
-L1L6_or_out = L1L14 # !CSS # L1L6_p1_out # L1L6_p2_out # L1L6_p3_out # !AnG;
-L1L6 = !(L1L6_or_out);
-
-
---D1L5 is FrameTiming:Frame|LessThan8~6 at LC78
-D1L5_p1_out = !NTSCClk & !S2_dffs[0] & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1];
-D1L5_or_out = D1L5_p1_out # !S2_dffs[7] # !S2_dffs[6];
-D1L5 = D1L5_or_out;
 
+--H1_counter[4] is data_counter_vhdl:dataAddress|counter[4] at LC37
+H1_counter[4]_p1_out = H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0];
+H1_counter[4]_or_out = H1_counter[4];
+H1_counter[4]_reg_input = H1_counter[4]_p1_out $ H1_counter[4]_or_out;
+H1_counter[4]_p4_out = H1_counter[4] & H1L21;
+H1_counter[4] = DFFE(H1_counter[4]_reg_input, D1L3, !H1L22, !H1_counter[4]_p4_out, );
 
---D1L4 is FrameTiming:Frame|LessThan7~4 at LC79
-D1L4_p1_out = !S2_dffs[0] & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[7] & !S2_dffs[1];
-D1L4_p2_out = !S2_dffs[7] & !S2_dffs[6];
-D1L4_or_out = D1L4_p1_out # D1L4_p2_out;
-D1L4 = D1L4_or_out;
 
+--H1L22 is data_counter_vhdl:dataAddress|counter[4]~74 at SEXP33
+H1L22 = EXP(D1L36 & H1L23 & H1L24 & H1L25 & H1L26);
 
---D1L8 is FrameTiming:Frame|LessThan9~29 at LC114
-D1L8_p0_out = S1_dffs[6] & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-D1L8_p1_out = S1_dffs[6] & S1_dffs[4] & S1_dffs[3] & S1_dffs[1];
-D1L8_p2_out = S1_dffs[6] & S1_dffs[4] & S1_dffs[3] & S1_dffs[2];
-D1L8_p3_out = S1_dffs[6] & !C1_FormatOut;
-D1L8_p4_out = S1_dffs[6] & !NTSCClk & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6];
-D1L8_or_out = D1L9 # D1L8_p0_out # D1L8_p1_out # D1L8_p2_out # D1L8_p3_out # D1L8_p4_out;
-D1L8 = D1L8_or_out;
 
+--H1_counter[5] is data_counter_vhdl:dataAddress|counter[5] at LC35
+H1_counter[5]_or_out = H1L29 # !H1_counter[0] # !H1_counter[2] # !H1_counter[1];
+H1_counter[5]_reg_input = !H1_counter[5]_or_out;
+H1_counter[5]_p2_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+H1_counter[5] = TFFE(H1_counter[5]_reg_input, D1L3, !H1_counter[5]_p2_out, , );
 
---D1L10 is FrameTiming:Frame|active[0]~18 at LC83
-D1L10_p0_out = S1_dffs[8] & S1_dffs[2] & S1_dffs[1] & S1_dffs[4] & S1_dffs[0];
-D1L10_p1_out = S1_dffs[5] & !NTSCClk & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6] & S1_dffs[6] & S1_dffs[2] & S1_dffs[1] & S1_dffs[4] & S1_dffs[3] & S1_dffs[7];
-D1L10_p2_out = S1_dffs[8] & !NTSCClk & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6];
-D1L10_p3_out = S1_dffs[8] & S1_dffs[7];
-D1L10_p4_out = S1_dffs[8] & S1_dffs[4] & S1_dffs[3];
-D1L10_or_out = D1L12 # D1L10_p0_out # D1L10_p1_out # D1L10_p2_out # D1L10_p3_out # D1L10_p4_out;
-D1L10 = D1L10_or_out;
 
+--H1_counter[6] is data_counter_vhdl:dataAddress|counter[6] at LC59
+H1_counter[6]_p1_out = D1L44 & D1L45 & D1L46 & D1L47 & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0];
+H1_counter[6]_or_out = H1_counter[6]_p1_out;
+H1_counter[6]_reg_input = H1_counter[6]_or_out;
+H1_counter[6]_p2_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+H1_counter[6] = TFFE(H1_counter[6]_reg_input, D1L3, !H1_counter[6]_p2_out, , );
 
---L1L8 is videoMux:outputStream|Mux8~37 at LC90
-L1L8_p1_out = !S2_dffs[1] & !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6];
-L1L8_p2_out = !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[0];
-L1L8_p3_out = !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6] & !S2_dffs[4];
-L1L8_or_out = L1L15 # !CSS # L1L8_p1_out # L1L8_p2_out # L1L8_p3_out # !AnG;
-L1L8 = L1L8_or_out;
 
+--H1_counter[7] is data_counter_vhdl:dataAddress|counter[7] at LC57
+H1_counter[7]_p0_out = H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0] & T2_dffs[6];
+H1_counter[7]_p1_out = T2_dffs[4] & T2_dffs[3] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0];
+H1_counter[7]_p4_out = H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0] & T2_dffs[7];
+H1_counter[7]_or_out = H1L33 # H1_counter[7]_p0_out # H1_counter[7]_p1_out # H1_counter[7]_p4_out;
+H1_counter[7]_reg_input = H1_counter[7]_or_out;
+H1_counter[7]_p2_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+H1_counter[7] = TFFE(H1_counter[7]_reg_input, D1L3, !H1_counter[7]_p2_out, , );
 
---L1L9 is videoMux:outputStream|Mux8~40 at LC69
-L1L9_p2_out = AnG & D1L5 & !D1L4 & D1L8 & !D1L10 & L1L8 & L1L7 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L9_p3_out = !AnG & D1L5 & !D1L4 & D1L8 & !D1L10 & !L1L8 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L9_p4_out = D1L5 & !D1L4 & D1L8 & !D1L10 & !L1L8 & !CSS & GM[0] & D1L1 & D1L13 & D1L14 & D1L15;
-L1L9_or_out = L1L9_p2_out # L1L9_p3_out # L1L9_p4_out;
-L1L9 = !L1L8 $ L1L9_or_out;
 
+--H1_counter[8] is data_counter_vhdl:dataAddress|counter[8] at LC53
+H1_counter[8]_p1_out = D1L44 & D1L45 & D1L46 & D1L47 & H1_counter[7] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0];
+H1_counter[8]_or_out = H1_counter[8]_p1_out;
+H1_counter[8]_reg_input = H1_counter[8]_or_out;
+H1_counter[8]_p2_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+H1_counter[8] = TFFE(H1_counter[8]_reg_input, D1L3, !H1_counter[8]_p2_out, , );
 
---L1L1 is videoMux:outputStream|Mux5~12 at LC80
-L1L1_p0_out = AnG & D1L10 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L1_p1_out = GM[0] & AnG & D1L1 & D1L13 & D1L14 & D1L15;
-L1L1_p2_out = AnG & !D1L5 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L1_p3_out = AnG & D1L4 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L1_p4_out = AnG & !D1L8 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L1_or_out = L1L1_p0_out # L1L1_p1_out # L1L1_p2_out # L1L1_p3_out # L1L1_p4_out;
-L1L1 = L1L1_or_out;
 
+--H1_counter[9] is data_counter_vhdl:dataAddress|counter[9] at LC51
+H1_counter[9]_p1_out = D1L44 & D1L45 & D1L46 & D1L47 & H1_counter[8] & H1_counter[7] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0];
+H1_counter[9]_or_out = H1_counter[9]_p1_out;
+H1_counter[9]_reg_input = H1_counter[9]_or_out;
+H1_counter[9]_p2_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+H1_counter[9] = TFFE(H1_counter[9]_reg_input, D1L3, !H1_counter[9]_p2_out, , );
 
---L1L10 is videoMux:outputStream|Mux8~46 at LC65
-L1L10_p2_out = AnG & D1L5 & !D1L4 & D1L8 & !D1L10 & L1L8 & L1L7 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L10_p3_out = !AnG & D1L5 & !D1L4 & D1L8 & !D1L10 & !L1L8 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L10_p4_out = D1L5 & !D1L4 & D1L8 & !D1L10 & !L1L8 & !CSS & GM[0] & D1L1 & D1L13 & D1L14 & D1L15;
-L1L10_or_out = L1L10_p2_out # L1L10_p3_out # L1L10_p4_out;
-L1L10 = !L1L8 $ L1L10_or_out;
 
+--H1_counter[10] is data_counter_vhdl:dataAddress|counter[10] at LC49
+H1_counter[10]_p1_out = D1L44 & D1L45 & D1L46 & D1L47 & H1_counter[9] & H1_counter[8] & H1_counter[7] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0];
+H1_counter[10]_or_out = H1_counter[10]_p1_out;
+H1_counter[10]_reg_input = H1_counter[10]_or_out;
+H1_counter[10]_p2_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+H1_counter[10] = TFFE(H1_counter[10]_reg_input, D1L3, !H1_counter[10]_p2_out, , );
 
---L1L11 is videoMux:outputStream|Mux8~52 at LC91
-L1L11_p2_out = AnG & D1L5 & !D1L4 & D1L8 & !D1L10 & L1L8 & L1L16 & D1L1 & D1L16 & D1L17 & D1L18;
-L1L11_p3_out = !AnG & D1L5 & !D1L4 & D1L8 & !D1L10 & !L1L8 & D1L1 & D1L16 & D1L17 & D1L18;
-L1L11_p4_out = D1L5 & !D1L4 & D1L8 & !D1L10 & !L1L8 & !CSS & GM[0] & D1L1 & D1L16 & D1L17 & D1L18;
-L1L11_or_out = L1L11_p2_out # L1L11_p3_out # L1L11_p4_out;
-L1L11 = !L1L8 $ L1L11_or_out;
 
+--AB2L1 is data_counter_vhdl:dataAddress|lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~12 at LC74
+AB2L1_p1_out = H1_counter[10] & H1_counter[9] & H1_counter[8] & H1_counter[7] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0];
+AB2L1_or_out = H1_counter[11];
+AB2L1 = AB2L1_p1_out $ AB2L1_or_out;
 
---L1L2 is videoMux:outputStream|Mux5~18 at LC75
-L1L2_p0_out = AnG & D1L10 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L2_p1_out = GM[0] & AnG & D1L1 & D1L13 & D1L14 & D1L15;
-L1L2_p2_out = AnG & !D1L5 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L2_p3_out = AnG & D1L4 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L2_p4_out = AnG & !D1L8 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L2_or_out = L1L2_p0_out # L1L2_p1_out # L1L2_p2_out # L1L2_p3_out # L1L2_p4_out;
-L1L2 = L1L2_or_out;
 
+--D1L43 is FrameTiming:Frame|hsn~35 at LC30
+D1L43_p1_out = !T2_dffs[5] & !T2_dffs[4] & T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L43_p2_out = !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & NTSCClk & T2_dffs[0] & T2_dffs[2];
+D1L43_p3_out = !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & T2_dffs[2] & T2_dffs[1];
+D1L43_p4_out = !T2_dffs[5] & T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0] & !T2_dffs[2] & !T2_dffs[1];
+D1L43_or_out = D1L43_p1_out # D1L43_p2_out # D1L43_p3_out # D1L43_p4_out;
+D1L43 = D1L43_or_out;
 
---L1L3 is videoMux:outputStream|Mux5~24 at LC77
-L1L3_p0_out = AnG & D1L10 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L3_p1_out = GM[0] & AnG & D1L1 & D1L13 & D1L14 & D1L15;
-L1L3_p2_out = AnG & !D1L5 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L3_p3_out = AnG & D1L4 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L3_p4_out = AnG & !D1L8 & D1L1 & D1L13 & D1L14 & D1L15;
-L1L3_or_out = L1L3_p0_out # L1L3_p1_out # L1L3_p2_out # L1L3_p3_out # L1L3_p4_out;
-L1L3 = L1L3_or_out;
 
+--H1_counter[11] is data_counter_vhdl:dataAddress|counter[11] at LC72
+H1_counter[11]_p1_out = AB2L1 & !D1L43;
+H1_counter[11]_p4_out = D1L43 & H1_counter[11];
+H1_counter[11]_or_out = H1_counter[11]_p1_out # H1_counter[11]_p4_out;
+H1_counter[11]_reg_input = H1_counter[11]_or_out;
+H1_counter[11]_p2_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+H1_counter[11] = DFFE(H1_counter[11]_reg_input, D1L3, !H1_counter[11]_p2_out, , );
 
---L1L12 is videoMux:outputStream|Mux8~58 at LC66
-L1L12_p1_out = !S1_dffs[8] & !S1_dffs[5] & !S1_dffs[4] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-L1L12 = L1L12_p1_out;
 
+--H1_counter[12] is data_counter_vhdl:dataAddress|counter[12] at LC73
+H1_counter[12]_p1_out = H1_counter[11] & H1_counter[10] & H1_counter[9] & H1_counter[8] & H1_counter[7] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0] & !D1L43;
+H1_counter[12]_or_out = H1_counter[12]_p1_out;
+H1_counter[12]_reg_input = H1_counter[12]_or_out;
+H1_counter[12]_p2_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+H1_counter[12] = TFFE(H1_counter[12]_reg_input, D1L3, !H1_counter[12]_p2_out, , );
 
---L1L13 is videoMux:outputStream|Mux8~60 at LC85
-L1L13_p1_out = !S1_dffs[8] & !S1_dffs[5] & !S1_dffs[4] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-L1L13 = L1L13_p1_out;
 
+--D1L5 is FrameTiming:Frame|LessThan8~21 at LC81
+D1L5_p1_out = T1_dffs[6] & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0];
+D1L5_p2_out = !C1_FormatOut & T1_dffs[5] & T1_dffs[4] & T1_dffs[3] & T1_dffs[2] & T1_dffs[1] & T1_dffs[0];
+D1L5_p3_out = !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[0] & T1_dffs[5] & T1_dffs[4] & T1_dffs[3] & T1_dffs[2] & T1_dffs[1] & T1_dffs[0];
+D1L5 = T1_dffs[8] # D1L5_p1_out # D1L5_p2_out # D1L5_p3_out # T1_dffs[7];
 
---L1L14 is videoMux:outputStream|Mux8~62 at LC87
-L1L14_p1_out = !S1_dffs[8] & !S1_dffs[5] & !S1_dffs[4] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-L1L14 = L1L14_p1_out;
 
+--D1L26 is FrameTiming:Frame|alphaReset~23 at LC115
+D1L26_p1_out = !T1_dffs[7] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4];
+D1L26 = D1L26_p1_out;
 
---D1L9 is FrameTiming:Frame|LessThan9~30 at LC113
-D1L9_p3_out = S1_dffs[5] & S1_dffs[6];
-D1L9_p4_out = S1_dffs[6] & S1_dffs[4] & S1_dffs[3] & S1_dffs[0];
-D1L9 = S1_dffs[8] # S1_dffs[7] # D1L9_p3_out # D1L9_p4_out;
 
+--D1L27 is FrameTiming:Frame|alphaReset~25 at LC43
+D1L27_p1_out = T1_dffs[8] & !C1_FormatOut;
+D1L27 = D1L27_p1_out;
 
---D1L11 is FrameTiming:Frame|active[0]~19 at LC81
-D1L11_p1_out = S1_dffs[5] & S1_dffs[8];
-D1L11 = D1L11_p1_out;
 
+--T4L3 is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[0]~39 at LC60
+T4L3_p1_out = NTSCClk & T2_dffs[4] & T2_dffs[3] & T2_dffs[5] & T2_dffs[2] & !T4_dffs[0];
+T4L3 = T4L3_p1_out;
 
---D1L12 is FrameTiming:Frame|active[0]~21 at LC82
-D1L12_p0_out = !S2_dffs[0] & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6] & S1_dffs[8];
-D1L12_p1_out = S1_dffs[2] & S1_dffs[1] & S1_dffs[4] & S1_dffs[3] & S1_dffs[7] & S1_dffs[5] & S1_dffs[6] & !C1_FormatOut;
-D1L12_p2_out = S1_dffs[2] & S1_dffs[1] & S1_dffs[4] & S1_dffs[3] & S1_dffs[7] & S1_dffs[5] & !S2_dffs[0] & !S2_dffs[5] & !S2_dffs[2] & !S2_dffs[4] & !S2_dffs[3] & !S2_dffs[1] & !S2_dffs[7] & !S2_dffs[6] & S1_dffs[6];
-D1L12_p3_out = S1_dffs[6] & S1_dffs[8];
-D1L12_p4_out = !C1_FormatOut & S1_dffs[8];
-D1L12 = D1L11 # D1L12_p0_out # D1L12_p1_out # D1L12_p2_out # D1L12_p3_out # D1L12_p4_out;
 
+--T4L5 is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[1]~41 at LC62
+T4L5_p1_out = !NTSCClk & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[7] & !T2_dffs[6];
+T4L5_p2_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4];
+T4L5_p3_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[3];
+T4L5 = T4L5_p1_out # T4L5_p2_out # T4L5_p3_out;
 
---L1L15 is videoMux:outputStream|Mux8~64 at LC89
-L1L15_p1_out = !S1_dffs[8] & !S1_dffs[5] & !S1_dffs[4] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-L1L15 = L1L15_p1_out;
 
+--T4L7 is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[2]~45 at LC23
+T4L7_p1_out = !NTSCClk & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[7] & !T2_dffs[6];
+T4L7_p2_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4];
+T4L7_p3_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[3];
+T4L7_p4_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[5];
+T4L7 = T4L7_p1_out # T4L7_p2_out # T4L7_p3_out # T4L7_p4_out;
 
---~GND~0 is ~GND~0 at LC19
-~GND~0_or_out = GND;
-~GND~0 = ~GND~0_or_out;
 
+--T4L9 is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[3]~50 at LC25
+T4L9_p0_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[2];
+T4L9_p1_out = !NTSCClk & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[7] & !T2_dffs[6];
+T4L9_p2_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[4];
+T4L9_p3_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[3];
+T4L9_p4_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[5];
+T4L9 = T4L9_p0_out # T4L9_p1_out # T4L9_p2_out # T4L9_p3_out # T4L9_p4_out;
 
---~GND~1 is ~GND~1 at LC17
-~GND~1_or_out = GND;
-~GND~1 = ~GND~1_or_out;
 
+--T4L11 is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[4]~56 at LC20
+T4L11_p1_out = !NTSCClk & !T2_dffs[1] & !T2_dffs[0] & !T2_dffs[7] & !T2_dffs[6];
+T4L11 = T4L11_p1_out;
 
---~GND~2 is ~GND~2 at LC46
-~GND~2_or_out = GND;
-~GND~2 = ~GND~2_or_out;
 
+--T4L12 is FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[4]~58 at LC21
+T4L12_p0_out = !T4_dffs[4] & !T4_dffs[1];
+T4L12_p1_out = !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6];
+T4L12_p2_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[3];
+T4L12_p3_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[5];
+T4L12_p4_out = !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[2];
+T4L12 = T4L11 # T4L12_p0_out # T4L12_p1_out # T4L12_p2_out # T4L12_p3_out # T4L12_p4_out;
 
---~GND~3 is ~GND~3 at LC45
-~GND~3_or_out = GND;
-~GND~3 = ~GND~3_or_out;
 
+--D1L32 is FrameTiming:Frame|blank~39 at LC68
+D1L32_p1_out = !T1_dffs[3] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L32 = D1L32_p1_out;
 
---~GND~4 is ~GND~4 at LC37
-~GND~4_or_out = GND;
-~GND~4 = ~GND~4_or_out;
 
+--D1L33 is FrameTiming:Frame|blank~41 at LC90
+D1L33_p1_out = !T1_dffs[3] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L33 = D1L33_p1_out;
 
---~GND~5 is ~GND~5 at LC35
-~GND~5_or_out = GND;
-~GND~5 = ~GND~5_or_out;
 
+--D1L34 is FrameTiming:Frame|blank~43 at LC79
+D1L34_p1_out = !T1_dffs[3] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L34 = D1L34_p1_out;
 
---~GND~6 is ~GND~6 at LC59
-~GND~6_or_out = GND;
-~GND~6 = ~GND~6_or_out;
 
+--D1L22 is FrameTiming:Frame|active[0]~28 at LC40
+D1L22_p1_out = T1_dffs[8] & T1_dffs[6];
+D1L22 = D1L22_p1_out;
 
---~GND~7 is ~GND~7 at LC57
-~GND~7_or_out = GND;
-~GND~7 = ~GND~7_or_out;
 
+--D1L23 is FrameTiming:Frame|active[0]~30 at LC41
+D1L23_p0_out = T1_dffs[8] & T1_dffs[5];
+D1L23_p1_out = T1_dffs[8] & !C1_FormatOut;
+D1L23_p2_out = T1_dffs[8] & !T2_dffs[0] & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6];
+D1L23_p3_out = !C1_FormatOut & T1_dffs[4] & T1_dffs[3] & T1_dffs[2] & T1_dffs[1] & T1_dffs[7] & T1_dffs[6] & T1_dffs[5];
+D1L23_p4_out = !T2_dffs[0] & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6] & T1_dffs[4] & T1_dffs[3] & T1_dffs[2] & T1_dffs[1] & T1_dffs[7] & T1_dffs[6] & T1_dffs[5];
+D1L23 = D1L22 # D1L23_p0_out # D1L23_p1_out # D1L23_p2_out # D1L23_p3_out # D1L23_p4_out;
 
---~GND~8 is ~GND~8 at LC53
-~GND~8_or_out = GND;
-~GND~8 = ~GND~8_or_out;
 
+--D1L14 is FrameTiming:Frame|LessThan12~38 at LC38
+D1L14_p1_out = !C1_FormatOut & T1_dffs[6];
+D1L14_p2_out = T1_dffs[6] & T1_dffs[5];
+D1L14_p3_out = T1_dffs[6] & T1_dffs[4] & T1_dffs[3] & T1_dffs[0];
+D1L14_p4_out = T1_dffs[6] & T1_dffs[4] & T1_dffs[3] & T1_dffs[1];
+D1L14 = D1L14_p1_out # D1L14_p2_out # D1L14_p3_out # D1L14_p4_out;
 
---~GND~9 is ~GND~9 at LC51
-~GND~9_or_out = GND;
-~GND~9 = ~GND~9_or_out;
 
+--D1L35 is FrameTiming:Frame|blank~45 at LC121
+D1L35_p1_out = !T1_dffs[3] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L35 = D1L35_p1_out;
 
---~GND~10 is ~GND~10 at LC49
-~GND~10_or_out = GND;
-~GND~10 = ~GND~10_or_out;
 
+--H1L28 is data_counter_vhdl:dataAddress|counter[5]~140 at LC33
+H1L28 = !H1_counter[4];
 
---~GND~11 is ~GND~11 at LC72
-~GND~11_or_out = GND;
-~GND~11 = ~GND~11_or_out;
 
+--H1L29 is data_counter_vhdl:dataAddress|counter[5]~142 at LC34
+H1L29_p1_out = NTSCClk & !T2_dffs[5] & T2_dffs[2] & !T2_dffs[4] & T2_dffs[0] & !T2_dffs[7] & !T2_dffs[6];
+H1L29_p2_out = !T2_dffs[5] & T2_dffs[2] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & T2_dffs[1];
+H1L29_p3_out = !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & T2_dffs[3];
+H1L29_p4_out = !T2_dffs[5] & !T2_dffs[2] & T2_dffs[4] & !T2_dffs[0] & !T2_dffs[7] & !T2_dffs[6] & !T2_dffs[1] & !T2_dffs[3];
+H1L29 = H1L28 # !H1_counter[3] # H1L29_p1_out # H1L29_p2_out # H1L29_p3_out # H1L29_p4_out;
 
---~GND~12 is ~GND~12 at LC73
-~GND~12_or_out = GND;
-~GND~12 = ~GND~12_or_out;
 
+--H1L32 is data_counter_vhdl:dataAddress|counter[7]~148 at LC55
+H1L32_p1_out = T2_dffs[4] & T2_dffs[1] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0];
+H1L32 = H1L32_p1_out;
 
---~GND~13 is ~GND~13 at LC13
-~GND~13_or_out = GND;
-~GND~13 = ~GND~13_or_out;
 
+--H1L33 is data_counter_vhdl:dataAddress|counter[7]~150 at LC56
+H1L33_p0_out = H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0] & T2_dffs[5];
+H1L33_p1_out = T2_dffs[4] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0] & T2_dffs[0];
+H1L33_p2_out = !T2_dffs[4] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0] & !T2_dffs[3] & !T2_dffs[2];
+H1L33_p3_out = !T2_dffs[4] & H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0] & !T2_dffs[3] & !NTSCClk & !T2_dffs[1];
+H1L33_p4_out = H1_counter[6] & H1_counter[5] & H1_counter[4] & H1_counter[3] & H1_counter[2] & H1_counter[1] & H1_counter[0] & !T2_dffs[0] & !T2_dffs[3] & T2_dffs[2] & !T2_dffs[1];
+H1L33 = H1L32 # H1L33_p0_out # H1L33_p1_out # H1L33_p2_out # H1L33_p3_out # H1L33_p4_out;
 
---L1L7 is videoMux:outputStream|Mux8~32sexp at SEXP69
-L1L7 = EXP(!CSS & GM[0]);
 
+--D1L6 is FrameTiming:Frame|LessThan10~4sexpand0 at SEXP66
+D1L6 = EXP(!T2_dffs[0] & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[3]);
 
---D1L13 is FrameTiming:Frame|always2~8sexp2 at SEXP68
-D1L13 = EXP(!S2_dffs[4] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6]);
 
+--D1L7 is FrameTiming:Frame|LessThan10~4sexpand1 at SEXP65
+D1L7 = EXP(!T2_dffs[7] & !T2_dffs[6]);
 
---D1L14 is FrameTiming:Frame|always2~8sexp3 at SEXP66
-D1L14 = EXP(!S2_dffs[1] & !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6]);
 
+--T3L1 is FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0|and_a[1]~1sexp at SEXP117
+T3L1 = EXP(T3_dffs[1] & T3_dffs[0]);
 
---D1L15 is FrameTiming:Frame|always2~8sexp4 at SEXP65
-D1L15 = EXP(!S2_dffs[0] & !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6]);
 
+--D1L1 is FrameTiming:Frame|Equal3~3sexp at SEXP118
+D1L1 = EXP(T3_dffs[3] & T3_dffs[2] & !T3_dffs[1] & !T3_dffs[0]);
 
---D1L1 is FrameTiming:Frame|LessThan2~3bal at LC96
-D1L1_p1_out = !S1_dffs[8] & !S1_dffs[5] & !S1_dffs[4] & !S1_dffs[7] & !S1_dffs[6] & !S1_dffs[3];
-D1L1_or_out = D1L1_p1_out;
-D1L1 = !(D1L1_or_out);
+
+--T3L2 is FrameTiming:Frame|counter:alphaCounter|lpm_counter:count_rtl_0|and_a[2]~3sexp at SEXP119
+T3L2 = EXP(T3_dffs[1] & T3_dffs[0] & T3_dffs[2]);
+
+
+--H1L4 is data_counter_vhdl:dataAddress|counter[0]~50sexp1 at SEXP19
+H1L4 = EXP(T2_dffs[2] & T2_dffs[1] & !H1_counter[0] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L5 is data_counter_vhdl:dataAddress|counter[0]~50sexp2 at SEXP20
+H1L5 = EXP(NTSCClk & T2_dffs[2] & T2_dffs[0] & !H1_counter[0] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L6 is data_counter_vhdl:dataAddress|counter[0]~50sexp3 at SEXP32
+H1L6 = EXP(!T2_dffs[2] & !T2_dffs[1] & !T2_dffs[0] & !H1_counter[0] & !T2_dffs[5] & !T2_dffs[3] & T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L7 is data_counter_vhdl:dataAddress|counter[0]~50sexp4 at SEXP18
+H1L7 = EXP(!H1_counter[0] & !T2_dffs[5] & T2_dffs[3] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L10 is data_counter_vhdl:dataAddress|counter[1]~61sexp1 at SEXP27
+H1L10 = EXP(T2_dffs[2] & T2_dffs[1] & !H1_counter[1] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L11 is data_counter_vhdl:dataAddress|counter[1]~61sexp2 at SEXP31
+H1L11 = EXP(NTSCClk & T2_dffs[2] & T2_dffs[0] & !H1_counter[1] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L12 is data_counter_vhdl:dataAddress|counter[1]~61sexp3 at SEXP30
+H1L12 = EXP(!T2_dffs[2] & !T2_dffs[1] & !T2_dffs[0] & !H1_counter[1] & !T2_dffs[5] & !T2_dffs[3] & T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L13 is data_counter_vhdl:dataAddress|counter[1]~61sexp4 at SEXP23
+H1L13 = EXP(!H1_counter[1] & !T2_dffs[5] & T2_dffs[3] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L23 is data_counter_vhdl:dataAddress|counter[4]~79sexp1 at SEXP48
+H1L23 = EXP(T2_dffs[2] & T2_dffs[1] & !H1_counter[4] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L24 is data_counter_vhdl:dataAddress|counter[4]~79sexp2 at SEXP47
+H1L24 = EXP(NTSCClk & T2_dffs[2] & T2_dffs[0] & !H1_counter[4] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L25 is data_counter_vhdl:dataAddress|counter[4]~79sexp3 at SEXP43
+H1L25 = EXP(!T2_dffs[2] & !T2_dffs[1] & !T2_dffs[0] & !H1_counter[4] & !T2_dffs[5] & !T2_dffs[3] & T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L26 is data_counter_vhdl:dataAddress|counter[4]~79sexp4 at SEXP36
+H1L26 = EXP(!H1_counter[4] & !T2_dffs[5] & T2_dffs[3] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36);
+
+
+--H1L16 is data_counter_vhdl:dataAddress|counter[2]~67sexp1bal at LC47
+H1L16_p1_out = T2_dffs[2] & T2_dffs[1] & !H1_counter[2] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36;
+H1L16_p2_out = T2_dffs[2] & !H1_counter[2] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36 & NTSCClk & T2_dffs[0];
+H1L16_p3_out = !T2_dffs[2] & !T2_dffs[1] & !H1_counter[2] & !T2_dffs[5] & T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36 & !T2_dffs[0] & !T2_dffs[3];
+H1L16_p4_out = !H1_counter[2] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36 & T2_dffs[3];
+H1L16_or_out = H1L16_p1_out # H1L16_p2_out # H1L16_p3_out # H1L16_p4_out;
+H1L16 = !(H1L16_or_out);
+
+
+--H1L19 is data_counter_vhdl:dataAddress|counter[3]~73sexp1bal at LC48
+H1L19_p1_out = T2_dffs[2] & T2_dffs[1] & !H1_counter[3] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36;
+H1L19_p2_out = T2_dffs[2] & !H1_counter[3] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36 & NTSCClk & T2_dffs[0];
+H1L19_p3_out = !T2_dffs[2] & !T2_dffs[1] & !H1_counter[3] & !T2_dffs[5] & T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36 & !T2_dffs[0] & !T2_dffs[3];
+H1L19_p4_out = !H1_counter[3] & !T2_dffs[5] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[6] & D1L36 & T2_dffs[3];
+H1L19_or_out = H1L19_p1_out # H1L19_p2_out # H1L19_p3_out # H1L19_p4_out;
+H1L19 = !(H1L19_or_out);
+
+
+--D1L3 is FrameTiming:Frame|Equal4~2sexpbal at LC31
+D1L3_p1_out = !T4_dffs[4] & !T4_dffs[3] & !T4_dffs[2] & !T4_dffs[1] & T4_dffs[0];
+D1L3_or_out = D1L3_p1_out;
+D1L3 = !(D1L3_or_out);
+
+
+--D1L36 is FrameTiming:Frame|fsn~12bal at LC36
+D1L36_p1_out = !T1_dffs[3] & T1_dffs[2] & !T1_dffs[6] & !T1_dffs[5] & !T1_dffs[4] & !T1_dffs[8] & !T1_dffs[7];
+D1L36_or_out = D1L36_p1_out;
+D1L36 = !(D1L36_or_out);
 
 
 --NTSCClk is NTSCClk at PIN_33
@@ -570,94 +934,10 @@ GM[2] = INPUT();
 Ext = INPUT();
 
 
---DA[0] is DA[0] at PIN_21
---operation mode is output
-
-DA[0] = OUTPUT(~GND~0);
-
-
---DA[1] is DA[1] at PIN_22
---operation mode is output
-
-DA[1] = OUTPUT(~GND~1);
-
-
---DA[2] is DA[2] at PIN_24
---operation mode is output
-
-DA[2] = OUTPUT(~GND~2);
-
-
---DA[3] is DA[3] at PIN_25
---operation mode is output
-
-DA[3] = OUTPUT(~GND~3);
-
-
---DA[4] is DA[4] at PIN_30
---operation mode is output
-
-DA[4] = OUTPUT(~GND~4);
-
-
---DA[5] is DA[5] at PIN_31
---operation mode is output
-
-DA[5] = OUTPUT(~GND~5);
-
-
---DA[6] is DA[6] at PIN_35
---operation mode is output
-
-DA[6] = OUTPUT(~GND~6);
-
-
---DA[7] is DA[7] at PIN_36
---operation mode is output
-
-DA[7] = OUTPUT(~GND~7);
-
-
---DA[8] is DA[8] at PIN_39
---operation mode is output
-
-DA[8] = OUTPUT(~GND~8);
-
-
---DA[9] is DA[9] at PIN_40
---operation mode is output
-
-DA[9] = OUTPUT(~GND~9);
-
-
---DA[10] is DA[10] at PIN_41
---operation mode is output
-
-DA[10] = OUTPUT(~GND~10);
-
-
---DA[11] is DA[11] at PIN_48
---operation mode is output
-
-DA[11] = OUTPUT(~GND~11);
-
-
---DA[12] is DA[12] at PIN_49
---operation mode is output
-
-DA[12] = OUTPUT(~GND~12);
-
-
---RP is RP at PIN_6
---operation mode is output
-
-RP = OUTPUT(~GND~13);
-
-
 --HSn is HSn at PIN_76
 --operation mode is output
 
-HSn = OUTPUT(D1L3);
+HSn = OUTPUT(D1L38);
 
 
 --Format is Format at PIN_68
@@ -675,80 +955,172 @@ FormatClk = OUTPUT(B1L1);
 --FSn is FSn at PIN_75
 --operation mode is output
 
-FSn = OUTPUT(D1L2);
-
-
---rgb[1] is rgb[1] at PIN_45
---operation mode is output
-
-rgb[1] = OUTPUT(L1L4);
-
-
---rgb[7] is rgb[7] at PIN_57
---operation mode is output
-
-rgb[7] = OUTPUT(L1L6);
-
-
---rgb[8] is rgb[8] at PIN_56
---operation mode is output
-
-rgb[8] = OUTPUT(L1L5);
+FSn = OUTPUT(D1L37);
 
 
 --rgb[0] is rgb[0] at PIN_46
 --operation mode is output
 
-rgb[0] = OUTPUT(L1L9);
-
-
---rgb[2] is rgb[2] at PIN_44
---operation mode is output
-
-rgb[2] = OUTPUT(L1L10);
+rgb[0] = OUTPUT(D1L28);
 
 
 --rgb[3] is rgb[3] at PIN_52
 --operation mode is output
 
-rgb[3] = OUTPUT(L1L1);
+rgb[3] = OUTPUT(D1L30);
 
 
 --rgb[6] is rgb[6] at PIN_58
 --operation mode is output
 
-rgb[6] = OUTPUT(L1L11);
+rgb[6] = OUTPUT(D1L29);
+
+
+--DA[0] is DA[0] at PIN_21
+--operation mode is output
+
+DA[0] = OUTPUT(H1_counter[0]);
+
+
+--rgb[1] is rgb[1] at PIN_45
+--operation mode is output
+
+rgb[1] = OUTPUT(D1L16);
+
+
+--DA[1] is DA[1] at PIN_22
+--operation mode is output
+
+DA[1] = OUTPUT(H1_counter[1]);
+
+
+--rgb[2] is rgb[2] at PIN_44
+--operation mode is output
+
+rgb[2] = OUTPUT(D1L21);
 
 
 --rgb[4] is rgb[4] at PIN_51
 --operation mode is output
 
-rgb[4] = OUTPUT(L1L3);
+rgb[4] = OUTPUT(D1L20);
 
 
 --rgb[5] is rgb[5] at PIN_50
 --operation mode is output
 
-rgb[5] = OUTPUT(L1L2);
+rgb[5] = OUTPUT(D1L19);
+
+
+--rgb[7] is rgb[7] at PIN_57
+--operation mode is output
+
+rgb[7] = OUTPUT(D1L18);
+
+
+--rgb[8] is rgb[8] at PIN_56
+--operation mode is output
+
+rgb[8] = OUTPUT(D1L17);
+
+
+--DA[2] is DA[2] at PIN_24
+--operation mode is output
+
+DA[2] = OUTPUT(H1_counter[2]);
+
+
+--DA[3] is DA[3] at PIN_25
+--operation mode is output
+
+DA[3] = OUTPUT(H1_counter[3]);
+
+
+--RP is RP at PIN_77
+--operation mode is output
+
+RP = OUTPUT(D1L2);
+
+
+--DA[4] is DA[4] at PIN_30
+--operation mode is output
+
+DA[4] = OUTPUT(H1_counter[4]);
+
+
+--DA[5] is DA[5] at PIN_31
+--operation mode is output
+
+DA[5] = OUTPUT(H1_counter[5]);
+
+
+--DA[6] is DA[6] at PIN_35
+--operation mode is output
+
+DA[6] = OUTPUT(H1_counter[6]);
+
+
+--DA[7] is DA[7] at PIN_36
+--operation mode is output
+
+DA[7] = OUTPUT(H1_counter[7]);
+
+
+--DA[8] is DA[8] at PIN_39
+--operation mode is output
+
+DA[8] = OUTPUT(H1_counter[8]);
+
+
+--DA[9] is DA[9] at PIN_40
+--operation mode is output
+
+DA[9] = OUTPUT(H1_counter[9]);
+
+
+--DA[10] is DA[10] at PIN_41
+--operation mode is output
+
+DA[10] = OUTPUT(H1_counter[10]);
+
+
+--DA[11] is DA[11] at PIN_48
+--operation mode is output
+
+DA[11] = OUTPUT(H1_counter[11]);
+
+
+--DA[12] is DA[12] at PIN_49
+--operation mode is output
+
+DA[12] = OUTPUT(H1_counter[12]);
 
 
 
 
 
 
---L1L16 is videoMux:outputStream|Mux8~66 at SEXP81
-L1L16 = EXP(!CSS & GM[0]);
+--D1L8 is FrameTiming:Frame|LessThan10~5 at SEXP83
+D1L8 = EXP(!T2_dffs[0] & !T2_dffs[5] & !T2_dffs[2] & !T2_dffs[1] & !T2_dffs[4] & !T2_dffs[7] & !T2_dffs[3]);
 
 
---D1L16 is FrameTiming:Frame|always2~9 at SEXP84
-D1L16 = EXP(!S2_dffs[4] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6]);
+--D1L9 is FrameTiming:Frame|LessThan10~6 at SEXP84
+D1L9 = EXP(!T2_dffs[7] & !T2_dffs[6]);
 
 
---D1L17 is FrameTiming:Frame|always2~10 at SEXP85
-D1L17 = EXP(!S2_dffs[1] & !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6]);
+--D1L44 is FrameTiming:Frame|hsn~36 at SEXP49
+D1L44 = EXP(!T2_dffs[5] & !T2_dffs[4] & T2_dffs[3] & !T2_dffs[7] & !T2_dffs[6]);
 
 
---D1L18 is FrameTiming:Frame|always2~11 at SEXP87
-D1L18 = EXP(!S2_dffs[0] & !S2_dffs[3] & !S2_dffs[2] & !S2_dffs[5] & !S2_dffs[7] & !S2_dffs[6]);
+--D1L45 is FrameTiming:Frame|hsn~37 at SEXP51
+D1L45 = EXP(NTSCClk & !T2_dffs[5] & T2_dffs[0] & !T2_dffs[4] & T2_dffs[2] & !T2_dffs[7] & !T2_dffs[6]);
+
+
+--D1L46 is FrameTiming:Frame|hsn~38 at SEXP53
+D1L46 = EXP(!T2_dffs[5] & T2_dffs[1] & !T2_dffs[4] & T2_dffs[2] & !T2_dffs[7] & !T2_dffs[6]);
+
+
+--D1L47 is FrameTiming:Frame|hsn~39 at SEXP55
+D1L47 = EXP(!T2_dffs[5] & !T2_dffs[0] & !T2_dffs[1] & T2_dffs[4] & !T2_dffs[3] & !T2_dffs[2] & !T2_dffs[7] & !T2_dffs[6]);
 
 

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MC6847XTB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MC6847XTB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="683.117 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,063.377 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="59"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/MC6847XTB/NTSCClk" type="logic">
+      <obj_property name="ElementShortName">NTSCClk</obj_property>
+      <obj_property name="ObjectShortName">NTSCClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/PALClk" type="logic">
+      <obj_property name="ElementShortName">PALClk</obj_property>
+      <obj_property name="ObjectShortName">PALClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/RequestFormat" type="logic">
+      <obj_property name="ElementShortName">RequestFormat</obj_property>
+      <obj_property name="ObjectShortName">RequestFormat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/DA0" type="logic">
+      <obj_property name="ElementShortName">DA0</obj_property>
+      <obj_property name="ObjectShortName">DA0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/FSn" type="logic">
+      <obj_property name="ElementShortName">FSn</obj_property>
+      <obj_property name="ObjectShortName">FSn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/HSn" type="logic">
+      <obj_property name="ElementShortName">HSn</obj_property>
+      <obj_property name="ObjectShortName">HSn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/FormatClk" type="logic">
+      <obj_property name="ElementShortName">FormatClk</obj_property>
+      <obj_property name="ObjectShortName">FormatClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/Format" type="logic">
+      <obj_property name="ElementShortName">Format</obj_property>
+      <obj_property name="ObjectShortName">Format</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject2/count" type="array">
+      <obj_property name="ElementShortName">count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">count[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject3/load" type="logic">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject3/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject3/div2" type="logic">
+      <obj_property name="ElementShortName">div2</obj_property>
+      <obj_property name="ObjectShortName">div2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject3/pixelData" type="array">
+      <obj_property name="ElementShortName">pixelData[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pixelData[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject4/data" type="array">
+      <obj_property name="ElementShortName">data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject4/RGB" type="array">
+      <obj_property name="ElementShortName">RGB[8:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB[8:0]</obj_property>
+      <obj_property name="Radix">OCTALRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/gmtpIn" type="array">
+      <obj_property name="ElementShortName">gmtpIn[2:0]</obj_property>
+      <obj_property name="ObjectShortName">gmtpIn[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject5/RGB" type="array">
+      <obj_property name="ElementShortName">RGB[8:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB[8:0]</obj_property>
+      <obj_property name="Radix">OCTALRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/rmtpIn" type="array">
+      <obj_property name="ElementShortName">rmtpIn[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rmtpIn[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/rmtpClk" type="logic">
+      <obj_property name="ElementShortName">rmtpClk</obj_property>
+      <obj_property name="ObjectShortName">rmtpClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject6/RGB" type="array">
+      <obj_property name="ElementShortName">RGB[8:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB[8:0]</obj_property>
+      <obj_property name="Radix">OCTALRADIX</obj_property>
+   </wvobject>
+</wave_config>

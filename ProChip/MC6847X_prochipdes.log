@@ -1,0 +1,76 @@
+          Project's MC6847X log file produced by Atmel ProChip Designer version 5.0
+                                        on
+                         October 28, 2025 at 8:22:21 am
+
+Log: Project MC6847X.apj has been loaded
+Log: h:\MC6847X\ProChip\MC6847X.edf is already added in the Toolflow
+Log: h:\MC6847X\ProChip\MC6847X.log is already added in the Toolflow
+Log: h:\MC6847X\ProChip\MC6847X.edf is already added in the Toolflow
+Log: Starting ""c:\ATMEL_PLS_Tools\ProChip\\bin\edifparse"<"h:\MC6847X\ProChip\MC6847X.edf"" 
+
+
+START PRP FILE
+
+NODES:
+
+BIDIRPINS:
+
+INPUTPINS:
+clk 0
+reset 0
+
+OUTPUTPINS:
+count_5 0
+count_6 0
+count_7 0
+count_8 0
+count_0 0
+count_1 0
+count_2 0
+count_3 0
+count_4 0
+
+Log: h:\MC6847X\ProChip\ClockSwitch.v is already added in the Toolflow
+Log: h:\MC6847X\ProChip\counter.v is already added in the Toolflow
+Log: h:\MC6847X\ProChip\ext_counter.v is already added in the Toolflow
+Log: h:\MC6847X\ProChip\FormatSwitch.v is already added in the Toolflow
+Log: h:\MC6847X\ProChip\FrameTiming.v is already added in the Toolflow
+Log: h:\MC6847X\ProChip\MC6847X.v is already added in the Toolflow
+<<WARN>> h:\MC6847X\ProChip\ext_counter.v design file is removed from the project list.
+Log: h:\MC6847X\ProChip\MC6847X.edf is already added in the Toolflow
+Log: h:\MC6847X\ProChip\MC6847X.log is already added in the Toolflow
+Log: h:\MC6847X\ProChip\MC6847X.edf is already added in the Toolflow
+Log: Starting ""c:\ATMEL_PLS_Tools\ProChip\\bin\edifparse"<"h:\MC6847X\ProChip\MC6847X.edf"" 
+
+
+START PRP FILE
+
+NODES:
+
+BIDIRPINS:
+
+INPUTPINS:
+NTSCClk 0
+PALClk 0
+RequestFormat 0
+
+OUTPUTPINS:
+DA0 0
+rgb_0 0
+rgb_1 0
+rgb_2 0
+rgb_3 0
+rgb_4 0
+rgb_5 0
+rgb_6 0
+rgb_7 0
+rgb_8 0
+Format 0
+FormatClk 0
+HSn 0
+FSn 0
+
+Log: Starting ""C:\ATMISP7\atmisp.exe " "h:\MC6847X\ProChip\MC6847X.chn"" 
+
+Log: Project MC6847X was saved in h:\MC6847X\ProChip\MC6847X.apj
+Log: The project MC6847X.apj  is no longer in use

@@ -1,0 +1,30 @@
+-i MC6847X.edf
+-ifmt EDIF
+-lib aprim.lib
+-device PLCC84
+-tech ATF1508AS
+-strategy preassign TRY
+-strategy MC_power OFF
+-strategy open_collector OFF
+-strategy JTAG ON 
+-strategy power_reset OFF
+-strategy pd1 OFF
+-strategy pd2 OFF
+-strategy TDI_pullup ON
+-strategy TMS_pullup ON
+-strategy output_fast ON
+-strategy pin_keep ON
+-strategy security OFF
+-strategy tPD 15
+-strategy fast_inlatch OFF
+-strategy GCK_ITD ON
+-strategy Latch_Synthesis OFF
+-strategy Optimize ON
+-strategy Cascade_Logic OFF
+-strategy Foldback_Logic ON
+-strategy Soft_Buffer ON
+-strategy XOR_Synthesis ON
+-strategy Push_Gate OFF
+-strategy Verilog_sim sdf
+-strategy Out_Edif ON
+-strategy logic_doubling OFF

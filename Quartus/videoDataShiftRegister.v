@@ -22,10 +22,15 @@ end
 always @(posedge vsclk) begin
 	pixels <= pixels << 2;
 	if (load) begin
-		pixels[7:0] = data;
+		pixels[7:0] <= data;
 	end
 end
 
-assign pixeldata = pixels[9:8];
+assign pixelData = pixels[9:8];
 
 endmodule
+
+/*
+Tested working in simulation for load, shift and slow clock
+PixelData output is correct
+*/

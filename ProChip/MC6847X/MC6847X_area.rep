@@ -1,0 +1,44 @@
+//  Precision RTL Synthesis 2013a.10OEM_Atmelcpld (Production Release) Wed Aug 21 11:28:25 PDT 2013
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2013, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on  julia@OMEGA  6.02.9200 x86
+//  
+//  Start time Tue Oct 28 08:30:17 2025
+
+***************************************************************
+Device Utilization for ATF1508AS-10JU84
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               17      72       23.61%
+---------------------------------------------------------------
+
+*************************************************
+
+Library: work    Cell: MC6847X    View: INTERFACE
+
+*************************************************
+
+  Cell          Library  References     Total Area
+
+ AND2I1         atf15as     1 x
+ BUF            atf15as    14 x
+ FrameTiming    work        1 x     17     17 DFFs
+ GND            atf15as     1 x
+ INBUF          atf15as     2 x
+ VCC            atf15as     1 x
+ XOR            atf15as     1 x
+
+ Number of ports :                      17
+ Number of nets :                       26
+ Number of instances :                  21
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of DFFs :                       17
+ Number of accumulated instances :     135
