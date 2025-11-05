@@ -528,3 +528,6 @@ end
 assign chardata = {2'b00,data,1'b0};
 
 endmodule
+/*
+Tested working in simulation
+*/

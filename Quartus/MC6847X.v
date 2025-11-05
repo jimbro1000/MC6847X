@@ -90,6 +90,12 @@ wire	[1:0] pixelData;
 		.chardata	(charRowData)
 	);
 	
+	invertText		invCharData(
+		.pixelsIn (charRowData),
+		.Inv	(Inv),
+		.pixelsOut (invCharRowData)
+	);
+	
 	videoMux			outputStream(
 		.select		(outputSelect),
 		.channel1	(9'b000000000),

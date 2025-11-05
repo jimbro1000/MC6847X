@@ -170,6 +170,12 @@ module MC6847XTB;
     bit [3:0] alphaRow = 4'd0;
     bit [5:0] alphaData = 4'd0;
     bit [7:0] charData;
+    bit charClk = 1'b0;
+    bit charLoad = 1'b0;
+    bit [1:0] charPixelData;
+    bit [3:0] charPalette;
+    bit [8:0] charrgb;
+    
     
     alphaDataMux subject8(
         .row (alphaRow),
@@ -177,19 +183,159 @@ module MC6847XTB;
         .chardata (charData)
     );
     
+    videoDataShiftRegister subject8b(
+        .clk (charClk),
+        .load (charLoad),
+	    .data (charData),
+	    .div2 (1'b0),
+	    .pixelData (charPixelData)
+    );
+    
+    textModeToPixel subject8c(
+        .data (charPixelData),
+	    .clk (charClk),
+	    .colour (4'b0000),
+	    .palette (charPalette)
+    );
+    
+    colourMux subject8d(
+        .data (charPalette),
+        .rgb (charrgb)
+    );
+    
     always begin
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
-        #10 alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = alphaRow + 1;
+        charLoad = 1'b1;
+        #10 charClk = ~charClk;
+        charLoad = 1'b0;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        #10 charClk = ~charClk;
+        alphaRow = 4'd0;
         alphaData = alphaData + 1;        
     end
     

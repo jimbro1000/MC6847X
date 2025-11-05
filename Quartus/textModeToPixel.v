@@ -10,3 +10,7 @@ module textModeToPixel(
 	assign palette = (pixel == 1'b1) ? colour : 4'b1000;
 
 endmodule
+
+/*
+Tested working in simulation
+*/

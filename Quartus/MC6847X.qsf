@@ -121,3 +121,4 @@ set_global_assignment -name VERILOG_FILE textModeToPixel.v
 set_global_assignment -name VHDL_FILE data_counter_vhdl.vhd
 set_global_assignment -name VERILOG_FILE videoDataShiftRegister.v
 set_global_assignment -name VERILOG_FILE videoShiftClock.v
+set_global_assignment -name VERILOG_FILE invertText.v

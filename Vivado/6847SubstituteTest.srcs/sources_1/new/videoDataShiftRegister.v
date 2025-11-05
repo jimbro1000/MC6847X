@@ -19,7 +19,7 @@ initial begin
 	pixels = 10'd0;
 end
 
-always @(posedge vsclk) begin
+always @(negedge vsclk) begin
 	pixels <= pixels << 2;
 	if (load) begin
 		pixels[7:0] <= data;
