@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/MC6847X/Vivado/6847SubstituteTest.srcs/sim_1/new/6847XTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/MC6847X/Vivado/6847SubstituteTest.srcs/sim_1/new/6847XTB.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MC6847XTB
-WARNING: [VRFC 10-3248] data object 'RP' is already declared [H:/MC6847X/Vivado/6847SubstituteTest.srcs/sim_1/new/6847XTB.sv:42]
-WARNING: [VRFC 10-9364] second declaration of 'RP' is ignored [H:/MC6847X/Vivado/6847SubstituteTest.srcs/sim_1/new/6847XTB.sv:42]
+WARNING: [VRFC 10-3248] data object 'RP' is already declared [E:/MC6847X/Vivado/6847SubstituteTest.srcs/sim_1/new/6847XTB.sv:42]
+WARNING: [VRFC 10-9364] second declaration of 'RP' is ignored [E:/MC6847X/Vivado/6847SubstituteTest.srcs/sim_1/new/6847XTB.sv:42]

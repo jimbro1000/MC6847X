@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="683.117 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,063.377 ns"></ZoomEndTime>
-      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+      <ZoomStartTime time="1,251,533.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,251,592.401 ns"></ZoomEndTime>
+      <Cursor1Time time="88.586 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="59"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="22" />
+   <WVObjectSize size="28" />
    <wvobject fp_name="/MC6847XTB/NTSCClk" type="logic">
       <obj_property name="ElementShortName">NTSCClk</obj_property>
       <obj_property name="ObjectShortName">NTSCClk</obj_property>
@@ -110,5 +110,31 @@
       <obj_property name="ElementShortName">RGB[8:0]</obj_property>
       <obj_property name="ObjectShortName">RGB[8:0]</obj_property>
       <obj_property name="Radix">OCTALRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/tmtp/data" type="array">
+      <obj_property name="ElementShortName">data[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/tmtp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/subject7/RGB" type="array">
+      <obj_property name="ElementShortName">RGB[8:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB[8:0]</obj_property>
+      <obj_property name="Radix">OCTALRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/alphaData" type="array">
+      <obj_property name="ElementShortName">alphaData[5:0]</obj_property>
+      <obj_property name="ObjectShortName">alphaData[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/alphaRow" type="array">
+      <obj_property name="ElementShortName">alphaRow[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alphaRow[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC6847XTB/charData" type="array">
+      <obj_property name="ElementShortName">charData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">charData[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
 </wave_config>

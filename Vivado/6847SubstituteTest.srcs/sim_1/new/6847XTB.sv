@@ -142,4 +142,55 @@ module MC6847XTB;
         rmtpClk = 1;
     end
     
+    bit [1:0] textData = 2'd0;
+    bit textClk = 1'b0;
+    bit [3:0] textColour = 4'd0;
+    bit [3:0] tmPalette;
+        
+    textModeToPixel tmtp(
+        .data (textData),
+	    .clk (textClk),
+	    .colour (textColour),
+	    .palette (tmPalette)
+    );
+    
+    bit [8:0] tmrgb;
+    
+    colourMux subject7(
+        .data (tmPalette),
+        .rgb (tmrgb)
+    );
+    
+    always begin
+        #10  textClk = ~textClk;
+        #10  textData = textData + 1;
+        textClk = ~textClk;
+    end
+    
+    bit [3:0] alphaRow = 4'd0;
+    bit [5:0] alphaData = 4'd0;
+    bit [7:0] charData;
+    
+    alphaDataMux subject8(
+        .row (alphaRow),
+        .index (alphaData),
+        .chardata (charData)
+    );
+    
+    always begin
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        #10 alphaRow = alphaRow + 1;
+        alphaData = alphaData + 1;        
+    end
+    
 endmodule
