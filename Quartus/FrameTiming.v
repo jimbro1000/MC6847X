@@ -1,7 +1,7 @@
 module FrameTiming(
 	input  clk, 	// pixel clock (==NTSC)
 	input  format, // 0 = NTSC, 1 = PAL
-	input	 [5:0] width, 	// bytes
+	input	 div2, 	// pixel clock divider
 	output hsn, 	// horizontal sync, active low
 	output fsn, 	// vertical sync, active low
 	output preload, // data preload sync
@@ -32,11 +32,14 @@ module FrameTiming(
 	reg [1:0] state;
 	reg [8:0] activeRow;
 	
+	wire [5:0] width;
 	wire [8:0] nPreload;
 	wire [4:0] dataCount;
 	wire blank;
 	
 	assign nPreload = portx - 9'd8;
+	
+	assign width = div2 ? 5'd16 : 5'd32;
 
 	wire rowClk;
 	wire [8:0] colCount;

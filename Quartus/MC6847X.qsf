@@ -122,3 +122,5 @@ set_global_assignment -name VHDL_FILE data_counter_vhdl.vhd
 set_global_assignment -name VERILOG_FILE videoDataShiftRegister.v
 set_global_assignment -name VERILOG_FILE videoShiftClock.v
 set_global_assignment -name VERILOG_FILE invertText.v
+set_global_assignment -name VHDL_FILE clock_divide_vhdl.vhd
+set_global_assignment -name VHDL_FILE row_divide_vhdl.vhd

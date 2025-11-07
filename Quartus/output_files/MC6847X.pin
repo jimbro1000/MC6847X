@@ -125,7 +125,7 @@ RESERVED                     : 61        :        :                   :         
 TCK                          : 62        : input  : TTL               :         :           : N              
 RESERVED                     : 63        :        :                   :         :           :                
 RESERVED                     : 64        :        :                   :         :           :                
-RESERVED                     : 65        :        :                   :         :           :                
+RP                           : 65        : output : TTL               :         :           : N              
 VCCIO                        : 66        : power  :                   : 5.0V    :           :                
 RESERVED                     : 67        :        :                   :         :           :                
 Format                       : 68        : output : TTL               :         :           : Y              
@@ -137,7 +137,7 @@ RESERVED                     : 73        :        :                   :         
 FormatClk                    : 74        : output : TTL               :         :           : Y              
 FSn                          : 75        : output : TTL               :         :           : Y              
 HSn                          : 76        : output : TTL               :         :           : Y              
-RP                           : 77        : output : TTL               :         :           : N              
+RESERVED                     : 77        :        :                   :         :           :                
 VCCIO                        : 78        : power  :                   : 5.0V    :           :                
 RESERVED                     : 79        :        :                   :         :           :                
 RESERVED                     : 80        :        :                   :         :           :                

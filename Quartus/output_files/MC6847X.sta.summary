@@ -2,9 +2,9 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Setup 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2]'
+Type  : Setup 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3]'
 Slack : -21.300
-TNS   : -205.800
+TNS   : -222.400
 
 Type  : Setup 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0]'
 Slack : -21.300
@@ -14,7 +14,7 @@ Type  : Setup 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col
 Slack : -21.300
 TNS   : -166.200
 
-Type  : Setup 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3]'
+Type  : Setup 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2]'
 Slack : -21.300
 TNS   : -166.200
 
@@ -50,9 +50,9 @@ Type  : Hold 'NTSCClk'
 Slack : -3.500
 TNS   : -30.000
 
-Type  : Hold 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2]'
+Type  : Hold 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3]'
 Slack : -3.000
-TNS   : -36.000
+TNS   : -33.000
 
 Type  : Hold 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[0]'
 Slack : -3.000
@@ -62,7 +62,7 @@ Type  : Hold 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_
 Slack : -3.000
 TNS   : -21.000
 
-Type  : Hold 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3]'
+Type  : Hold 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2]'
 Slack : -3.000
 TNS   : -21.000
 
@@ -115,8 +115,8 @@ Slack : -28.000
 TNS   : -252.000
 
 Type  : Recovery 'FrameTiming:Frame|counter:dataCounter|lpm_counter:count_rtl_0|dffs[0]'
-Slack : -25.000
-TNS   : -148.000
+Slack : -27.400
+TNS   : -165.800
 
 Type  : Recovery 'NTSCClk'
 Slack : -4.000
@@ -162,7 +162,7 @@ Type  : Removal 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:c
 Slack : 8.000
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2]'
+Type  : Minimum Pulse Width 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3]'
 Slack : -3.500
 TNS   : -154.000
 
@@ -174,7 +174,7 @@ Type  : Minimum Pulse Width 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_co
 Slack : -3.500
 TNS   : -119.000
 
-Type  : Minimum Pulse Width 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[3]'
+Type  : Minimum Pulse Width 'FrameTiming:Frame|col_counter_vhdl:pixelCols|ext_counter_vhdl:col_counter|lpm_counter:counter_rtl_0|dffs[2]'
 Slack : -3.500
 TNS   : -119.000
 

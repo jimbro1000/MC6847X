@@ -27,13 +27,13 @@ Q[4] => ~NO_FANOUT~
 Q[5] => ~NO_FANOUT~
 Q[6] => ~NO_FANOUT~
 Q[7] => ~NO_FANOUT~
-Inv => ~NO_FANOUT~
-AnG => AnG.IN2
+Inv => Inv.IN1
+AnG => AnG.IN4
 AnS => ~NO_FANOUT~
 CSS => CSS.IN3
-GM[0] => GM[0].IN2
-GM[1] => GM[1].IN2
-GM[2] => GM[2].IN2
+GM[0] => GM[0].IN4
+GM[1] => GM[1].IN4
+GM[2] => GM[2].IN4
 Ext => ~NO_FANOUT~
 RP <= AlphaRowClear.DB_MAX_OUTPUT_PORT_TYPE
 rgb[0] <= videoMux:outputStream.result
@@ -61,6 +61,14 @@ Clk2 => Clk.IN1
 Clk <= Clk.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|MC6847X|clockDivide:pixelClockDivider
+AnG => Mux0.IN16
+GM[0] => Mux0.IN19
+GM[1] => Mux0.IN18
+GM[2] => Mux0.IN17
+div2 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |MC6847X|FrameTiming:Frame
 clk => clk.IN1
 format => maxRows.DATAB
@@ -72,18 +80,7 @@ format => portY[6].DATAB
 format => maxPortY[8].DATAB
 format => comb.IN0
 format => maxPortY[0].DATAB
-width[0] => Equal0.IN6
-width[0] => Equal1.IN11
-width[1] => Equal0.IN5
-width[1] => Equal1.IN10
-width[2] => Equal0.IN4
-width[2] => Equal1.IN9
-width[3] => Equal0.IN3
-width[3] => Equal1.IN8
-width[4] => Equal0.IN2
-width[4] => Equal1.IN7
-width[5] => Equal0.IN1
-width[5] => Equal1.IN6
+div2 => width[4].OUTPUTSELECT
 hsn <= hsn.DB_MAX_OUTPUT_PORT_TYPE
 fsn <= fsn.DB_MAX_OUTPUT_PORT_TYPE
 preload <= Equal4.DB_MAX_OUTPUT_PORT_TYPE
@@ -4737,6 +4734,41 @@ chardata[6] <= <GND>
 chardata[7] <= <GND>
 
 
+|MC6847X|invertText:invCharData
+pixelsIn[0] => pixelsOut.IN0
+pixelsIn[0] => pixelsOut.DATAA
+pixelsIn[1] => pixelsOut.IN0
+pixelsIn[1] => pixelsOut.DATAA
+pixelsIn[2] => pixelsOut.IN0
+pixelsIn[2] => pixelsOut.DATAA
+pixelsIn[3] => pixelsOut.IN0
+pixelsIn[3] => pixelsOut.DATAA
+pixelsIn[4] => pixelsOut.IN0
+pixelsIn[4] => pixelsOut.DATAA
+pixelsIn[5] => pixelsOut.IN0
+pixelsIn[5] => pixelsOut.DATAA
+pixelsIn[6] => pixelsOut.IN0
+pixelsIn[6] => pixelsOut.DATAA
+pixelsIn[7] => pixelsOut.IN0
+pixelsIn[7] => pixelsOut.DATAA
+Inv => pixelsOut.OUTPUTSELECT
+Inv => pixelsOut.OUTPUTSELECT
+Inv => pixelsOut.OUTPUTSELECT
+Inv => pixelsOut.OUTPUTSELECT
+Inv => pixelsOut.OUTPUTSELECT
+Inv => pixelsOut.OUTPUTSELECT
+Inv => pixelsOut.OUTPUTSELECT
+Inv => pixelsOut.OUTPUTSELECT
+pixelsOut[0] <= pixelsOut.DB_MAX_OUTPUT_PORT_TYPE
+pixelsOut[1] <= pixelsOut.DB_MAX_OUTPUT_PORT_TYPE
+pixelsOut[2] <= pixelsOut.DB_MAX_OUTPUT_PORT_TYPE
+pixelsOut[3] <= pixelsOut.DB_MAX_OUTPUT_PORT_TYPE
+pixelsOut[4] <= pixelsOut.DB_MAX_OUTPUT_PORT_TYPE
+pixelsOut[5] <= pixelsOut.DB_MAX_OUTPUT_PORT_TYPE
+pixelsOut[6] <= pixelsOut.DB_MAX_OUTPUT_PORT_TYPE
+pixelsOut[7] <= pixelsOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |MC6847X|videoMux:outputStream
 select[0] => Mux0.IN1
 select[0] => Mux1.IN1
@@ -4986,6 +5018,21 @@ RGB[5] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 RGB[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 RGB[7] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 RGB[8] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MC6847X|rowDivide:rowRepeat
+AnG => Mux0.IN16
+AnG => Mux1.IN16
+AnG => process_0.IN0
+GM[0] => Mux0.IN19
+GM[0] => Mux1.IN19
+GM[1] => Mux0.IN18
+GM[1] => Mux1.IN18
+GM[2] => Mux0.IN17
+GM[2] => Mux1.IN17
+div2 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+div3 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+div12 <= process_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MC6847X|data_counter_vhdl:dataAddress

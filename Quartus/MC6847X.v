@@ -51,6 +51,7 @@ wire	[3:0] graphicPaletteValue;
 wire	[3:0] alphaPaletteValue;
 wire	[3:0] paletteValue;
 wire	[1:0] pixelData;
+wire div2;
 
 	FormatSwitch	FormatSelect(
 		.RequestFormat (RequestFormat),
@@ -65,10 +66,16 @@ wire	[1:0] pixelData;
 		.Clk			(FormatClk)
 	);
 	
+	clockDivide pixelClockDivider(
+		.AnG (AnG),
+		.GM (GM),
+		.div2 (div2)
+	);
+	
 	FrameTiming		Frame(
 		.clk 			(NTSCClk),
 		.format 		(Format),
-		.width		(6'b100000),
+		.div2			(div2),
 		.hsn			(HSn),
 		.fsn			(FSn),
 		.preload		(DataPreLoad),
@@ -80,7 +87,7 @@ wire	[1:0] pixelData;
 		.clk	(NTSCClk),
 		.load	(DataPreLoad),
 		.data	(videoData),
-		.div2	(1'b0),
+		.div2	(div2),
 		.pixelData (pixelData)
 	);
 	
@@ -98,10 +105,10 @@ wire	[1:0] pixelData;
 	
 	videoMux			outputStream(
 		.select		(outputSelect),
-		.channel1	(9'b000000000),
-		.channel2	(9'b111111111),
-		.channel3	(9'b001001001), //BDStream
-		.channel4	(VPStream), //VPStream
+		.channel1	(9'b000000000), //blank
+		.channel2	(9'b111111111), //illegal
+		.channel3	(9'b001001001), //BorderStream
+		.channel4	(VPStream), 	 //ViewPortStream
 		.result		(rgb)
 	);
 	
@@ -147,15 +154,27 @@ wire	[1:0] pixelData;
 		.RGB			(BDStream)
 	);
 	
+	wire rowDiv2;
+	wire rowDiv3;
+	wire rowDiv12;
+	
+	rowDivide		rowRepeat(
+		.AnG (AnG),
+		.GM (GM),
+		.div2 (rowDiv2),
+		.div3 (rowDiv3),
+		.div12 (rowDiv12)
+	);
+	
 	data_counter_vhdl  dataAddress(
 		.clk			(~DataPreLoad),
 		.reset		(~FSn),
 		.hsn			(HSn),
 		.rp			(AlphaRowClear),
-		.wide			(1'b1),
-		.div2			(1'b0),
-		.div3			(1'b0),
-		.div12		(1'b0),
+		.wide			(~div2),
+		.div2			(rowDiv2),
+		.div3			(rowDiv3),
+		.div12		(rowDiv12),
 		.count		(DA)
 	);
 	
